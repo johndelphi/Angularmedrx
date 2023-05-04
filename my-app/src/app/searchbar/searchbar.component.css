@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap");
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    max-width: 800px; /* Adjust this value based on your design preference */
+    width: 100%;
+    position: relative;
+  }
+  .Searchbarheader h2{
+    
+    text-align: center;
+    padding-top: 26px;
+    
+  }
+  .search-input {
+    padding: 0.5rem 1rem;
+    height: 3rem;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    flex-grow: 1;
+    margin: 10px 0;
+    padding-right: 3rem; 
+    box-sizing: border-box;
+  }
+
+  .Search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    background-color:#07b90a;
+    border-radius: 0 50px 0;
+    color: white;
+    border: none;
+    border-radius: 0 25px 0;
+    padding: 0.5rem;
+    cursor: pointer;
+    font-size: 1rem;
+    position: absolute; /* Add this line */
+    right: 0; /* Add this line */
+    height: 3rem;
+    width: 3rem; /* Adjust this value if needed */
+  }
+  .search-barWrapper{
+    background-color: rgb(204, 243, 224);
+    height: 40%;
+  }
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+    }
+  }
+  .material-icon{
+    font-size: 1.2rem;
+    color: #333;
+  }
