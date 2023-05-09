@@ -1,0 +1,18 @@
+.features-benefits{
+    background-color: rgb(204, 243, 224);
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+
+}
+.benfits{
+    float: left;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-right: 80;
+   
+}
+  
