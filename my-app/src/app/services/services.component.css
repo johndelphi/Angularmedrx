@@ -1,0 +1,29 @@
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+  
+  .service {
+    width: 300px;
+    text-align: center;
+    margin: 1rem;
+  }
+  
+  .service img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .service h3 {
+    margin: 1rem 0;
+  }
+  .service p {
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+  }
+  
+  .service p.collapsed {
+    height: 3.6rem; /* Adjust this value to control the number of visible lines when collapsed */
+  }
