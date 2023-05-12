@@ -27,3 +27,9 @@
   .service p.collapsed {
     height: 3.6rem; /* Adjust this value to control the number of visible lines when collapsed */
   }
+  .services-header {
+      display: flex;
+      justify-content: center;
+      margin-top: 12px;
+      font-weight: 600;
+  }
