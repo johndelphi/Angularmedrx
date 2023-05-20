@@ -24,6 +24,13 @@
                                 </div>
                                 <small *ngIf="signupForm.controls['lastName'].dirty && signupForm.hasError('required','lastName')" class="text-danger">*LastName is required</small>
                                 <div class="form-group pt-3">
+                                  <div class="input-field" [class.error]="signupForm.controls['phoneNumber'].dirty && signupForm.hasError('required','lastName')">
+                                      <span class="fa-solid fa-user p-2"></span>
+                                      <input formControlName="phoneNumber" type="text" placeholder="PhoneNumber">
+                                  </div>
+                              </div>
+                              <small *ngIf="signupForm.controls['phoneNumber'].dirty && signupForm.hasError('required','phoneNumber')" class="text-danger">*PhoneNumber is required</small>
+                                <div class="form-group pt-3">
                                     <div class="input-field" [class.error]="signupForm.controls['email'].dirty && signupForm.hasError('required','email')">
                                         <span class="fa-solid fa-user p-2"></span>
                                         <input formControlName="email" type="text" placeholder="Email">

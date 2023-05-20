@@ -10,6 +10,8 @@ import { ServicesComponent } from './services/services.component';
 import { FeaturesComponent } from './features/features.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { SignupComponent } from './signup/signup.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

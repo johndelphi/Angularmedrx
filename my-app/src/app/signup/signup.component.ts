@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import ValidateForm from '../helpers/validateform';
+import { VisibilityService } from '../visibility.service';
+
 
 @Component({
   selector: 'app-signup',
@@ -14,16 +16,23 @@ export class SignupComponent implements OnInit{
   isText: boolean = false;
   eyeIcon: string = "fa-eye-slash";
   signupForm!: FormGroup;
-  constructor(private fb : FormBuilder) {}
+  signupVisible: boolean = false;
+  constructor(private fb : FormBuilder, private visibilityService: VisibilityService) {}
 
   ngOnInit(): void {
     this.signupForm = this.fb.group({
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
+      phoneNumber: ['', Validators.required],
       userName: ['', Validators.required],
       email: ['', Validators.required],
       password: ['', Validators.required],
     })
+
+    this.visibilityService.signupVisible.subscribe((visible: boolean) => {
+      this.signupVisible = visible;
+    });
+
   }
 
   hideShowPass() {
@@ -33,6 +42,7 @@ export class SignupComponent implements OnInit{
   }
 
   onSignup(){
+
     if(this.signupForm.valid){
 
       console.log(this.signupForm.value)
