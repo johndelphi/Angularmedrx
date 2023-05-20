@@ -1,6 +1,15 @@
-<app-header></app-header>
+<div id="header">
+  <app-header></app-header>
+</div>
+
+<div id="content">
+  <router-outlet></router-outlet>
+  <ng-container *ngIf="loginVisible || signupVisible">
+    <app-login *ngIf="loginVisible"></app-login>
+    <app-signup *ngIf="signupVisible"></app-signup>
+  </ng-container>
+</div>
 <app-searchbar></app-searchbar>
 <app-services></app-services>
 <app-features></app-features>
 
-<router-outlet></router-outlet>
