@@ -6,6 +6,10 @@ import { VisibilityService } from './visibility.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+<<<<<<< HEAD
+export class AppComponent {
+  title = 'MedRx';
+=======
 export class AppComponent implements OnInit {
   title = 'my-app';
   constructor(private visibilityService: VisibilityService) {}
@@ -23,4 +27,5 @@ export class AppComponent implements OnInit {
     throw new Error('Method not implemented.');
   }
 
+>>>>>>> master
 }
