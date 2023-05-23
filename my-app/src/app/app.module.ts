@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -8,7 +9,14 @@ import { HeaderComponent } from './header/header.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { ServicesComponent } from './services/services.component';
 import { FeaturesComponent } from './features/features.component';
-import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './home/home.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -17,15 +25,21 @@ import { ContactComponent } from './contact/contact.component';
     SearchbarComponent,
     ServicesComponent,
     FeaturesComponent,
-    ContactComponent
+    HomeComponent,
+    SignUpPageComponent
+   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

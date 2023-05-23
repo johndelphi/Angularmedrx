@@ -1,18 +1,18 @@
 <div class="container" ng-app="ContactForm">
-    <h1>Contact Us!</h1>
-    <form name="cf" controller="cfController as cfCtrl" ng-submit="submitForm(cf.$valid)" novalidate>
+    <h1>Contact us!</h1>
+    <form name="cf" ng-controller="cfController as cfCtrl" ng-submiit="submitForm(cf.$valid)" novalidate>
         <div class="form-group">
             <label for="name">Name</label>
-            <input id="name" type="text" name="name" ng-model="name" required>
+            <input type="text" id="name" name="name" ng-model="name" required>
         </div>
         <div class="form-group">
-            <label for="email">Email(optional)</label>
-            <input type="email" id="email" name="email">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
         </div>
         <div class="form-group">
             <label for="msg">Message</label>
-            <textarea name="message" id="msg" rows="4" ng-model="msg" required></textarea>
+            <textarea name="message" id="msg" ng-model="msg" rows="4" required></textarea>
         </div>
-        <input type="submit" value="send" ng-disabled="cf.$invalid">
+        <input type="submit" value="send" ng-disabled="cf.$invalid"/>
     </form>
 </div>
