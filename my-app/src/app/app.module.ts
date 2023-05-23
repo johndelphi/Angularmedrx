@@ -1,6 +1,7 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -8,6 +9,17 @@ import { HeaderComponent } from './header/header.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { ServicesComponent } from './services/services.component';
 import { FeaturesComponent } from './features/features.component';
+import { HomeComponent } from './home/home.component';
+
+import { HttpClientModule } from '@angular/common/http';
+import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
+
+
+
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -15,15 +27,29 @@ import { FeaturesComponent } from './features/features.component';
     HeaderComponent,
     SearchbarComponent,
     ServicesComponent,
-    FeaturesComponent
+    FeaturesComponent,
+
+    HomeComponent,
+    SignUpPageComponent
+   
+
+   
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
+
   ],
-  providers: [],
+  providers: [
+    
+
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
