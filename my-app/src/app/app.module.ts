@@ -9,19 +9,16 @@ import { HeaderComponent } from './header/header.component';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { ServicesComponent } from './services/services.component';
 import { FeaturesComponent } from './features/features.component';
-<<<<<<< HEAD
 import { HomeComponent } from './home/home.component';
-import { ReactiveFormsModule } from '@angular/forms';
+
 import { HttpClientModule } from '@angular/common/http';
 import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 
 
 
-=======
-import { LoginComponent } from './login/login.component';
-import { SignupComponent } from './signup/signup.component';
-import { HttpClientModule } from '@angular/common/http';
->>>>>>> master
+
+
+
 
 
 @NgModule({
@@ -31,14 +28,13 @@ import { HttpClientModule } from '@angular/common/http';
     SearchbarComponent,
     ServicesComponent,
     FeaturesComponent,
-<<<<<<< HEAD
+
     HomeComponent,
     SignUpPageComponent
    
-=======
-    LoginComponent,
-    SignupComponent
->>>>>>> master
+
+   
+
   ],
   imports: [
     BrowserModule,
@@ -47,12 +43,12 @@ import { HttpClientModule } from '@angular/common/http';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule
-<<<<<<< HEAD
+
   ],
   providers: [
     
-=======
->>>>>>> master
+
+
   ],
   bootstrap: [AppComponent]
 })
