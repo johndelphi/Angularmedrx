@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
+import { PharmacyRegistrationComponent } from './pharmacy-registration/pharmacy-registration.component';
 
 
 
@@ -28,12 +29,12 @@ import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
     SearchbarComponent,
     ServicesComponent,
     FeaturesComponent,
+     HomeComponent,
+    SignUpPageComponent,
+    PharmacyRegistrationComponent
 
-    HomeComponent,
-    SignUpPageComponent
-   
 
-   
+
 
   ],
   imports: [
@@ -46,7 +47,7 @@ import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 
   ],
   providers: [
-    
+
 
 
   ],
