@@ -15,8 +15,26 @@
 
     </button>
 
+    <div class="menu-container">
+      <mat-toolbar>
+        <button mat-icon-button (click)="toggleSideNav()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </mat-toolbar>
+      <div class="dropdown-menu" [ngClass]="{ 'show': isMenuOpen }">
+        <li ><a routerLink="/home" routerLinkActive="active">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a  routerLink="/contact" routerLinkActive="active">Contact</a></li>
+        <li><a  routerLink="/pharmacy-registration" routerLinkActive="active">Pharmacy Registration</a></li>
+      </div>
+    </div>
   </ul>
 
 
-
 </nav>
+<app-searchbar></app-searchbar>
+
+
+
+
+
