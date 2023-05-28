@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { BackendserviceService } from '../backendservice.service';
 @Component({
   selector: 'app-searchbar',
   templateUrl: './searchbar.component.html',
@@ -7,9 +7,14 @@ import { Component } from '@angular/core';
 })
 export class SearchbarComponent {
 searchTerm:string ='';
- constructor() {}
+ constructor(private backendService : BackendserviceService) {}
 
  onSearch(){
+  
   console.log('Search term:', this.searchTerm);
- }
+  this.backendService.search(this.searchTerm)
+  .subscribe(response => {
+    console.log(response);
+  })
+}
 }
