@@ -16,4 +16,9 @@ export class HeaderComponent {
 
   }
 
+  closeDropdownMenu() {
+    this.isMenuOpen = false;
+  }
+
 }
+

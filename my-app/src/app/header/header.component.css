@@ -39,7 +39,7 @@ nav a:hover{
 }
 nav ul{
   display: flex;
-  gap: 1.9rem;
+  gap: 9.9rem;
 }
 nav ul li{
   font-weight: 700
@@ -132,25 +132,45 @@ button{
   outline: none;
  }
 
- ul mat-toolbar {
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 18px;
-  height: 32px;
-  background-color: transparent;
- }
-
-.menu-container.dropdown-menu {
+.menu-container .dropdown-menu {
   position: absolute;
+  height: 100vh;
+  width: 256px;
   top: 100%;
   right: 0;
   background-color: green;
+  cursor: pointer;
   padding: 10px;
-  display: none;
- }
 
-.menu-container.dropdown-menu.show {
+}
+
+.menu-container .dropdown-menu:active {
   display: block;
- }
+}
+
+.menu-container .dropdown-menu li {
+  margin-bottom: 10px;
+}
+
+.menu-container .dropdown-menu li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.menu-container .dropdown-menu li:last-child {
+  margin-bottom: 0;
+}
+
+.menu-container .dropdown-menu h1 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.menu-container .dropdown-menu .close {
+  float: right;
+  font-size: 24px;
+  font-weight: bold ;
+}

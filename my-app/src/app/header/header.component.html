@@ -1,11 +1,9 @@
 <nav>
   <h1>MedRx</h1>
   <ul class="navigation">
-    <li ><a routerLink="/home" routerLinkActive="active">Home</a></li>
+    <li><a href="#">Download App</a></li>
     <li><a href="#">Services</a></li>
-    <li><a href="#">About</a></li>
-    <li><a  routerLink="/contact" routerLinkActive="active">Contact</a></li>
-    <li><a  routerLink="/pharmacy-registration" routerLinkActive="active">Pharmacy Registration</a></li>
+
     <button routerLink="/sign-up-page">
       <span class="shadow"></span>
       <span class="edge"></span>
@@ -22,10 +20,11 @@
         </button>
       </mat-toolbar>
       <div class="dropdown-menu" [ngClass]="{ 'show': isMenuOpen }">
-        <li ><a routerLink="/home" routerLinkActive="active">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a  routerLink="/contact" routerLinkActive="active">Contact</a></li>
-        <li><a  routerLink="/pharmacy-registration" routerLinkActive="active">Pharmacy Registration</a></li>
+        <h1>MedRx</h1>
+        <li ><a routerLink="/home" routerLinkActive="active" (click)="closeDropdownMenu()">Home</a></li>
+        <li><a routerLink="/about" routerLinkActive="active" (click)="closeDropdownMenu()">About</a></li>
+        <li><a  routerLink="/contact" routerLinkActive="active" (click)="closeDropdownMenu()">Contact</a></li>
+        <li><a  routerLink="/pharmacy-registration" routerLinkActive="active" (click)="closeDropdownMenu()">Pharmacy Registration</a></li>
       </div>
     </div>
   </ul>
