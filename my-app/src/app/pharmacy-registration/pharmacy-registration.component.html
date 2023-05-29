@@ -1,0 +1,69 @@
+<div class="container">
+  <h2 class="mb-4">Pharmacy Registration</h2>
+  <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()" class="row">
+    <div class="col-md-6">
+      <div class="mb-3">
+        <label for="pharmacyName" class="form-label">Pharmacy Name<span>*</span></label>
+        <input type="text" id="pharmacyName" class="form-control" formControlName="pharmacyName">
+        <div class="invalid-feedback" *ngIf="registrationForm.get('pharmacyName')?.invalid && registrationForm.get('pharmacyName'),touched">
+          Pharmacy Name is required.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="region" class="form-label">Region</label>
+        <input type="text" id="region" class="form-control" formControlName="region">
+      </div>
+
+      <div class="mb-3">
+        <label for="county" class="form-label">County <span>*</span></label>
+        <select class="form-control" id="county" [(ngModel)]="selectedCounty" (change)="onCountyChange()" name="county">
+          <option value="">Select County</option>
+          <option *ngFor="let county of KenyanCounties" [value]="county">{{ county }}</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="subcounty" class="form-label">Subcounty</label>
+        <select class="form-control" id="subcounty" [(ngModel)]="selectedSubcounty" name="subcounty">
+          <option value="">Select Subcounty</option>
+          <option *ngFor="let subcounty of SubCounties" [value]="subcounty">{{ subcounty }}</option>
+        </select>
+      </div>
+
+    </div>
+
+    <div class="col-md-6">
+      <div class="mb-3">
+        <label for="phoneNumber" class="form-label">Phone Number<span>*</span></label>
+        <input type="text" id="phoneNumber" class="form-control" formControlName="phoneNumber">
+        <div class="invalid-feedback" *ngIf="registrationForm.get('phoneNumber')?.invalid && registrationForm.get('phoneNumber'),touched">
+          Phone Number is required.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="landmark" class="form-label">Landmark</label>
+        <input type="text" id="landmark" class="form-control" formControlName="landmark">
+      </div>
+
+      <div class="mb-3">
+        <label for="latitude" class="form-label">Latitude<span>*</span></label>
+        <input type="text" id="latitude" class="form-control" formControlName="latitude">
+        <div class="invalid-feedback" *ngIf="registrationForm.get('latitude')?.invalid && registrationForm.get('latitude'),touched">
+          Latitude is required.
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="longitude" class="form-label">Longitude<span>*</span></label>
+        <input type="text" id="longitude" class="form-control" formControlName="longitude">
+        <div class="invalid-feedback" *ngIf="registrationForm.get('longitude')?.invalid && registrationForm.get('longitude'),touched">
+          Longitude is required.
+        </div>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary" [disabled]="registrationForm.invalid">Register</button>
+  </form>
+</div>
