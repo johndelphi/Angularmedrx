@@ -1,6 +1,5 @@
- 
-import { Component } from '@angular/core';
 
+import { Component } from '@angular/core';
 
 
 @Component({
@@ -8,9 +7,18 @@ import { Component } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
- 
+
 export class HeaderComponent {
-  /**
-   *
-   */
+  isMenuOpen = false
+
+  toggleSideNav() {
+    this.isMenuOpen = !this.isMenuOpen;
+
+  }
+
+  closeDropdownMenu() {
+    this.isMenuOpen = false;
+  }
+
 }
+

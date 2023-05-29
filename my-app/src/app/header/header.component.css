@@ -24,7 +24,7 @@ nav{
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
   background-color: white;
-  
+
 }
 nav h1{
   color: black;
@@ -39,7 +39,7 @@ nav a:hover{
 }
 nav ul{
   display: flex;
-  gap: 1.9rem;
+  gap: 9.9rem;
 }
 nav ul li{
   font-weight: 700
@@ -84,7 +84,7 @@ button{
   border-radius: 12px;
   background: green;
  }
- 
+
  .front-text {
   display: block;
   position: relative;
@@ -99,35 +99,78 @@ button{
      600ms
      cubic-bezier(.3, .7, .4, 1);
  }
- 
+
  button:hover {
   filter: brightness(110%);
  }
- 
+
  button:hover .front-text {
   transform: translateY(-6px);
   transition: transform
      250ms
      cubic-bezier(.3, .7, .4, 1.5);
  }
- 
+
  button:active .front-text {
   transform: translateY(-2px);
   transition: transform 34ms;
  }
- 
+
  button:hover .shadow {
   transform: translateY(4px);
   transition: transform
      250ms
      cubic-bezier(.3, .7, .4, 1.5);
  }
- 
+
  button:active .shadow {
   transform: translateY(1px);
   transition: transform 34ms;
  }
- 
+
  button:focus:not(:focus-visible) {
   outline: none;
  }
+
+.menu-container .dropdown-menu {
+  position: absolute;
+  height: 100vh;
+  width: 256px;
+  top: 100%;
+  right: 0;
+  background-color: green;
+  cursor: pointer;
+  padding: 10px;
+
+}
+
+.menu-container .dropdown-menu:active {
+  display: block;
+}
+
+.menu-container .dropdown-menu li {
+  margin-bottom: 10px;
+}
+
+.menu-container .dropdown-menu li a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.menu-container .dropdown-menu li:last-child {
+  margin-bottom: 0;
+}
+
+.menu-container .dropdown-menu h1 {
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.menu-container .dropdown-menu .close {
+  float: right;
+  font-size: 24px;
+  font-weight: bold ;
+}
