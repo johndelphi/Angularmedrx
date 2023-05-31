@@ -3,11 +3,9 @@
 </div>
 <div class="services-container">
     <div class="service" *ngFor="let service of services">
-        <h3>{{service.title}}</h3>
+      <h3>{{service.title}}</h3>
       <img [src]="service.image" alt="{{service.title}}">
-    <p [class.collapsed]="service.collapsed">{{service.description}}</p>
-    <button (click)="toggleViewMore(service)">{{service.collapsed ? 'View More' : 'View Less'}}</button>
-      
+      <p [class.collapsed]="service.collapsed">{{service.description}}</p>
+      <button (click)="toggleViewMore(service)">{{service.collapsed ? 'View More' : 'View Less'}}</button>
     </div>
-  </div>
-  
+</div>

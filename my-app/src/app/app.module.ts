@@ -20,6 +20,7 @@ import { HomeComponent } from './home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 import { PharmacyRegistrationComponent } from './pharmacy-registration/pharmacy-registration.component';
+import { SigninComponent } from './signin/signin.component';
 
 
 
@@ -39,6 +40,7 @@ import { PharmacyRegistrationComponent } from './pharmacy-registration/pharmacy-
      HomeComponent,
     SignUpPageComponent,
     PharmacyRegistrationComponent,
+    SigninComponent,
 
 
 
