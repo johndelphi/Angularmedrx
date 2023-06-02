@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-up-page',
@@ -6,7 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./sign-up-page.component.css']
 })
 export class SignUpPageComponent {
-  
+  wordToHighlight = 'Free';
+  email!: string;
+  phone!: string;
+
+  onSubmit() {
+    // Perform the sign-in logic here
+    console.log('Username:', this.email);
+    console.log('Password:', this.phone);
+    // Add your sign-in logic here, such as making an API request or validating credentials
+  }
 
 
 }

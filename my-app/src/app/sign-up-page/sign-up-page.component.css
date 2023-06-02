@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
 * {
     box-sizing: border-box;
@@ -176,37 +176,37 @@ button.ghost {
 
 .overlay-left {
     transform: translateY(-20%);
-}
+} */
 
 /* Move signin to right */
-.container.right-panel-active .sign-in-container {
+/* .container.right-panel-active .sign-in-container {
     transform: translateY(100%);
-}
+} */
 
 /* Move overlay to left */
-.container.right-panel-active .overlay-container {
+/* .container.right-panel-active .overlay-container {
     transform: translateX(-100%);
-}
+} */
 
 /* Bring signup over signin */
-.container.right-panel-active .sign-up-container {
+/* .container.right-panel-active .sign-up-container {
     transform: translateX(100%);
     opacity: 1;
     z-index: 5;
-}
+} */
 
 /* Move overlay back to right */
-.container.right-panel-active .overlay {
+/* .container.right-panel-active .overlay {
     transform: translateX(50%);
-}
+} */
 
 /* Bring back the text to center */
-.container.right-panel-active .overlay-left {
+/* .container.right-panel-active .overlay-left {
     transform: translateY(0);
-}
+} */
 
 /* Same effect for right */
-.container.right-panel-active .overlay-right {
+/* .container.right-panel-active .overlay-right {
     transform: translateY(20%);
 }
 
@@ -222,4 +222,74 @@ button.ghost {
 	height: 30px;
 	letter-spacing: 15px;
 	align-items: center;
+} */
+
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(47, 197, 47);
+  width: 70%;
+  margin: 0 auto;
+  height: 330px;
+  margin-top: -130px;
+}
+.close-icon {
+  color: red;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+h1 {
+  align-items: center;
+  font-size: 30px;
+  font-weight: 500px;
+}
+
+.highlight {
+  color: purple;
+  font-weight: bold;
+}
+
+h2 {
+  align-items: center;
+  font-size: 15px;
+  font-weight: 390px;
+}
+
+label {
+  font-weight: bold;
+}
+
+p {
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.email-label input {
+  display: flex;
+  width: 656px;
+  height: 40px;
+}
+
+.phone-label input{
+  width: 70%;
+  height: 28px;
+}
+
+button {
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid rgb(145, 140, 140);
+  margin-left: 170px;
+  margin-top: 25px;
+  background: rgb(145, 140, 140);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 90px;
+  cursor: pointer;
 }

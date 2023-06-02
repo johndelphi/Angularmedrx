@@ -1,4 +1,4 @@
-<body>
+<!-- <body>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
     crossorigin="anonymous">
@@ -60,4 +60,23 @@
 		<a href="#" target="_blank" class="social"><i class="fab fa-linkedin"></i></a>
 		</div>
 	</div>
-</body>
+</body> -->
+
+<div class="signup-container">
+  <mat-icon class="close-icon">close</mat-icon>
+  <h1>Sign up <span [ngClass]="{'highlight': wordToHighlight === 'Free'}">Free</span> To Get Lowest Price</h1>
+  <h2>Enter your email to get started</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="email-label">
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" [(ngModel)]="email">
+    </div>
+    <p>This value is required</p>
+    <div class="phone-label">
+      <label for="phone">Phone:</label>
+      <input type="phone" id="phone" name="phone" [(ngModel)]="phone">
+    </div>
+    <br>
+    <button type="submit">Continue</button>
+  </form>
+</div>
