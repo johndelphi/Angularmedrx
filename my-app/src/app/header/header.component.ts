@@ -20,5 +20,11 @@ export class HeaderComponent {
     this.isMenuOpen = false;
   }
 
+  isContentOpen: boolean = false;
+
+  toggleSignin() {
+    this.isContentOpen = !this.isContentOpen;
+  }
+
 }
 

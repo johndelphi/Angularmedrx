@@ -1,0 +1,13 @@
+<div class="signin-container">
+  <form (ngSubmit)="onSubmit()">
+    <label for="username" class="form-label">Username</label>
+    <input type="text" id="username" name="username" [(ngModel)]="username">
+    <br>
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" [(ngModel)]="password">
+    <br>
+    <button type="submit">sign in</button>
+  </form>
+  <p class="signup-text">Not a member? <a routerLink="/sign-up-page">Sign up today!</a></p>
+</div>
+

@@ -13,10 +13,10 @@
     position: relative;
   }
   .Searchbarheader h2{
-    
+
     text-align: center;
     padding-top: 26px;
-    
+
   }
   .search-input {
     padding: 0.5rem 1rem;
@@ -25,7 +25,7 @@
     border-radius: 50px;
     flex-grow: 1;
     margin: 10px 0;
-    padding-right: 3rem; 
+    padding-right: 3rem;
     box-sizing: border-box;
   }
 
@@ -48,8 +48,8 @@
     width: 3rem; /* Adjust this value if needed */
   }
   .search-barWrapper{
-    background-color: rgb(204, 243, 224);
-    height: 40%;
+    background-color: rgb(110, 204, 110);
+    height: 60%;
   }
   @media (max-width: 768px) {
     .container {

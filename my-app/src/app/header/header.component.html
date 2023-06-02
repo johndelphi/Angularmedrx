@@ -2,16 +2,20 @@
   <h1>MedRx</h1>
   <ul class="navigation">
     <li><a href="#">Download App</a></li>
-    <li><a href="#">Services</a></li>
+    <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
 
-    <button routerLink="/sign-up-page">
+    <!-- <button routerLink="/sign-up-page">
       <span class="shadow"></span>
       <span class="edge"></span>
-
       <span class="front-text" >Sign up</span>
+    </button> -->
 
-
-    </button>
+    <div class="dropdown">
+      <li><a routerLink="/signin" routerLinkActive="active" (click)="toggleSignin()">Sign In</a></li>
+      <div class="dropdown-content" [ngClass]="{'show': isContentOpen }">
+        <app-signin></app-signin>
+      </div>
+    </div>
 
     <div class="menu-container">
       <mat-toolbar>
@@ -24,6 +28,7 @@
         <li ><a routerLink="/home" routerLinkActive="active" (click)="closeDropdownMenu()">Home</a></li>
         <li><a routerLink="/about" routerLinkActive="active" (click)="closeDropdownMenu()">About</a></li>
         <li><a  routerLink="/contact" routerLinkActive="active" (click)="closeDropdownMenu()">Contact</a></li>
+        <li ><a routerLink="/features" routerLinkActive="active" (click)="closeDropdownMenu()">Features</a></li>
         <li><a  routerLink="/pharmacy-registration" routerLinkActive="active" (click)="closeDropdownMenu()">Pharmacy Registration</a></li>
       </div>
     </div>

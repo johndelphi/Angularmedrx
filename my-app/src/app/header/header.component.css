@@ -39,7 +39,7 @@ nav a:hover{
 }
 nav ul{
   display: flex;
-  gap: 9.9rem;
+  gap: 3.9rem;
 }
 nav ul li{
   font-weight: 700
@@ -173,4 +173,20 @@ button{
   float: right;
   font-size: 24px;
   font-weight: bold ;
+}
+
+.dropdown .dropdown-content{
+  margin-top: 20px;
+  display: none;
+  position: absolute;
+  height: 100vh;
+  width: 256px;
+  top: 100%;
+  right: 0;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.dropdown .dropdown-content.show {
+  display: block;
 }
