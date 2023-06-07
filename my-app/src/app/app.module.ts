@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 import { PharmacyRegistrationComponent } from './pharmacy-registration/pharmacy-registration.component';
 import { SigninComponent } from './signin/signin.component';
+import { UserdetailsSignupComponent } from './userdetails-signup/userdetails-signup.component';
 
 
 
@@ -41,6 +42,7 @@ import { SigninComponent } from './signin/signin.component';
     SignUpPageComponent,
     PharmacyRegistrationComponent,
     SigninComponent,
+    UserdetailsSignupComponent,
 
 
 
