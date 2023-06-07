@@ -8,6 +8,7 @@ import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 import { PharmacyRegistrationComponent } from './pharmacy-registration/pharmacy-registration.component';
 import { ServicesComponent } from './services/services.component';
 import { FeaturesComponent } from './features/features.component';
+import { UserdetailsSignupComponent } from './userdetails-signup/userdetails-signup.component';
 // import { SigninComponent } from './signin/signin.component';
 
 const routes: Routes = [
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'pharmacy-registration', component: PharmacyRegistrationComponent},
   {path: 'services', component: ServicesComponent},
   {path: 'features', component: FeaturesComponent},
+  {path: 'userdetails-signup', component: UserdetailsSignupComponent},
   // {path: 'signin', component: SigninComponent},
   {path: '**', redirectTo: ''}
 

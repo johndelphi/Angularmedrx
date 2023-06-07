@@ -1,18 +1,18 @@
 <div class="signup-container">
-  <mat-icon class="close-icon">close</mat-icon>
+  <button class="close-button" (click)="closeSignUp()">X</button>
   <h1>Sign up <span [ngClass]="{'highlight': wordToHighlight === 'Free'}">Free</span> To Get Lowest Price</h1>
   <h2>Enter your email to get started</h2>
-  <form (ngSubmit)="onSubmit()">
+  <form (submit)="onSubmit($event)">
     <div class="email-label">
       <label for="email">Email</label>
       <input type="text" id="email" name="email" [(ngModel)]="email">
     </div>
-    <p>This value is required</p>
+    <p class="error-message" [ngClass]="{ 'error-red': formSubmitted && (!email || !phone) }">This value is required</p>
     <div class="phone-label">
       <label for="phone">Phone:</label>
       <input type="phone" id="phone" name="phone" [(ngModel)]="phone">
     </div>
     <br>
-    <button type="submit">Continue</button>
+    <button type="submit" (click)="userSignUp()">Continue</button>
   </form>
 </div>

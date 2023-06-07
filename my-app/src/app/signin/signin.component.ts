@@ -10,12 +10,14 @@ import { Router } from '@angular/router';
 export class SigninComponent {
 
   constructor(private router: Router) { }
+
+  showSignInPage: boolean = true;
+
   navigateTosignUp() {
     this.router.navigate(['/sign-up-page']);
+    this.showSignInPage = false;
   }
-  onSignUpClick() {
-    this.navigateTosignUp();
-  }
+
 
   username!: string;
   password!: string;

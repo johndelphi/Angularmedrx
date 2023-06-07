@@ -6,15 +6,24 @@
   background-color: rgb(47, 197, 47);
   width: 70%;
   margin: 0 auto;
-  height: 330px;
+  height: 360px;
   margin-top: -130px;
+  z-index: 9999;
+  position: relative;
 }
-.close-icon {
+.close-button {
   color: red;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: -10px;
+  right: 15px;
+  transform: translate(50%, -50%);
+  transform-origin: top right;
   cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 22px;
+  z-index: 2;
+
 }
 
 h1 {
@@ -67,3 +76,9 @@ button {
   padding: 8px 90px;
   cursor: pointer;
 }
+
+.error-red{
+  color: red;
+
+}
+
