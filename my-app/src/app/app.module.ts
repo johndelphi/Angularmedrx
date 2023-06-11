@@ -22,6 +22,8 @@ import { SignUpPageComponent } from './sign-up-page/sign-up-page.component';
 import { PharmacyRegistrationComponent } from './pharmacy-registration/pharmacy-registration.component';
 import { SigninComponent } from './signin/signin.component';
 import { UserdetailsSignupComponent } from './userdetails-signup/userdetails-signup.component';
+import { DrugCarouselComponentComponent } from './drug-carousel-component/drug-carousel-component.component';
+import { HowmedrxworksComponent } from './howmedrxworks/howmedrxworks.component';
 
 
 
@@ -43,6 +45,8 @@ import { UserdetailsSignupComponent } from './userdetails-signup/userdetails-sig
     PharmacyRegistrationComponent,
     SigninComponent,
     UserdetailsSignupComponent,
+    DrugCarouselComponentComponent,
+    HowmedrxworksComponent,
 
 
 
