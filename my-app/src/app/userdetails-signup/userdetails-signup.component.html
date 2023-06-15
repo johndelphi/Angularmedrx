@@ -1,1 +1,28 @@
-<p>userdetails-signup works!</p>
+<div class="user-container">
+  <h1>Sign up <span [ngClass]="{'highlight': wordToHighlight === 'Free'}">Free</span> To Get Lowest price</h1>
+  <form (ngSubmit)="onSubmit()" >
+    <div class="first-name">
+      <label for="firstName">First name</label>
+      <input type="text" id="firstName" name="firstName" [(ngModel)]="firstName">
+    </div>
+
+    <div class="last-name">
+      <label for="lastName">last name</label>
+      <input type="text" id="lastName" name="lastName" [(ngModel)]="lastName">
+    </div>
+
+    <div class="DOB-password">
+      <div class="DOB">
+        <label for="dateOfbirth">Date of birth</label>
+        <input type="text" id="dateOfbirth" name="dateOfbirth" [(ngModel)]="dateOfbirth">
+      </div>
+      <br>
+      <div class="password">
+        <label for="passWord">Password</label>
+        <input type="text" id="passWord" name="passWord" [(ngModel)]="passWord">
+      </div>
+    </div>
+    <button type="submit" >Sign UP</button>
+
+  </form>
+</div>

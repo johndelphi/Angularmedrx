@@ -27,6 +27,7 @@ nav{
 
 }
 nav h1{
+  margin-left: -50px;
   color: black;
 }
 nav a{
@@ -189,4 +190,12 @@ button{
 
 .dropdown .dropdown-content.show {
   display: block;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    width: 380px;
+    gap: 10px;
+    margin-right: -55px;
+  }
 }

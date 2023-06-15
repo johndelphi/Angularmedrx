@@ -1,0 +1,102 @@
+.user-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #3BB74F;
+  font-family: hex;
+  font-weight: bold;
+  width: 50%;
+  margin: 0 auto;
+  height: 460px;
+  margin-top: -295px;
+  z-index: 9999;
+  position: relative;
+}
+
+
+h1 {
+  align-items: center;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-left: 80px;
+
+}
+
+.highlight {
+  color: purple;
+  font-weight: bold;
+}
+
+.first-name {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.first-name input {
+  display: block;
+  margin-top: 10px;
+  height: 30px;
+  width: 420px;
+  background-color: lightgray;
+}
+
+.last-name {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.last-name input {
+  display: block;
+  margin-top: 10px;
+  height: 35px;
+  width: 420px;
+  background-color: lightgray;
+}
+
+.DOB-password {
+  display: flex;
+}
+
+.DOB {
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.DOB input {
+  display: block;
+  margin-top: 10px;
+  width: 160px;
+  background-color: lightgray;
+}
+
+.password {
+  margin-top: 20px;
+  margin-left: 90px;
+}
+
+.password input{
+  display: block;
+  margin-top: 10px;
+  width: 160px;
+  background-color: lightgray;
+}
+
+button {
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid darkgreen;
+  margin-left: 100px;
+  margin-top: 40px;
+  background: darkgreen;
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 8px 90px;
+  cursor: pointer;
+}
+
+
+
+
