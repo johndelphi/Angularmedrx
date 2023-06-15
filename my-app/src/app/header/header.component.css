@@ -194,7 +194,7 @@ button{
 
 @media (max-width: 768px) {
   nav ul {
-    width: 380px;
+    width: 350px;
     gap: 10px;
     margin-right: -55px;
   }
