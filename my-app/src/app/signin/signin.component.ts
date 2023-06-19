@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -7,9 +7,21 @@ import { Router } from '@angular/router';
   styleUrls: ['./signin.component.css']
 })
 
-export class SigninComponent {
+export class SigninComponent implements OnInit{
 
   constructor(private router: Router) { }
+  ngOnInit(): void {
+  }
+
+  type: string = "password"
+  isText: boolean = false;
+  eyeIcon: string = "fa-eye-slash"
+
+  hideShowPass() {
+    this.isText = !this.isText;
+    this.isText ? this.eyeIcon = "fa-eye" : this.eyeIcon = "fa-eye-slash";
+    this.isText ? this.type = "text" : this.type = "password";
+  }
 
   showSignInPage: boolean = true;
 

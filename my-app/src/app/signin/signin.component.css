@@ -6,11 +6,11 @@
   background-color: rgb(47, 197, 47);
   width: 440px;
   margin: 0 auto;
-  height: 330px;
+  height: 340px;
 }
 
 .form-label {
-  margin-top: 80px;
+  margin-top: 50px;
   font-weight: bold;
   margin-bottom: -5px;
 }
@@ -25,14 +25,20 @@ label {
 
 }
 
-input {
+.input-field {
   border: 1px solid black;
   align-items: center;
+  background-color: white;
   width: 290px;
   height: 30px;
   padding: 5px;
   margin-top: 5px;
 }
+
+.black-icon {
+  color: black;
+}
+
 
 button {
   align-items: center;
@@ -63,6 +69,12 @@ button {
 }
 
 @media (max-width: 768px) {
+  .signin-container {
+    width: 330px;
+  }
+  .signup-text {
+    margin-left: -35px;
+  }
   form {
     width: 90%;
   }

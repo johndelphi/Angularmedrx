@@ -78,8 +78,41 @@ button {
 
 }
 
-.error-red{
-  color: red;
 
+@media (max-width: 768px) {
+  .signup-container{
+    width: 90%;
+    margin-top: -250px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .email-label {
+    margin-left: 60px;
+  }
+
+  .email-label input {
+    width: 235px;
+  }
+
+  p {
+    margin-left: 60px;
+  }
+
+  .phone-label {
+    margin-left: 60px;
+  }
+
+  .phone-label {
+    width: 255px;
+  }
+
+  button {
+    margin-left: 80px;
+    align-items: center;
+    margin-top:25px;
+    padding: 4px 45px;
+  }
 }
-
