@@ -1,20 +1,23 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-ul{
+
+ul {
   list-style-type: none;
 }
-a{
+
+a {
   text-decoration: none;
   color: black;
 }
-a:hover{
+
+a:hover {
   color: green;
 }
 
-nav{
+nav {
   position: sticky;
   top: 0;
   left: 0;
@@ -24,28 +27,34 @@ nav{
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
   background-color: white;
-
+  height: 80px;
 }
-nav h1{
+
+nav h1 {
   margin-left: -50px;
   color: black;
 }
-nav a{
+
+nav a {
   color: black;
   transition: 0.3s;
 }
-nav a:hover{
+
+nav a:hover {
   color: green;
   border-bottom: 2px solid green;
 }
-nav ul{
+
+nav ul {
   display: flex;
   gap: 3.9rem;
 }
-nav ul li{
-  font-weight: 700
+
+nav ul li {
+  font-weight: 700;
 }
-.burger-menu{
+
+.burger-menu {
   color: green;
   font-size: 2rem;
   border: 0;
@@ -54,7 +63,7 @@ nav ul li{
   display: none;
 }
 
-button{
+button {
   position: relative;
   border: none;
   background: transparent;
@@ -64,7 +73,9 @@ button{
   transition: filter 250ms;
   user-select: none;
   touch-action: none;
-}.shadow{
+}
+
+.shadow {
   position: absolute;
   top: 0%;
   left: 0%;
@@ -76,6 +87,7 @@ button{
   transform: translateY(2px);
   transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
 }
+
 .edge {
   position: absolute;
   top: 0;
@@ -84,9 +96,9 @@ button{
   height: 100%;
   border-radius: 12px;
   background: green;
- }
+}
 
- .front-text {
+.front-text {
   display: block;
   position: relative;
   padding: 12px 27px;
@@ -96,42 +108,36 @@ button{
   background: green;
   will-change: transform;
   transform: translateY(-4px);
-  transition: transform
-     600ms
-     cubic-bezier(.3, .7, .4, 1);
- }
+  transition: transform 600ms cubic-bezier(.3, .7, .4, 1);
+}
 
- button:hover {
+button:hover {
   filter: brightness(110%);
- }
+}
 
- button:hover .front-text {
+button:hover .front-text {
   transform: translateY(-6px);
-  transition: transform
-     250ms
-     cubic-bezier(.3, .7, .4, 1.5);
- }
+  transition: transform 250ms cubic-bezier(.3, .7, .4, 1);
+}
 
- button:active .front-text {
+button:active .front-text {
   transform: translateY(-2px);
   transition: transform 34ms;
- }
+}
 
- button:hover .shadow {
+button:hover .shadow {
   transform: translateY(4px);
-  transition: transform
-     250ms
-     cubic-bezier(.3, .7, .4, 1.5);
- }
+  transition: transform 250ms cubic-bezier(.3, .7, .4, 1);
+}
 
- button:active .shadow {
+button:active .shadow {
   transform: translateY(1px);
   transition: transform 34ms;
- }
+}
 
- button:focus:not(:focus-visible) {
+button:focus:not(:focus-visible) {
   outline: none;
- }
+}
 
 .menu-container .dropdown-menu {
   position: absolute;
@@ -142,7 +148,6 @@ button{
   background-color: green;
   cursor: pointer;
   padding: 10px;
-
 }
 
 .menu-container .dropdown-menu:active {
@@ -173,10 +178,10 @@ button{
 .menu-container .dropdown-menu .close {
   float: right;
   font-size: 24px;
-  font-weight: bold ;
+  font-weight: bold;
 }
 
-.dropdown .dropdown-content{
+.dropdown .dropdown-content {
   margin-top: 20px;
   display: none;
   position: absolute;
@@ -194,8 +199,18 @@ button{
 
 @media (max-width: 768px) {
   nav ul {
-    width: 350px;
+    width: 100%;
+    display: none;
+    flex-direction: column;
     gap: 10px;
     margin-right: -55px;
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: block;
   }
 }

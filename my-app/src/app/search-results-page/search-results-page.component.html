@@ -4,26 +4,27 @@
     <tr *ngFor="let result of searchResults$ | async">
       <td>
         <div class="medicine-info">
-          <img [src]="result.imageUrl" alt="Medicine Image">
+          <img [src]="result.imageUrl" alt="Medicine Image" style="width: 200px; height: 200px;">
           <div>
             <div>Medicine Name: {{ result.medicineName }}</div>
             <div>Medicine Description: {{ result.medicineDescription }}</div>
             <div>Category: {{ result.category }}</div>
           </div>
-        </div>
+åå        </div>
       </td>
+    </tr>
+    <tr>
+      <td>Best prices in Humble</td>
     </tr>
     <tr *ngFor="let result of searchResults$ | async">
       <td>
         <table class="pharmacy-list">
           <tr class="pharmacy-item" *ngFor="let pharmacy of result.pharmacyMedicines; let even = even" [class.even-row]="even">
-            <td>Pharmacy ID: {{ pharmacy.pharmacyId }}</td>
-            <td>Pharmacy Name: {{ pharmacy.pharmacyName }}</td>
-            <td>Price: {{ pharmacy.price }}</td>
-            <td>Latitude: {{ pharmacy.latitude }}</td>
-            <td>Medicine Discount: {{ pharmacy.medicineDiscount }}</td>
-            <td>Quantity in Stock: {{ pharmacy.quantityInStock }}</td>
-          
+            <td>seller {{ pharmacy.pharmacyName }}</td>
+            <td><span class="price" [class.highlighted]="pharmacy.price < 10">{{ pharmacy.price }}ksh</span></td>
+            <td>
+              <button class="discount-button">Get <span class="discount-value">{{ pharmacy.medicineDiscount }}ksh</span> Discount</button> 
+            </td>
           </tr>
         </table>
       </td>
