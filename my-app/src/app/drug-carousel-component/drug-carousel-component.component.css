@@ -2,7 +2,7 @@
     display: flex;
     overflow: hidden;
     align-self: center;
-    height: 40%;
+    height: auto;
     margin-left: 10%;
     
 }
@@ -61,7 +61,19 @@
     background-color: rgb(110, 204, 110);
     margin-bottom: 30px;
   }
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    margin-top: 1px; /* Adjust the top margin as per your preference */
+    margin-bottom: 5px; /* Adjust the bottom margin as per your preference */
+  }
   
+  .card-body > *:not(:last-child) {
+    margin-bottom: 2px; /* Adjust the bottom margin between elements as per your preference */
+  }
   
   @media (max-width: 767px) {
     .card {

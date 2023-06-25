@@ -1,25 +1,25 @@
 <div class="header">
-<h4 >Save at your local pharmacy</h4>
+  <h4>Save at your local pharmacy</h4>
 </div>
 <div class="wrapper">
-    <!-- <button class="btn btn-secondary scroll-button" (click)="scrollLeft()">&lt;</button> -->
-    <div #cardContainer class="scrolling-wrapper">
-      <div *ngFor="let drug of drugs" class="col-lg-3 col-md-4 col-sm-6">
-        <div class="card">
-          <div class="card-img-container">
-            <img [src]="drug.image" alt="Drug Image" class="card-img-top">
-          </div>
-          <div class="card-body">
-            <h5 class="card-title">{{ drug.name }}</h5>
-            <p class="card-text">{{ drug.details }}</p>
-            <p class="card-text">Original Price: {{ drug.originalPrice }}</p>
-            <p class="card-text">Discounted Price: {{ drug.discountedPrice }}</p>
-            <p class="card-text">{{ drug.discountDetails }}</p>
-            <button (click)="getCoupon(drug)" class="btn btn-success">Get free coupon</button>
-          </div>
+  <!-- <button class="btn btn-secondary scroll-button" (click)="scrollLeft()">&lt;</button> -->
+  <div #cardContainer class="scrolling-wrapper">
+    <div *ngFor="let drug of drugs" class="col-lg-3 col-md-4 col-sm-6">
+      <div class="card">
+        <div class="card-img-container">
+          <img [src]="drug.image" alt="Drug Image" class="card-img-top">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{ drug.name }}</h5>
+          <p class="card-text">{{ drug.details }}</p>
+          <p class="card-text" [ngStyle]="{ 'text-decoration': drug.discountedPrice ? 'line-through' : 'none', 'color': drug.discountedPrice ? 'red' : 'black' }">Ksh {{ drug.originalPrice }}</p>
+          <p class="card-text" [ngStyle]="{ 'color': 'green', 'font-size': '1.1em' }">Ksh {{ drug.discountedPrice }}</p>
+          <p class="card-text">{{ drug.discountDetails }}</p>
+    
+          <button (click)="getCoupon(drug)" class="btn btn-success">Get free coupon</button>
         </div>
       </div>
     </div>
-    <!-- <button class="btn btn-secondary scroll-button" (click)="scrollRight()">&gt;</button> -->
   </div>
-  
+  <!-- <button class="btn btn-secondary scroll-button" (click)="scrollRight()">&gt;</button> -->
+</div>
