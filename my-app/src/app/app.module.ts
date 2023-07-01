@@ -24,7 +24,11 @@ import { SigninComponent } from './signin/signin.component';
 import { UserdetailsSignupComponent } from './userdetails-signup/userdetails-signup.component';
 import { DrugCarouselComponentComponent } from './drug-carousel-component/drug-carousel-component.component';
 import { HowmedrxworksComponent } from './howmedrxworks/howmedrxworks.component';
-
+import { SearchResultsPageComponent } from './search-results-page/search-results-page.component';
+import { StoreModule } from '@ngrx/store';
+import { MedicineSearchresultsReducer } from './State/medicine.search.reducer';
+import { AppState } from './State/app.state';
+import { BackendserviceService } from './backendservice.service';
 
 
 
@@ -48,6 +52,8 @@ import { HowmedrxworksComponent } from './howmedrxworks/howmedrxworks.component'
     DrugCarouselComponentComponent,
     HowmedrxworksComponent,
 
+    SearchResultsPageComponent,
+
 
 
 
@@ -63,12 +69,15 @@ import { HowmedrxworksComponent } from './howmedrxworks/howmedrxworks.component'
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
+    StoreModule.forRoot({search: MedicineSearchresultsReducer}),
+    
     MatListModule,
     MatButtonModule
 
   ],
   providers: [
-
+  BackendserviceService,
+  {provide: 'appState', useValue: {} as AppState},
 
 
   ],
