@@ -13,6 +13,14 @@ import { SearchResultsPageComponent } from './search-results-page/search-results
 // import { SigninComponent } from './signin/signin.component';
 
 const routes: Routes = [
+//   {path:'results',
+//   component: SearchResultsPageComponent,
+//   children: [
+//     {path: '',pathMatch: 'full',redirectTo: 'search-results'},
+//     {path: 'search-results',component: SearchResultsPageComponent},
+
+// ],
+// },
   {path: 'contact', component: ContactComponent},
   {path: 'home', component: HomeComponent},
   {path: 'sign-up-page', component: SignUpPageComponent},
@@ -23,6 +31,7 @@ const routes: Routes = [
   {path: 'results', component: SearchResultsPageComponent},
   // {path: 'signin', component: SigninComponent},
   {path: '**', redirectTo: 'home'}
+
 
 ];
 

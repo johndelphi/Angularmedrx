@@ -1,35 +1,65 @@
+.services-header {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
+  font-weight: 600;
+}
+
 .services-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin: 2rem 0;
-  }
-  
-  .service {
-    width: 300px;
-    text-align: center;
-    margin: 1rem;
-  }
-  
-  .service img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .service h3 {
-    margin: 1rem 0;
-  }
-  .service p {
-    overflow: hidden;
-    transition: height 0.3s ease-in-out;
-  }
-  
-  .service p.collapsed {
-    height: 3.6rem; /* Adjust this value to control the number of visible lines when collapsed */
-  }
-  .services-header {
-      display: flex;
-      justify-content: center;
-      margin-top: 12px;
-      font-weight: 600;
-  }
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.service {
+  width: 500px;
+  text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(10, 10, 10, 0.1);
+}
+
+.service img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.service h3 {
+  margin: 1rem 0;
+}
+
+.service p {
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+.service p.collapsed {
+  height: 3.6rem;
+}
+
+.service button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service button:hover {
+  background-color: #45a049;
+}
+
+.service button.collapsed {
+  background-color: #e53935;
+}
+
+.service button.collapsed:hover {
+  background-color: #c62828;
+}
