@@ -9,9 +9,18 @@ import { PharmacyRegistrationComponent } from './pharmacy-registration/pharmacy-
 import { ServicesComponent } from './services/services.component';
 import { FeaturesComponent } from './features/features.component';
 import { UserdetailsSignupComponent } from './userdetails-signup/userdetails-signup.component';
+import { SearchResultsPageComponent } from './search-results-page/search-results-page.component';
 // import { SigninComponent } from './signin/signin.component';
 
 const routes: Routes = [
+//   {path:'results',
+//   component: SearchResultsPageComponent,
+//   children: [
+//     {path: '',pathMatch: 'full',redirectTo: 'search-results'},
+//     {path: 'search-results',component: SearchResultsPageComponent},
+
+// ],
+// },
   {path: 'contact', component: ContactComponent},
   {path: 'home', component: HomeComponent},
   {path: 'sign-up-page', component: SignUpPageComponent},
@@ -19,12 +28,9 @@ const routes: Routes = [
   {path: 'services', component: ServicesComponent},
   {path: 'features', component: FeaturesComponent},
   {path: 'userdetails-signup', component: UserdetailsSignupComponent},
+  {path: 'results', component: SearchResultsPageComponent},
   // {path: 'signin', component: SigninComponent},
-  {path: '**', redirectTo: ''}
-
-
-
-
+  {path: '**', redirectTo: 'home'}
 
 
 ];

@@ -4,12 +4,6 @@
     <!-- <li><a href="#">Download App</a></li> -->
     <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
 
-    <!-- <button routerLink="/sign-up-page">
-      <span class="shadow"></span>
-      <span class="edge"></span>
-      <span class="front-text" >Sign up</span>
-    </button> -->
-
     <div class="dropdown">
       <li><a routerLink="/signin" routerLinkActive="active" (click)="toggleSignin()">Sign In</a></li>
       <div class="dropdown-content" [ngClass]="{'show': isContentOpen }">
