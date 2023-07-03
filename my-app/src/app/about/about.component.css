@@ -1,0 +1,38 @@
+body {
+    background-color: #9fdeaf;
+    color: #333;
+  }
+
+  .mission,
+  .team,
+  .customers {
+    background-color: #9fdeaf;
+    padding: 50px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    animation: fade-in 1s ease;
+  }
+
+  .mission h1,
+  .team h1,
+  .customers h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .missonContent,
+  .teamContent,
+  .customerContent {
+    text-align: center;
+  }
+
+  /* Animations */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
