@@ -1,1 +1,48 @@
-a,nav a,nav h1{color:#000}nav,nav ul{display:flex}a:hover,nav a:hover{color:green}*,button{padding:0}.edge,.shadow{top:0;left:0;width:100%;height:100%}.front-text,.shadow{will-change:transform;transition:transform .6s cubic-bezier(.3, .7, .4, 1)}.dropdown .dropdown-content,.menu-container .dropdown-menu{position:absolute;height:100vh;width:256px;top:100%;right:0;cursor:pointer;padding:10px}*{margin:0;box-sizing:border-box}ul{list-style-type:none}a{text-decoration:none}nav{position:sticky;top:0;left:0;z-index:1;align-items:center;justify-content:space-between;padding:1.5rem 3.5rem;background-color:#fff;height:80px}nav h1{margin-left:-50px}nav a{transition:.3s}nav a:hover{border-bottom:2px solid green}nav ul{gap:3.9rem}nav ul li{font-weight:700}.burger-menu{color:green;font-size:2rem;border:0;background-color:transparent;cursor:pointer;display:none}.dropdown .dropdown-content.show,.front-text,.menu-container .dropdown-menu:active{display:block}button{position:relative;border:none;background:0 0;cursor:pointer;outline-offset:4px;transition:filter 250ms;user-select:none;touch-action:none}.shadow{position:absolute;border-radius:12px;background:hsl(0deg 0% 0% /.25);transform:translateY(2px)}.edge,.front-text{border-radius:12px;background:green}.edge{position:absolute}.front-text{position:relative;padding:12px 27px;font-size:1.1rem;color:#fff;transform:translateY(-4px)}button:hover{filter:brightness(110%)}button:hover .front-text{transform:translateY(-6px);transition:transform 250ms cubic-bezier(.3, .7, .4, 1)}button:active .front-text{transform:translateY(-2px);transition:transform 34ms}button:hover .shadow{transform:translateY(4px);transition:transform 250ms cubic-bezier(.3, .7, .4, 1)}button:active .shadow{transform:translateY(1px);transition:transform 34ms}button:focus:not(:focus-visible){outline:0}.menu-container .dropdown-menu{background-color:green}.menu-container .dropdown-menu li{margin-bottom:10px}.menu-container .dropdown-menu li a{text-decoration:none;color:#f0f8ff}.menu-container .dropdown-menu li:last-child{margin-bottom:0}.menu-container .dropdown-menu h1{text-align:center;color:#fff;font-size:30px;margin-top:0;margin-bottom:20px}.menu-container .dropdown-menu .close{float:right;font-size:24px;font-weight:700}.dropdown .dropdown-content{margin-top:20px;display:none}@media (max-width:768px){nav ul{width:100%;display:none;flex-direction:column;gap:10px;margin-right:-55px}nav ul.show{display:flex}.burger-menu{display:block}}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: black;
+    font-weight: 700;
+    
+}
+.navbar-expand-lg .navbar-nav .nav-link.active-link{
+    color: greenyellow;
+    font-weight: 700;
+    text-decoration: underline;
+    
+}
+
+#navbar {
+    background-color: #fff;
+    overflow: hidden;
+  }
+  
+  /* CSS for the navbar links */
+  #navbar a {
+    float: right;
+    color: #333;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  /* CSS for the signup button */
+  #navbar .signup-button {
+    float: right;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .nav-link {
+    color: green;
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transition effect for smooth color change */
+  }
+  
+  .nav-link:hover,
+  .nav-link:active {
+    color: green; /* Change the color to your desired hover color */
+  }
