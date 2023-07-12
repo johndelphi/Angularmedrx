@@ -7,8 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./sign-up-page.component.css']
 })
 export class SignUpPageComponent implements OnInit{
+  signUp(){
 
-  constructor(private router: Router) { }
+  }
+
+  constructor(private router: Router) {}
 
   ngOnInit(): void {
 

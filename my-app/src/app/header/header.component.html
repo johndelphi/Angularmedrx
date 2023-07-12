@@ -1,35 +1,34 @@
-<nav>
-  <h1>MedRx</h1>
-  <ul class="navigation">
-    <!-- <li><a href="#">Download App</a></li> -->
-    <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
-
-    <div class="dropdown">
-      <li><a routerLink="/signin" routerLinkActive="active" (click)="toggleSignin()">Sign In</a></li>
-      <div class="dropdown-content" [ngClass]="{'show': isContentOpen }">
-        <app-signin></app-signin>
-      </div>
-
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="">MedRx</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="services"  routerLinkActive="active-link">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="about"  routerLinkActive="active-link">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="contact"  routerLinkActive="active-link">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="pharmacy-registration"  routerLinkActive="active-link">Pharmacy Registration</a>
+        </li>
+        <li class="nav-item">
+          <button class="signup-button" routerLink="sign-up-page" routerLinkActive="active-link">Sign Up</button>
+        </li>
+      </ul>
     </div>
-
-    <div class="menu-container">
-      <mat-toolbar>
-        <button mat-icon-button (click)="toggleSideNav()">
-          <mat-icon>menu</mat-icon>
-        </button>
-      </mat-toolbar>
-      <div class="dropdown-menu" [ngClass]="{ 'show': isMenuOpen }">
-        <h1>MedRx</h1>
-        <!-- <li ><a routerLink="/home" routerLinkActive="active" (click)="closeDropdownMenu()">Home</a></li> -->
-        <li><a routerLink="/about" routerLinkActive="active" (click)="closeDropdownMenu()">About</a></li>
-        <li><a  routerLink="/contact" routerLinkActive="active" (click)="closeDropdownMenu()">Contact</a></li>
-        <!-- <li ><a routerLink="/features" routerLinkActive="active" (click)="closeDropdownMenu()">Features</a></li> -->
-        <li><a  routerLink="/pharmacy-registration" routerLinkActive="active" (click)="closeDropdownMenu()">Pharmacy Registration</a></li>
-      </div>
-    </div>
-  </ul>
-
+  </div>
 </nav>
+
 
 
 
