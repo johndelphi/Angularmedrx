@@ -1,21 +1,19 @@
-
-<div class="signin-container" *ngIf="showSignInPage">
-  <form (ngSubmit)="onSubmit()">
-    <label for="username" class="form-label">Username</label>
-    <div class="input-field">
-      <span class="fa-solid fa-user p-1 black-icon"></span>
-      <input type="text" id="username" name="username" [(ngModel)]="username">
+<div class="container">
+  <form class="form" id="signup-form">
+    <h2>Sign In</h2>
+    <div class="form-group">
+      <label for="signup-email">Email:</label>
+      <input type="email" id="signin-email" name="email" required>
     </div>
-    <br>
-    <label for="password">Password</label>
-    <div class="input-field">
-      <span class="fa-solid fa-lock p-1 black-icon"></span>
-      <input [type]="type" id="password" name="password" [(ngModel)]="password">
-      <span (click)="hideShowPass()" class="fa-solid {{eyeIcon}} p-1 black-icon"></span>
+    <div class="form-group">
+      <label for="signin-password">Password:</label>
+      <input type="password" id="signin-password" name="password" required>
     </div>
-    <br>
-    <button type="submit">sign in</button>
+    <div class="form-group">
+      <button type="submit">Sign In</button>
+    </div>
+    <div class="form-group switch-form">
+      <span>Don't have an account? </span><a routerLink="/sign-up-page" routerLinkActive="active-link">Sign Up</a>
+    </div>
   </form>
-  <p class="signup-text">Not a member? <a routerLink="/sign-up-page" (click)="navigateTosignUp()">Sign up today!</a></p>
 </div>
-

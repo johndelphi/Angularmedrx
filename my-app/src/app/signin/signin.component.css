@@ -1,81 +1,75 @@
-.signin-container {
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(47, 197, 47);
-  width: 440px;
-  margin: 0 auto;
-  height: 340px;
+  height: 100vh;
 }
 
-.form-label {
-  margin-top: 50px;
-  font-weight: bold;
-  margin-bottom: -5px;
+/* CSS for the form */
+.form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
 }
 
+.form h2 {
+  text-align: center;
+}
 
-label {
-  justify-content: space-around;
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
   display: block;
   font-weight: bold;
-  font-size: 18px;
-  margin-top: 5px;
-
 }
 
-.input-field {
-  border: 1px solid black;
-  align-items: center;
-  background-color: white;
-  width: 290px;
-  height: 30px;
-  padding: 5px;
-  margin-top: 5px;
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.black-icon {
-  color: black;
+.form-group button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  width: 100%;
 }
 
-
-button {
-  align-items: center;
-  border-radius: 30px;
-  border: 1px solid rgb(145, 140, 140);
-  margin-left: 15px;
-  margin-top: 25px;
-  background: rgb(145, 140, 140);
-  color: black;
-  font-size: 18px;
-  font-weight: bold;
-  padding: 8px 90px;
+.form-group button:hover {
+  background-color: #45a049;
 }
 
-.signup-text {
-  margin-top: 20px;
+.form-group .switch-form {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form-group .switch-form a {
   text-decoration: none;
-  font-weight: bold;
-  color: black;
+  color: #4CAF50;
 }
 
-.signup-text a {
+/* CSS for the form switcher */
+.form-switch {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form-switch a {
   text-decoration: none;
-  font-weight: normal;
-  font-size: 20px;
-  font-style: italic;
-  color: purple;
-}
-
-@media (max-width: 768px) {
-  .signin-container {
-    width: 330px;
-  }
-  .signup-text {
-    margin-left: -35px;
-  }
-  form {
-    width: 90%;
-  }
+  color: #4CAF50;
 }
