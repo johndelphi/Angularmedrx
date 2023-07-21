@@ -1,4 +1,3 @@
-
 <div class="signin-container" *ngIf="showSignInPage">
   <form (ngSubmit)="onSubmit()">
     <label for="username" class="form-label">Username</label>
@@ -7,15 +6,19 @@
       <input type="text" id="username" name="username" [(ngModel)]="username">
     </div>
     <br>
-    <label for="password">Password</label>
+    <label for="password" class="password-label">Password</label>
     <div class="input-field">
       <span class="fa-solid fa-lock p-1 black-icon"></span>
       <input [type]="type" id="password" name="password" [(ngModel)]="password">
       <span (click)="hideShowPass()" class="fa-solid {{eyeIcon}} p-1 black-icon"></span>
     </div>
     <br>
-    <button type="submit">sign in</button>
+    <button type="submit">Sign in</button>
   </form>
+  <p class="reset-password"><a routerLink="/reset-password-page" (click)="navigateToresetPassword()">Reset Password?</a></p>
   <p class="signup-text">Not a member? <a routerLink="/sign-up-page" (click)="navigateTosignUp()">Sign up today!</a></p>
 </div>
+
+
+
 

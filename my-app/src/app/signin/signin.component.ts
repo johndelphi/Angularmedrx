@@ -30,6 +30,13 @@ export class SigninComponent implements OnInit{
     this.showSignInPage = false;
   }
 
+  showResetPasswordPage: boolean = true;
+
+  navigateToresetPassword() {
+    this.router.navigate(['/reset-password-page']);
+    this.showSignInPage = false;
+  }
+
 
   username!: string;
   password!: string;
