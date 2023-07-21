@@ -88,38 +88,45 @@ button {
 
 @media (max-width: 768px) {
   .signup-container{
-    width: 90%;
-    margin-top: -250px;
+    width: 92%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   h1 {
+    margin-left: 40px;
     font-size: 30px;
   }
 
   .email-label {
-    margin-left: 60px;
+    margin-left: 30px;
   }
 
   .email-label input {
-    width: 235px;
+    width: 245px;
   }
 
   p {
-    margin-left: 60px;
+    margin-left: 30px;
   }
 
   .phone-label {
-    margin-left: 60px;
+    margin-left: 30px;
   }
 
-  .phone-label {
-    width: 255px;
+  .phone-label input {
+    width: 180px;
+  }
+
+  .close-button{
+    top: -2px;
   }
 
   button {
-    margin-left: 80px;
+    margin-left: 60px;
     align-items: center;
-    margin-top:25px;
+    margin-top: 15px;
     padding: 4px 45px;
   }
 }

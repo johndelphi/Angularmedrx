@@ -1,5 +1,7 @@
 
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { SigninComponent } from '../signin/signin.component';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -10,6 +12,10 @@ import { Component } from '@angular/core';
 
 export class HeaderComponent {
   isMenuOpen = false
+
+  constructor(private router: Router) {}
+
+  @ViewChild(SigninComponent) signInComponent!: SigninComponent;
 
   toggleSideNav() {
     this.isMenuOpen = !this.isMenuOpen;
@@ -23,7 +29,15 @@ export class HeaderComponent {
   isContentOpen: boolean = false;
 
   toggleSignin() {
-    this.isContentOpen = !this.isContentOpen;
+    if (this.isContentOpen) {
+      // If the "Sign Up" link in the sign-in page is clicked, navigate to the home page and hide the sign-in container
+      this.router.navigate(['/']);
+      this.isContentOpen = false;
+    } else {
+      // If the "Sign In" link is clicked, show the sign-in container
+      this.isContentOpen = true;
+    }
+    this.isMenuOpen = false; // Close the menu when clicking the sign-in link
   }
 
 }

@@ -2,10 +2,10 @@
   <h1>MedRx</h1>
   <ul class="navigation">
     <!-- <li><a href="#">Download App</a></li> -->
-    <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
+    <li><a class="service-link" routerLink="/services" routerLinkActive="active">Services</a></li>
 
     <div class="dropdown">
-      <li><a routerLink="/signin" routerLinkActive="active" (click)="toggleSignin()">Sign In</a></li>
+      <li><a class="signin-link" (click)="toggleSignin()">Sign In</a></li>
       <div class="dropdown-content" [ngClass]="{'show': isContentOpen }">
         <app-signin></app-signin>
       </div>
