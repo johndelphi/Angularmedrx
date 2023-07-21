@@ -4,15 +4,12 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(47, 197, 47);
-  width: 55%;
+  width: 70%;
   margin: 0 auto;
   height: 360px;
   margin-top: -130px;
   z-index: 9999;
-  position: absolute;
-  top: 85%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
 }
 .close-button {
   color: red;
@@ -57,24 +54,20 @@ p {
 
 .email-label input {
   display: flex;
-  width: 450px;
+  width: 656px;
   height: 40px;
-  border-radius: 10px;
 }
 
 .phone-label input{
-  width: 55%;
-  height: 40px;
-  border-radius: 10px;
-  border: 1px solid white;
-  margin-left: 10px;
+  width: 70%;
+  height: 28px;
 }
 
 button {
   align-items: center;
   border-radius: 10px;
   border: 1px solid rgb(145, 140, 140);
-  margin-left: 110px;
+  margin-left: 170px;
   margin-top: 25px;
   background: rgb(145, 140, 140);
   color: white;

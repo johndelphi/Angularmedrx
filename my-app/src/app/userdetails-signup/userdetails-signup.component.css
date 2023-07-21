@@ -11,10 +11,7 @@
   height: 460px;
   margin-top: -295px;
   z-index: 9999;
-  position: absolute;
-  top: 105%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
 }
 
 
