@@ -88,16 +88,17 @@ button {
 
 @media (max-width: 768px) {
   .signup-container{
-    width: 90%;
+    width: 92%;
     margin-top: -250px;
   }
 
   h1 {
+    margin-left: 40px;
     font-size: 30px;
   }
 
   .email-label {
-    margin-left: 60px;
+    margin-left: 30px;
   }
 
   .email-label input {
@@ -105,19 +106,19 @@ button {
   }
 
   p {
-    margin-left: 60px;
+    margin-left: 30px;
   }
 
   .phone-label {
-    margin-left: 60px;
+    margin-left: 30px;
   }
 
-  .phone-label {
-    width: 255px;
+  .phone-label input {
+    width: 170px;
   }
 
   button {
-    margin-left: 80px;
+    margin-left: 60px;
     align-items: center;
     margin-top:25px;
     padding: 4px 45px;
