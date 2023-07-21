@@ -1,50 +1,21 @@
-import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-@Component({
-  selector: 'app-signin',
-  templateUrl: './signin.component.html',
-  styleUrls: ['./signin.component.css']
-})
+import { SigninComponent } from './signin.component';
 
-export class SigninComponent implements OnInit {
+describe('SigninComponent', () => {
+  let component: SigninComponent;
+  let fixture: ComponentFixture<SigninComponent>;
 
-  constructor(private router: Router) { }
-  ngOnInit(): void {
-  }
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [SigninComponent]
+    });
+    fixture = TestBed.createComponent(SigninComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
 
-  type: string = "password"
-  isText: boolean = false;
-  eyeIcon: string = "fa-eye-slash"
-
-  hideShowPass() {
-    this.isText = !this.isText;
-    this.isText ? this.eyeIcon = "fa-eye" : this.eyeIcon = "fa-eye-slash";
-    this.isText ? this.type = "text" : this.type = "password";
-  }
-
-  showSignInPage: boolean = true;
-
-  navigateTosignUp() {
-    this.router.navigate(['/sign-up-page']);
-    this.showSignInPage = false;
-  }
-
-  showResetPasswordPage: boolean = true;
-
-  navigateToresetPassword() {
-    this.router.navigate(['/reset-password-page']);
-    this.showSignInPage = false;
-  }
-
-  username!: string;
-  password!: string;
-
-  onSubmit() {
-    // Perform the sign-in logic here
-    console.log('Username:', this.username);
-    console.log('Password:', this.password);
-    // Add your sign-in logic here, such as making an API request or validating credentials
-  }
-}
-
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});
