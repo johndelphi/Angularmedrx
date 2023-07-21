@@ -3,17 +3,26 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(47, 197, 47);
-  width: 440px;
-  margin: 0 auto;
-  height: 340px;
+  background-color: rgb(193, 233, 193);
+  width: 280px;
+  /* margin: 0 auto; */
+  height: 300px;
+  border-radius: 10px;
 }
 
 .form-label {
-  margin-top: 50px;
+  margin-top: 20px;
   font-weight: bold;
-  margin-bottom: -5px;
+  color: green;
+  margin-bottom: -0px;
 }
+
+.password-label {
+  margin-top: 0px;
+  font-weight: bold;
+  color: green;
+}
+
 
 
 label {
@@ -21,43 +30,58 @@ label {
   display: block;
   font-weight: bold;
   font-size: 18px;
-  margin-top: 5px;
+  margin-top: 2px;
 
 }
 
 .input-field {
-  border: 1px solid black;
+  border: 1px solid rgb(193, 233, 193);
   align-items: center;
   background-color: white;
-  width: 290px;
-  height: 30px;
-  padding: 5px;
+  width: 240px;
+  height: 40px;
+  padding: 20px;
   margin-top: 5px;
 }
 
 .black-icon {
-  color: black;
+  color: green;
 }
 
 
 button {
   align-items: center;
-  border-radius: 30px;
-  border: 1px solid rgb(145, 140, 140);
-  margin-left: 15px;
-  margin-top: 25px;
-  background: rgb(145, 140, 140);
-  color: black;
+  border-radius: 5px;
+  border: 1px solid rgb(193, 233, 193);
+  /* margin-left: 15px; */
+  margin-top: -5px;
+  background: green;
+  color: white;
   font-size: 18px;
   font-weight: bold;
   padding: 8px 90px;
 }
 
+.reset-password {
+  display: flex; /* Use flex to center the link */
+  justify-content: center; /* Horizontally center the link */
+  align-items: center; /* Vertically center the link */
+  margin-top: 10px;
+}
+
+.reset-password a {
+  text-decoration: underline;
+  font-size: 16px;
+  color: green; /* Change the link color to green */
+  cursor: pointer;
+}
+
+
 .signup-text {
-  margin-top: 20px;
+  margin-top: 0px;
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: rgb(111, 110, 110);
 }
 
 .signup-text a {
@@ -65,7 +89,7 @@ button {
   font-weight: normal;
   font-size: 20px;
   font-style: italic;
-  color: purple;
+  color: green;
 }
 
 @media (max-width: 768px) {
