@@ -94,7 +94,7 @@ button {
 
 @media (max-width: 768px) {
   .signin-container {
-    width: 330px;
+    width: 300px;
   }
   .signup-text {
     margin-left: -35px;

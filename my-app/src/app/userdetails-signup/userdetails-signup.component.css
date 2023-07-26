@@ -8,15 +8,29 @@
   font-weight: bold;
   width: 50%;
   margin: 0 auto;
-  height: 460px;
-  margin-top: -295px;
   z-index: 9999;
   position: absolute;
-  top: 105%;
+  top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
+  min-height: 460px;
+  max-height: 80vh;
 }
 
+.close-button {
+  color: red;
+  position: absolute;
+  top: -15px;
+  right: 15px;
+  transform: translate(50%, -50%);
+  transform-origin: top right;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 22px;
+  z-index: 2;
+
+}
 
 h1 {
   align-items: center;
@@ -31,6 +45,9 @@ h1 {
   color: purple;
   font-weight: bold;
 }
+.text-danger {
+  margin-left: 30px;
+}
 
 .first-name {
   margin-top: 20px;
@@ -40,9 +57,10 @@ h1 {
 .first-name input {
   display: block;
   margin-top: 10px;
-  height: 30px;
-  width: 420px;
+  height: 40px;
+  width: 430px;
   background-color: lightgray;
+  border-radius: 10px;
 }
 
 .last-name {
@@ -53,12 +71,17 @@ h1 {
 .last-name input {
   display: block;
   margin-top: 10px;
-  height: 35px;
-  width: 420px;
+  height: 40px;
+  width: 430px;
   background-color: lightgray;
+  border-radius: 10px;
 }
 
 .DOB-password {
+  display: flex;
+}
+
+.DOB-password .text-danger {
   display: flex;
 }
 
@@ -70,8 +93,10 @@ h1 {
 .DOB input {
   display: block;
   margin-top: 10px;
-  width: 160px;
+  height: 30px;
+  width: 170px;
   background-color: lightgray;
+  border-radius: 10px;
 }
 
 .password {
@@ -82,18 +107,20 @@ h1 {
 .password input{
   display: block;
   margin-top: 10px;
-  width: 160px;
+  height: 30px;
+  width: 170px;
   background-color: lightgray;
+  border-radius: 10px;
 }
 
 button {
   align-items: center;
-  border-radius: 20px;
+  border-radius: 10px;
   border: 1px solid darkgreen;
   margin-left: 100px;
-  margin-top: 40px;
+  margin-top: 30px;
   background: darkgreen;
-  color: black;
+  color: white;
   font-size: 18px;
   font-weight: bold;
   padding: 8px 90px;
@@ -101,8 +128,58 @@ button {
 }
 
 @media (max-width: 768px) {
-  form {
-    width: 100%;
+  .user-container {
+    width: 96%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
+
+  .close-button {
+    top: -5px;
+  }
+  h1 {
+    margin-left: 35px;
+  }
+
+  .first-name {
+    margin-left: 30px;
+  }
+
+  .first-name input {
+    width: 95%;
+  }
+
+  .last-name {
+    margin-left: 30px;
+  }
+
+  .last-name input {
+    width: 95%
+  }
+
+  .DOB {
+    margin-left: 30px;
+  }
+
+  .DOB input {
+    width: 130px;
+    height: 32px;
+  }
+
+  .password {
+    margin-left: 30px;
+  }
+
+  .password input {
+    width: 130px;
+    height: 32px;
+  }
+
+  button {
+    margin-top: 20px;
+    margin-left: 50px;
+  }
+
 }
 

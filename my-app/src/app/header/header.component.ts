@@ -12,6 +12,8 @@ import { Router } from '@angular/router';
 
 export class HeaderComponent {
   isMenuOpen = false
+  isHovered: boolean = false;
+  isSignInHovered: boolean = false;
 
   constructor(private router: Router) {}
 
@@ -26,19 +28,24 @@ export class HeaderComponent {
     this.isMenuOpen = false;
   }
 
+  closeSigninDropdown() {
+     if (!this.isSignInHovered) {
+      this.isContentOpen = false;
+    }
+    this.isSignInHovered = false;
+  }
+
   isContentOpen: boolean = false;
 
-  toggleSignin() {
-    if (this.isContentOpen) {
-      // If the "Sign Up" link in the sign-in page is clicked, navigate to the home page and hide the sign-in container
-      this.router.navigate(['/']);
-      this.isContentOpen = false;
-    } else {
-      // If the "Sign In" link is clicked, show the sign-in container
-      this.isContentOpen = true;
-    }
-    this.isMenuOpen = false; // Close the menu when clicking the sign-in link
+ toggleSignin() {
+    this.isHovered = !this.isHovered;
+    this.isContentOpen = this.isHovered;
   }
+
+  keepSigninDropdownOpen() {
+    this.isSignInHovered = true;
+  }
+
 
 }
 

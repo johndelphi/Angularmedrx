@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
 @Component({
@@ -8,28 +9,32 @@ import { Router } from '@angular/router';
 })
 export class SignUpPageComponent implements OnInit{
 
-  constructor(private router: Router) { }
+  wordToHighlight = 'Free';
+  formSubmitted: boolean = false;
+  signupForm!: FormGroup;
+
+  constructor(private router: Router, private fb: FormBuilder) { }
 
   ngOnInit(): void {
-
+    this.signupForm = this.fb.group({
+      email: ['', [Validators.required, Validators.email]],
+      phone: ['', [Validators.required, Validators.pattern(/^(07|01|2547|2541)[0-9]{8}$/)]]
+    })
   }
-  wordToHighlight = 'Free';
-  email!: string;
-  phone!: string;
-  formSubmitted: boolean = false;
 
   onSubmit(event: Event) {
     event.preventDefault(); // Prevent form submission
     this.formSubmitted = true; // Set formSubmitted flag to true
 
-    if (!this.email || !this.phone) {
-      return; // Exit the function if fields are empty
+    if (this.signupForm.invalid) {
+      return; // Exit the function if the form is invalid
     }
 
     // Continue with the sign-up logic here
-    console.log('Email:', this.email);
-    console.log('Phone:', this.phone);
+    console.log('Email:', this.signupForm.value.email);
+    console.log('Phone:', this.signupForm.value.phone);
     // Add logic to navigate to another page if needed
+    this.userSignUp();
   }
 
 

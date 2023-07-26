@@ -67,6 +67,7 @@ nav {
   padding: 1.5rem 3.5rem;
   background-color: #fff;
   height: 80px;
+
 }
 
 nav h1 {
@@ -103,6 +104,7 @@ nav ul li {
 .menu-container .dropdown-menu:active {
   display: block;
 }
+
 
 button {
   position: relative;
@@ -212,7 +214,7 @@ button:focus:not(:focus-visible) {
     gap: 10px;
     align-items: center;
     margin: 0;
-    padding: 0 78px;
+    padding: 0 70px;
     flex: 1;
     justify-content: space-between;
   }
