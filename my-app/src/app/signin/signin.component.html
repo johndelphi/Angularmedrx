@@ -1,5 +1,5 @@
 <div class="signin-container" *ngIf="showSignInPage">
-  <form (ngSubmit)="onSubmit()">
+  <form (ngSubmit)="onSubmit()" (mouseenter)="keepSigninDropdownOpen()" (mouseleave)="closeSigninDropdown()">
     <label for="username" class="form-label">Username</label>
     <div class="input-field">
       <span class="fa-solid fa-user p-1 black-icon"></span>
@@ -15,9 +15,6 @@
     <br>
     <button type="submit">sign in</button>
   </form>
-
-  <p class="signup-text">Not a member? <a (click)="navigateTosignUp()">Sign up today!</a></p>
-
   <ul class="Reset-password!"><a routerLink="/reset-password-page">Reset Password!</a></ul>
   <p class="signup-text">Not a member? <a routerLink="/sign-up-page" (click)="navigateTosignUp()">Sign up today!</a></p>
 
