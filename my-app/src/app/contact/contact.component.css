@@ -1,3 +1,151 @@
+
+.container {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  /* Section styles */
+  .contact-page-section {
+    background-color: lightgreen;
+    padding: 40px 0;
+  }
+
+  /* Section title styles */
+  .sec-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .sec-title .title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+  }
+
+  .sec-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+  }
+
+  /* Inner container styles */
+  .inner-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Form column styles */
+  .form-column {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-size: 16px;
+  }
+
+  .contact-form textarea {
+    height: 120px;
+    resize: vertical;
+  }
+
+  .contact-form button {
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: lightgreen;
+    cursor: pointer;
+  }
+
+  /* Info column styles */
+  .info-column {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+
+  .info-column h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  .list-info {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+  .list-info li {
+    margin-bottom: 10px;
+  }
+
+  .social-icon-four {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .social-icon-four .follow {
+    color: white;
+    margin-right: 10px;
+  }
+
+  .social-icon-four li {
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .social-icon-four a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    color: lightgreen;
+  }
+  button.hover{
+    background-color: greenyellow;
+    cursor: pointer;
+  }
+  @media (max-width: 767px) {
+    .inner-container {
+      flex-direction: column;
+    }
+
+    .form-column,
+    .info-column {
+      width: 100%;
+      max-width: none;
+    }
+
+    .form-group,
+    .list-info {
+      text-align: center;
+    }
+  }
+
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 *{
     margin: 0px;
@@ -76,3 +224,4 @@ font-family: 'Poppins', sans-serif;
         width: auto;
     }
 }
+
