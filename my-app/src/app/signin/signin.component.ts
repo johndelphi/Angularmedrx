@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
@@ -31,6 +31,8 @@ export class SigninComponent implements OnInit{
   }
 
 
+
+
   username!: string;
   password!: string;
 
@@ -39,6 +41,19 @@ export class SigninComponent implements OnInit{
     console.log('Username:', this.username);
     console.log('Password:', this.password);
     // Add your sign-in logic here, such as making an API request or validating credentials
+  }
+
+  @Input() isSignInHovered: boolean = false;
+  @Output() signInHovered = new EventEmitter<boolean>();
+  @Output() signInClosed = new EventEmitter<void>();
+
+  keepSigninDropdownOpen() {
+    this.signInHovered.emit(true);
+  }
+
+  closeSigninDropdown() {
+    this.signInHovered.emit(false);
+    this.signInClosed.emit();
   }
 }
 

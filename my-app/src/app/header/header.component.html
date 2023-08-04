@@ -2,19 +2,23 @@
   <h1>MedRx</h1>
   <ul class="navigation">
     <!-- <li><a href="#">Download App</a></li> -->
-    <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
+    <li><a class="service-link" routerLink="/services" routerLinkActive="active">Services</a></li>
 
-    <div class="dropdown">
-      <li><a routerLink="/signin" routerLinkActive="active" (click)="toggleSignin()">Sign In</a></li>
-      <div class="dropdown-content" [ngClass]="{'show': isContentOpen }">
-        <app-signin></app-signin>
-      </div>
-
+    <div class="dropdown" (mouseleave)="closeSigninDropdown()">
+      <li><a class="signin-link" (mouseenter)="toggleSignin()" (click)="toggleSignin()">Sign In</a>
+        <div class="dropdown-content" [ngClass]="{'show': isContentOpen }">
+          <app-signin
+            [isSignInHovered]="isSignInHovered"
+            (signInHovered)="keepSigninDropdownOpen()"
+            (signInClosed)="closeSigninDropdown()"
+          ></app-signin>
+        </div>
+      </li>
     </div>
 
     <div class="menu-container">
       <mat-toolbar>
-        <button mat-icon-button (click)="toggleSideNav()">
+        <button mat-icon-button (click)="toggleSideNav()" class="burger-menu-btn">
           <mat-icon>menu</mat-icon>
         </button>
       </mat-toolbar>
@@ -30,6 +34,10 @@
   </ul>
 
 </nav>
+<app-searchbar></app-searchbar>
+<app-drug-carousel-component></app-drug-carousel-component>
+<app-howmedrxworks></app-howmedrxworks>
+<app-features></app-features>
 
 
 

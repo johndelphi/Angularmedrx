@@ -4,12 +4,16 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(47, 197, 47);
-  width: 70%;
+  width: 55%;
   margin: 0 auto;
-  height: 360px;
-  margin-top: -130px;
   z-index: 9999;
-  position: relative;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 360px;
+  max-height: 80vh;
+
 }
 .close-button {
   color: red;
@@ -54,20 +58,27 @@ p {
 
 .email-label input {
   display: flex;
-  width: 656px;
+  width: 450px;
   height: 40px;
+  border-radius: 10px;
 }
 
+.phone-label {
+  margin-top: 20px;
+}
 .phone-label input{
-  width: 70%;
-  height: 28px;
+  width: 55%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid white;
+  margin-left: 10px;
 }
 
 button {
   align-items: center;
   border-radius: 10px;
   border: 1px solid rgb(145, 140, 140);
-  margin-left: 170px;
+  margin-left: 110px;
   margin-top: 25px;
   background: rgb(145, 140, 140);
   color: white;
@@ -81,38 +92,45 @@ button {
 
 @media (max-width: 768px) {
   .signup-container{
-    width: 90%;
-    margin-top: -250px;
+    width: 92%;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   h1 {
+    margin-left: 40px;
     font-size: 30px;
   }
 
   .email-label {
-    margin-left: 60px;
+    margin-left: 30px;
   }
 
   .email-label input {
-    width: 235px;
+    width: 245px;
   }
 
   p {
-    margin-left: 60px;
+    margin-left: 30px;
   }
 
   .phone-label {
-    margin-left: 60px;
+    margin-left: 30px;
   }
 
-  .phone-label {
-    width: 255px;
+  .phone-label input {
+    width: 180px;
+  }
+
+  .close-button{
+    top: -2px;
   }
 
   button {
-    margin-left: 80px;
+    margin-left: 60px;
     align-items: center;
-    margin-top:25px;
+    margin-top: 15px;
     padding: 4px 45px;
   }
 }
