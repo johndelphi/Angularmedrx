@@ -1,8 +1,128 @@
 .float-container {
     background-color: rgb(146, 192, 146);
     position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 400px;
+    max-height: 80vh;
+    width: 75%;
+}
+h2 {
+  margin-top: 20px;
+  margin-left: 340px;
+}
+.pharm {
+  margin-left: 60px;
+}
+
+.pharm input {
+  border-radius: 10px;
+  width: 390px;
+}
+
+.loc {
+  margin-left: 60px;
+}
+
+.loc input {
+  border-radius: 10px;
+  width: 390px;
+}
+
+.county {
+  margin-left: 60px;
+}
+
+.county .form-control {
+  border-radius: 10px;
+  width: 390px;
+}
+
+.sub-county {
+  margin-left: 30px;
+}
+
+.sub-county .form-control {
+  border-radius: 10px;
+  width: 390px;
+}
+
+.phone {
+  margin-left: 30px;
+}
+
+.phone input {
+  border-radius: 10px;
+  width: 390px;
+}
+button {
+  margin-top: 40px;
+  border-radius: 15px;
+  width: 25%;
+  margin-left: 380px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .float-container {
+    width: 96%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
-  
+
+  h2 {
+    margin-left: 45px;
+  }
+
+  .pharm {
+    margin-left: 40px;
+  }
+
+  .pharm input {
+    width: 90%;
+  }
+
+  .loc {
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+
+  .loc input {
+    width: 90%;
+  }
+
+  .county {
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+
+  .county .form-control {
+    width: 90%;
+  }
+
+  .sub-county {
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+
+  .sub-county .form-control {
+    width: 90%;
+  }
+
+  .phone {
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+
+  .phone input {
+    width: 90%;
+  }
+
+  button {
+    width: 170px;
+    margin-top: 20px;
+    margin-left: 98px;
+  }
+}

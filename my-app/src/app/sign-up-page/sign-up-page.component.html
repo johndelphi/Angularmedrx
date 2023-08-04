@@ -2,18 +2,18 @@
   <button class="close-button" (click)="closeSignUp()">X</button>
   <h1>Sign up <span [ngClass]="{'highlight': wordToHighlight === 'Free'}">Free</span> To Get Lowest Price</h1>
   <h2>Enter your email to get started</h2>
-  <form (submit)="onSubmit($event)">
+  <form (submit)="onSubmit($event)" [formGroup]="signupForm">
     <div class="email-label">
       <label for="email">Email</label>
-      <input type="text" id="email" name="email" [(ngModel)]="email">
+      <input type="text" id="email" name="email" formControlName="email">
     </div>
-    <p class="error-message" [ngClass]="{ 'error-red': formSubmitted && (!email || !phone) }">This value is required</p>
+    <p class="text-danger" *ngIf="signupForm.get('email')?.invalid && (signupForm.get('email')?.dirty || signupForm.get('email')?.touched)">Invalid email</p>
     <div class="phone-label">
       <label for="phone">Phone:</label>
-      <input type="phone" id="phone" name="phone" [(ngModel)]="phone">
+      <input type="phone" id="phone" name="phone" formControlName="phone">
     </div>
+    <p class="text-danger"*ngIf="signupForm.get('phone')?.invalid && (signupForm.get('phone')?.dirty || signupForm.get('phone')?.touched)">Invalid phone number</p>
     <br>
-    <button type="submit" (click)="userSignUp()">Continue</button>
+    <button type="submit" [disabled]="signupForm.invalid">Continue</button>
   </form>
 </div>
-<app-drug-carousel-component></app-drug-carousel-component>

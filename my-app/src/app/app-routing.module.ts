@@ -10,7 +10,7 @@ import { ServicesComponent } from './services/services.component';
 import { FeaturesComponent } from './features/features.component';
 import { UserdetailsSignupComponent } from './userdetails-signup/userdetails-signup.component';
 import { SearchResultsPageComponent } from './search-results-page/search-results-page.component';
-// import { SigninComponent } from './signin/signin.component';
+import { SigninComponent } from './signin/signin.component';
 
 const routes: Routes = [
 //   {path:'results',
@@ -29,7 +29,7 @@ const routes: Routes = [
   {path: 'features', component: FeaturesComponent},
   {path: 'userdetails-signup', component: UserdetailsSignupComponent},
   {path: 'results', component: SearchResultsPageComponent},
-  // {path: 'signin', component: SigninComponent},
+  {path: 'signin', component: SigninComponent},
   {path: '**', redirectTo: 'home'}
 
 

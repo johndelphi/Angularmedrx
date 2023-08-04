@@ -1,67 +1,46 @@
 <div class="container float-container">
   <h2 class="mb-4">Pharmacy Registration</h2>
-  <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()" class="row">
+  <form [formGroup]="registrationForm" (ngSubmit)="onSubmit($event)" class="row">
     <div class="col-md-6">
-      <div class="mb-3">
+      <div class="mb-3" class="pharm">
         <label for="pharmacyName" class="form-label">Pharmacy Name<span>*</span></label>
         <input type="text" id="pharmacyName" class="form-control" formControlName="pharmacyName">
-        <div class="invalid-feedback" *ngIf="registrationForm.get('pharmacyName')?.invalid && registrationForm.get('pharmacyName'),touched">
-          Pharmacy Name is required.
-        </div>
+        <small *ngIf="registrationForm.controls['pharmacyName'].dirty && registrationForm.hasError('required','pharmacyName')"class="text-danger">*Pharmacy name is required</small>
       </div>
 
-      <div class="mb-3">
-        <label for="region" class="form-label">Region</label>
-        <input type="text" id="region" class="form-control" formControlName="region">
+      <div class="mb-3" class="loc">
+        <label for="location" class="form-label">Location</label>
+        <input type="text" id="location" class="form-control" formControlName="location">
+        <small *ngIf="registrationForm.controls['location'].dirty && registrationForm.hasError('required','location')"class="text-danger">*Location is required</small>
       </div>
 
-      <div class="mb-3">
+      <div class="mb-3" class="county">
         <label for="county" class="form-label">County <span>*</span></label>
-        <select class="form-control" id="county" [(ngModel)]="selectedCounty" (change)="onCountyChange()" name="county">
+        <select class="form-control" id="county" formControlName="county" (change)="onCountyChange()" name="county">
           <option value="">Select County</option>
           <option *ngFor="let county of KenyanCounties" [value]="county">{{ county }}</option>
-        </select>
-      </div>
-
-      <div class="mb-3">
-        <label for="subcounty" class="form-label">Subcounty</label>
-        <select class="form-control" id="subcounty" [(ngModel)]="selectedSubcounty" name="subcounty">
-          <option value="">Select Subcounty</option>
-          <option *ngFor="let subcounty of SubCounties" [value]="subcounty">{{ subcounty }}</option>
         </select>
       </div>
 
     </div>
 
     <div class="col-md-6">
-      <div class="mb-3">
+
+      <div class="mb-3" class="sub-county">
+        <label for="subcounty" class="form-label">Subcounty</label>
+        <select class="form-control" id="subcounty" formControlName="subcounty">
+          <option value="">Select Subcounty</option>
+          <option *ngFor="let subcounty of SubCounties" [value]="subcounty">{{ subcounty }}</option>
+        </select>
+      </div>
+
+      <div class="mb-3" class="phone">
         <label for="phoneNumber" class="form-label">Phone Number<span>*</span></label>
-        <input type="text" id="phoneNumber" class="form-control" formControlName="phoneNumber">
-        <div class="invalid-feedback" *ngIf="registrationForm.get('phoneNumber')?.invalid && registrationForm.get('phoneNumber'),touched">
-          Phone Number is required.
-        </div>
+        <input type="phoneNumber" id="phoneNumber" class="form-control" formControlName="phoneNumber">
+        <small *ngIf="registrationForm.controls['phoneNumber'].dirty && registrationForm.hasError('required','phoneNumber')"class="text-danger">*Phone is required</small>
+        <p class="text-danger"*ngIf="registrationForm.get('phoneNumber')?.invalid && (registrationForm.get('phoneNumber')?.dirty || registrationForm.get('phoneNumber')?.touched)"> Invalid phone number</p>
       </div>
 
-      <div class="mb-3">
-        <label for="landmark" class="form-label">Landmark</label>
-        <input type="text" id="landmark" class="form-control" formControlName="landmark">
-      </div>
-
-      <div class="mb-3">
-        <label for="latitude" class="form-label">Latitude<span>*</span></label>
-        <input type="text" id="latitude" class="form-control" formControlName="latitude">
-        <div class="invalid-feedback" *ngIf="registrationForm.get('latitude')?.invalid && registrationForm.get('latitude'),touched">
-          Latitude is required.
-        </div>
-      </div>
-
-      <div class="mb-3">
-        <label for="longitude" class="form-label">Longitude<span>*</span></label>
-        <input type="text" id="longitude" class="form-control" formControlName="longitude">
-        <div class="invalid-feedback" *ngIf="registrationForm.get('longitude')?.invalid && registrationForm.get('longitude'),touched">
-          Longitude is required.
-        </div>
-      </div>
     </div>
 
     <button type="submit" class="btn btn-primary" [disabled]="registrationForm.invalid">Register</button>
