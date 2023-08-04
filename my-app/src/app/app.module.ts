@@ -30,6 +30,7 @@ import { MedicineSearchresultsReducer } from './State/medicine.search.reducer';
 import { AppState } from './State/app.state';
 import { BackendserviceService } from './backendservice.service';
 import { AboutComponent } from './about/about.component';
+import { HomefooterComponent } from './homefooter/homefooter.component';
 
 
 
@@ -55,6 +56,7 @@ import { AboutComponent } from './about/about.component';
 
     SearchResultsPageComponent,
       AboutComponent,
+      HomefooterComponent,
 
 
 
