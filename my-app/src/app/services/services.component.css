@@ -1,8 +1,10 @@
 .services-header {
   display: flex;
   justify-content: center;
-  margin-top: 12px;
+  margin-top: 3rem;
   font-weight: 600;
+  font-size: 2.5rem;
+  color: #27ae60; /* Green for titles */
 }
 
 .services-container {
@@ -10,16 +12,23 @@
   justify-content: space-around;
   flex-wrap: wrap;
   margin: 2rem 0;
+  padding: 0 1rem;
 }
 
 .service {
-  width: 500px;
+  max-width: 500px;
   text-align: center;
   margin: 1rem;
   padding: 1rem;
   background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(10, 10, 10, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 2px 15px rgba(10, 10, 10, 0.1);
+  transition: all 0.3s ease;
+}
+
+.service:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 30px rgba(10, 10, 10, 0.2);
 }
 
 .service img {
@@ -31,11 +40,13 @@
 
 .service h3 {
   margin: 1rem 0;
+  color: #27ae60; /* Green for titles */
 }
 
 .service p {
   overflow: hidden;
   transition: height 0.3s ease-in-out;
+  color: #333;
 }
 
 .service p.collapsed {
@@ -43,17 +54,17 @@
 }
 
 .service button {
-  background-color: #4CAF50;
+  background-color: #27ae60; /* Green for buttons */
   color: #fff;
   border: none;
-  padding: 8px 16px;
+  padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .service button:hover {
-  background-color: #45a049;
+  background-color: #229954; /* Darker green on hover */
 }
 
 .service button.collapsed {
@@ -62,4 +73,10 @@
 
 .service button.collapsed:hover {
   background-color: #c62828;
+}
+
+@media (max-width: 600px) {
+  .service {
+    width: 100%;
+  }
 }
