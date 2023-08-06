@@ -4,10 +4,17 @@
     --text-color: #F2F3FB;
 }
 body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
+main {
+    flex: 1 0 auto;
+}
 .footer{
+    flex-shrink: 0;
     display: flex;
     background-color: rgb(110, 204, 110);
     color: var(--text-color);

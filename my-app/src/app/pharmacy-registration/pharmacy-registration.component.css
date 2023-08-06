@@ -1,6 +1,7 @@
 .float-container {
     background-color: rgb(146, 192, 146);
     position: absolute;
+    margin-top: -50px;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -125,4 +126,5 @@ button {
     margin-top: 20px;
     margin-left: 98px;
   }
+  
 }
