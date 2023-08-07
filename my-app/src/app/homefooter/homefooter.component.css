@@ -1,23 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-:root {
-    --background-color: rgb(110, 204, 110);
-    --text-color: #F2F3FB;
-}
-body{
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+body {
     scroll-behavior: smooth;
     font-family: "Poppins", sans-serif;
 }
-main {
-    flex: 1 0 auto;
-}
-.footer{
-    flex-shrink: 0;
+
+.footer {
     display: flex;
     background-color: rgb(110, 204, 110);
-    color: var(--text-color);
+    color: #111;
     border-radius: 10px;
     padding: 50px;
     justify-content: space-between;
@@ -33,12 +22,12 @@ li{
 }
 a{
     text-decoration: none;
-    color: #fff;
+    color: #111;
 }
 h2{
     margin: 0;
     text-transform: uppercase;
-    color: var(--text-color);
+    color: #111;
     margin-bottom: 3px;
 }
 h3{
@@ -46,34 +35,35 @@ h3{
     font-weight: 500;
 }
 input{
-    border: 1px solid #000;
+    border: 1px solid #111;
     padding: 10px;
     border-radius: 5px;
     background-color: rgb(110, 204, 110);
     outline: none;
 }
-input::placeholder{
-    color: var(--text-color);
+input::placeholder {
+    color: #111;
 }
 .follow-us {
     margin-top: 40px;
 }
-img {
+img{
     width: 24px;
     height: 24px;
     margin-right: 5px;
 }
 .subscribe-btn{
-    background-color: #177500;
-    color: #000;
+    background-color: #111;
+    color: #fff;
     border: none;
     border-radius: 5px;
     padding: 10px;
     font-weight: bold;
     text-transform: uppercase;
+    cursor: pointer;
 }
-@media (max-width: 500px) {  
-    .subsribe-btn {
-      margin-top: 10px;
+@media (max-width: 500px){
+    .subscribe-btn {
+        margin-top: 10px;
     }
-  }
+}
