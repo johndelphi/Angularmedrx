@@ -5,7 +5,7 @@ import { Observable,BehaviorSubject } from 'rxjs';
   providedIn: 'root'
 })
 export class BackendserviceService {
-private baseUrl = 'https://localhost:7070/api';
+private baseUrl = 'https://medrxapi.azurewebsites.net/api';
   constructor(private http : HttpClient) { }
 
  
