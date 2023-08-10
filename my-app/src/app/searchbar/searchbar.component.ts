@@ -12,6 +12,7 @@ import { MedicineSearchresults } from '../State/Medicinesearchresults.Actions';
 export class SearchbarComponent {
   searchTerm: string = '';
   SearchResults: object[] = [];
+  isLoading: boolean = false;
 
   constructor(
     private backendService: BackendserviceService,
@@ -21,6 +22,8 @@ export class SearchbarComponent {
   ) {}
 
   onSearch() {
+    this.isLoading = true;
+    setTimeout(() => {
     console.log('Search term:', this.searchTerm);
     this.backendService.search(this.searchTerm).subscribe(response => {
       console.log('Response:', response);
@@ -32,5 +35,7 @@ export class SearchbarComponent {
       console.log(this.store.select(state => state.search.searchResults));
       }
     });
+  this.isLoading=false;
+  }, 2000);
   }
 }
