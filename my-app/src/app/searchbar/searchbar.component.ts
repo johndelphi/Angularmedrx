@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { BackendserviceService } from '../backendservice.service';
 import { ActivatedRoute, Router } from '@angular/router';
+import { Observable, of } from 'rxjs';
+
+import { debounceTime, switchMap } from 'rxjs/operators';
 import { AppState } from '../State/app.state';
 import { Store } from '@ngrx/store';
 import { MedicineSearchresults } from '../State/Medicinesearchresults.Actions';
@@ -13,13 +16,19 @@ export class SearchbarComponent {
   searchTerm: string = '';
   SearchResults: object[] = [];
   isLoading: boolean = false;
+  suggestons$: Observable<string[]>;
 
   constructor(
     private backendService: BackendserviceService,
     private router: Router,
     private route: ActivatedRoute,
     private store: Store<AppState>
-  ) {}
+  ) {
+    this.suggestons$ = of(this.searchTerm).pipe(
+      debounceTime(300), // delay for user input
+      switchMap(term => this.backendService.getSuggestions(term))
+    );
+  }
 
   onSearch() {
     this.isLoading = true;
