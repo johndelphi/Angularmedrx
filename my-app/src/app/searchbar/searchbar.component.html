@@ -6,9 +6,19 @@
       <div class="container">
       
         <input type="text" class="search-input" placeholder="Enter a medication...." [(ngModel)]="searchTerm">
-        <button class="Search-btn" (click)="onSearch()">
+        <mat-autocomplete #auto="matAutocomplete">
+          <mat-option *ngfor="let suggestion of suggestion$ | async" [value]="suggestion">
+            {{ suggestion }}
+          </mat-option>
+        </mat-autocomplete>
+        <button class="Search-btn" (click)="onSearch()" [disabled]="isLoading">
           <i class="material-icons">search</i>
         </button>
+      </div>
+
+      <div *ngIf="isLoading" class="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>Loading...</p>
       </div>
   </div>
 </div>
