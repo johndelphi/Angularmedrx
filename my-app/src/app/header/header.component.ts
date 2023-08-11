@@ -42,9 +42,7 @@ export class HeaderComponent {
     this.isContentOpen = this.isHovered;
   }
 
-  keepSigninDropdownOpen() {
-    this.isSignInHovered = true;
-  }
+
 
 
 }

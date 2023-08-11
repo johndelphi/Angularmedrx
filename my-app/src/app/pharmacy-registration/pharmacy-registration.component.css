@@ -7,8 +7,25 @@
     transform: translate(-50%, -50%);
     min-height: 400px;
     max-height: 80vh;
-    width: 75%;
+    width: 70%;
 }
+
+.close-button {
+  color: red;
+  position: absolute;
+  top: -20px;
+  right: 15px;
+  transform: translate(50%, -50%);
+  transform-origin: top right;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 22px;
+  z-index: 2;
+  font-weight: bolder;
+
+}
+
 h2 {
   margin-top: 20px;
   margin-left: 340px;
@@ -67,10 +84,14 @@ button {
 
 @media (max-width: 768px) {
   .float-container {
-    width: 96%;
+    width: 90%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .close-button {
+    top: -8px;
   }
 
   h2 {
@@ -126,5 +147,5 @@ button {
     margin-top: 20px;
     margin-left: 98px;
   }
-  
+
 }
