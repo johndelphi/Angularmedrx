@@ -4,11 +4,14 @@
     <!-- <li><a href="#">Download App</a></li> -->
     <li><a class="service-link" routerLink="/services" routerLinkActive="active">Services</a></li>
 
-    <div class="dropdown">
-      <li>
-        <a class="signin-link" (click)="toggleSignin()">Sign In</a>
+    <div class="dropdown" (mouseleave)="closeSigninDropdown()">
+      <li><a class="signin-link" (mouseenter)="toggleSignin()" (click)="toggleSignin()">Sign In</a>
         <div class="dropdown-content" [ngClass]="{'show': isContentOpen }">
-          <app-signin></app-signin>
+          <app-signin
+            [isSignInHovered]="isSignInHovered"
+            (signInHovered)="keepSigninDropdownOpen()"
+            (signInClosed)="closeSigninDropdown()"
+          ></app-signin>
         </div>
       </li>
     </div>
@@ -29,7 +32,7 @@
         <li><a  routerLink="/pharmacy-registration" routerLinkActive="active" (click)="closeDropdownMenu()">Pharmacy Registration</a></li>
       </div>
     </div>
-  </ul> 
+  </ul>
 
 </nav>
 
