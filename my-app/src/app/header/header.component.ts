@@ -71,9 +71,12 @@ export class HeaderComponent {
     }
   }
 
+
+
   closeDropdown() {
     this.isContentOpen = false;
   }
+
 
 
 }

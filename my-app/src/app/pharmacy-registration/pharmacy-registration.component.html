@@ -1,5 +1,6 @@
 
   <div class="container float-container">
+    <button class="close-button" (click)="closePharmacy()">X</button>
     <h2 class="mb-4">Pharmacy Registration</h2>
     <form [formGroup]="registrationForm" (ngSubmit)="onSubmit($event)" class="row">
       <div class="col-md-6">
@@ -22,6 +23,12 @@
             <option *ngFor="let county of KenyanCounties" [value]="county">{{ county }}</option>
           </select>
         </div>
+
+
+      </div>
+
+      <div class="col-md-6">
+
 
         <div class="mb-3 sub-county">
           <label for="subcounty" class="form-label">Subcounty</label>
