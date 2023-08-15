@@ -4,13 +4,18 @@
     <!-- <li><a href="#">Download App</a></li> -->
     <li><a class="service-link" routerLink="/services" routerLinkActive="active">Services</a></li>
 
-    <div class="dropdown" (mousedown)="handleDropdownClick($event)">
-      <li><a class="signin-link" (click)="navigateToSignIn($event)">Sign In</a>
+    <div class="dropdown" (mouseleave)="closeSigninDropdown()">
+      <li><a class="signin-link" (mouseenter)="toggleSignin()" (click)="toggleSignin()">Sign In</a>
         <div class="dropdown-content" [ngClass]="{'show': isContentOpen }">
-          <app-signin  *ngIf="isContentOpen" (mousedown)="handleSigninMousedown($event)"></app-signin>
+          <app-signin
+            [isSignInHovered]="isSignInHovered"
+            (signInHovered)="keepSigninDropdownOpen()"
+            (signInClosed)="closeSigninDropdown()"
+          ></app-signin>
         </div>
       </li>
     </div>
+
 
     <div class="menu-container">
       <mat-toolbar>

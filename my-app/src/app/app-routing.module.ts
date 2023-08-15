@@ -1,6 +1,6 @@
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
+import { LoaderComponent } from './loader/loader.component';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
@@ -30,6 +30,7 @@ const routes: Routes = [
   {path: 'userdetails-signup', component: UserdetailsSignupComponent},
   {path: 'results', component: SearchResultsPageComponent},
   {path: 'signin', component: SigninComponent},
+  {path: 'loader', component: LoaderComponent},
   {path: '**', redirectTo: 'home'}
 
 
