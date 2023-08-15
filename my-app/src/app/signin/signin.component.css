@@ -3,24 +3,25 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(193, 233, 193);
+  background-color: white;
   width: 280px;
   /* margin: 0 auto; */
   height: 300px;
   border-radius: 10px;
+  border: 1px solid grey;
 }
 
 .form-label {
   margin-top: 20px;
   font-weight: bold;
-  color: green;
+  color: black;
   margin-bottom: -0px;
 }
 
 .password-label {
   margin-top: 0px;
   font-weight: bold;
-  color: green;
+  color: black;
 }
 
 
@@ -35,7 +36,7 @@ label {
 }
 
 .input-field {
-  border: 1px solid rgb(193, 233, 193);
+  border: 1px solid grey;
   align-items: center;
   background-color: white;
   width: 240px;
@@ -45,14 +46,14 @@ label {
 }
 
 .black-icon {
-  color: green;
+  color: black;
 }
 
 
 button {
   align-items: center;
   border-radius: 5px;
-  border: 1px solid rgb(193, 233, 193);
+  border: 1px solid grey;
   /* margin-left: 15px; */
   margin-top: -5px;
   background: green;
