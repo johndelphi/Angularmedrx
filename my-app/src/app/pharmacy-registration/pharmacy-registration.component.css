@@ -1,13 +1,17 @@
 .float-container {
     background-color: rgb(146, 192, 146);
     position: absolute;
-    margin-top: -50px;
-    top: 60%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%);
     min-height: 400px;
+
     max-height: 80vh;
     width: 70%;
+
+    max-height: 90vh;
+    width: 35%;
+
 }
 
 .close-button {
@@ -28,10 +32,10 @@
 
 h2 {
   margin-top: 20px;
-  margin-left: 340px;
+  margin-left: 60px;
 }
 .pharm {
-  margin-left: 60px;
+  margin-left: 30px;
 }
 
 .pharm input {
@@ -40,7 +44,7 @@ h2 {
 }
 
 .loc {
-  margin-left: 60px;
+  margin-left: 30px;
 }
 
 .loc input {
@@ -49,7 +53,7 @@ h2 {
 }
 
 .county {
-  margin-left: 60px;
+  margin-left: 30px;
 }
 
 .county .form-control {
@@ -75,11 +79,11 @@ h2 {
   width: 390px;
 }
 button {
-  margin-top: 40px;
+  margin-top: 10px;
   border-radius: 15px;
-  width: 25%;
-  margin-left: 380px;
-  margin-bottom: 20px;
+  width: 35%;
+  margin-left: 110px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {

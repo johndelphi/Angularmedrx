@@ -24,9 +24,11 @@
           </select>
         </div>
 
+
       </div>
 
       <div class="col-md-6">
+
 
         <div class="mb-3 sub-county">
           <label for="subcounty" class="form-label">Subcounty</label>
@@ -39,8 +41,11 @@
         <div class="mb-3 phone">
           <label for="phoneNumber" class="form-label">Phone Number<span>*</span></label>
           <input type="phoneNumber" id="phoneNumber" class="form-control" formControlName="phoneNumber">
-          <small *ngIf="registrationForm.controls['phoneNumber'].dirty && registrationForm.hasError('required','phoneNumber')"class="text-danger">*Phone is required</small>
-          <p class="text-danger"*ngIf="registrationForm.get('phoneNumber')?.invalid && (registrationForm.get('phoneNumber')?.dirty || registrationForm.get('phoneNumber')?.touched)"> Invalid phone number</p>
+          <small *ngIf="registrationForm.controls['phoneNumber'].dirty && registrationForm.hasError('required','phoneNumber')"
+            class="text-danger">*Phone is required</small>
+          <p class="text-danger"
+            *ngIf="registrationForm.get('phoneNumber')?.invalid && (registrationForm.get('phoneNumber')?.dirty || registrationForm.get('phoneNumber')?.touched)">
+            Invalid phone number</p>
         </div>
 
       </div>
