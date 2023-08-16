@@ -11,6 +11,7 @@ export class SigninComponent implements OnInit{
 
   constructor(private router: Router) { }
   ngOnInit(): void {
+    this.showSignInPage = true;
   }
 
   type: string = "password"

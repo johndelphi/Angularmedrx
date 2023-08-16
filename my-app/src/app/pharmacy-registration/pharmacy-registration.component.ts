@@ -1,14 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-registration',
   templateUrl: './pharmacy-registration.component.html',
   styleUrls: ['./pharmacy-registration.component.css']
 })
-export class  PharmacyRegistrationComponent implements OnInit {
+export class PharmacyRegistrationComponent implements OnInit {
+
   registrationForm!: FormGroup;
-  router: any;
   selectedCounty!: string;
   selectedSubcounty!: string;
   KenyanCounties: string[] = [
@@ -78,7 +79,7 @@ export class  PharmacyRegistrationComponent implements OnInit {
 
 
 
-  constructor(private formBuilder: FormBuilder) {
+  constructor(private formBuilder: FormBuilder, private router: Router) {
 
   }
   ngOnInit(): void {
@@ -106,6 +107,10 @@ export class  PharmacyRegistrationComponent implements OnInit {
     console.log('Subcounty:', this.registrationForm.value.subcounty);
     console.log('Phone number:', this.registrationForm.value.phoneNumber);
 
+  }
+
+   closePharmacy() {
+    this.router.navigate(['/header']);
   }
 
 

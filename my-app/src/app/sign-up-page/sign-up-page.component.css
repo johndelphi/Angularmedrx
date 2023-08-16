@@ -93,7 +93,7 @@ button {
 @media (max-width: 768px) {
   .signup-container{
     width: 92%;
-    top: 60%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
