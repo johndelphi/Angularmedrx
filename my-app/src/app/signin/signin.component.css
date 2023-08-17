@@ -19,7 +19,7 @@
 }
 
 .password-label {
-  margin-top: 0px;
+  margin-top: -15px;
   font-weight: bold;
   color: black;
 }
@@ -56,7 +56,7 @@ button {
   border: 1px solid grey;
   /* margin-left: 15px; */
   margin-top: -5px;
-  background: green;
+  background: rgb(110, 204, 110);
   color: white;
   font-size: 18px;
   font-weight: bold;
@@ -73,7 +73,7 @@ button {
 .reset-password a {
   text-decoration: underline;
   font-size: 16px;
-  color: green; /* Change the link color to green */
+  color: rgb(110, 204, 110); /* Change the link color to green */
   cursor: pointer;
 }
 
@@ -90,15 +90,15 @@ button {
   font-weight: normal;
   font-size: 20px;
   font-style: italic;
-  color: green;
+  color: rgb(110, 204, 110);
 }
 
 @media (max-width: 768px) {
   .signin-container {
-    width: 300px;
+    width: 270px;
   }
   .signup-text {
-    margin-left: -35px;
+    margin-left: 0px;
   }
   form {
     width: 90%;
