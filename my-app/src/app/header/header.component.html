@@ -4,17 +4,16 @@
     <!-- <li><a href="#">Download App</a></li> -->
     <li><a class="service-link" routerLink="/services" routerLinkActive="active">Services</a></li>
 
-    <div class="dropdown" (mouseleave)="closeSigninDropdown()">
-      <li><a class="signin-link" (mouseenter)="toggleSignin()" (click)="toggleSignin()">Sign In</a>
+    <div class="dropdown" (mousedown)="handleDropdownClick($event)">
+      <li><a class="signin-link" (click)="navigateToSignIn($event)">Sign In</a>
         <div class="dropdown-content" [ngClass]="{'show': isContentOpen }">
           <app-signin
-            [isSignInHovered]="isSignInHovered"
-            (signInHovered)="keepSigninDropdownOpen()"
-            (signInClosed)="closeSigninDropdown()"
+            *ngIf="isContentOpen" (mousedown)="handleSigninMousedown($event)"
           ></app-signin>
         </div>
       </li>
     </div>
+
 
     <div class="menu-container">
       <mat-toolbar>
@@ -25,7 +24,7 @@
       <div class="dropdown-menu" [ngClass]="{ 'show': isMenuOpen }">
         <h1>MedRx</h1>
         <!-- <li ><a routerLink="/home" routerLinkActive="active" (click)="closeDropdownMenu()">Home</a></li> -->
-        <li><a routerLink="/about" routerLinkActive="active" (click)="closeDropdownMenu()">About</a></li>
+        <li><a routerLink="/about" routerLinkActive="active" (click)="closeDropdownMenu()">Home</a></li>
         <li><a  routerLink="/contact" routerLinkActive="active" (click)="closeDropdownMenu()">Contact</a></li>
         <!-- <li ><a routerLink="/features" routerLinkActive="active" (click)="closeDropdownMenu()">Features</a></li> -->
         <li><a  routerLink="/pharmacy-registration" routerLinkActive="active" (click)="closeDropdownMenu()">Pharmacy Registration</a></li>
@@ -34,14 +33,6 @@
   </ul>
 
 </nav>
-<app-searchbar></app-searchbar>
-<app-drug-carousel-component></app-drug-carousel-component>
-<app-howmedrxworks></app-howmedrxworks>
-<app-features></app-features>
-
-<app-homefooter></app-homefooter>
-
-
 
 
 

@@ -1,18 +1,44 @@
-.features-benefits{
-    background-color: rgb(110, 204, 110);
-    height: 40%;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+.features-benefits {
+    background-color: #c8e6c9;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+}
 
+.feature, .benefit {
+    flex: 1 1 200px;  
+    margin: 1rem;
+    padding: 2rem;
+    background-color: #a5d6a7;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
 }
-.benfits{
-    float: left;
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    margin-right: 80;
-   
+
+.feature h2, .benefit h2 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
 }
-  
+
+.feature ul, .benefit ul {
+    line-height: 1.6;
+}
+
+.feature:hover, .benefit:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    .features-benefits {
+        flex-direction: column;
+    }
+}
+ 
