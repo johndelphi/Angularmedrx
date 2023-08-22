@@ -1,227 +1,105 @@
-
-.container {
-    max-width: 100%;
-    padding: 0 15px;
-    margin: 0 auto;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-  }
-
-  /* Section styles */
-  .contact-page-section {
-    background-color: lightgreen;
-    padding: 40px 0;
-  }
-
-  /* Section title styles */
-  .sec-title {
-    text-align: center;
-    margin-bottom: 40px;
-  }
-
-  .sec-title .title {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 10px;
-  }
-
-  .sec-title h2 {
-    font-size: 32px;
-    font-weight: bold;
-    color: white;
-    margin: 0;
-  }
-
-  /* Inner container styles */
-  .inner-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  /* Form column styles */
-  .form-column {
-    width: 100%;
-    max-width: 600px;
-  }
-
-  .form-group {
-    margin-bottom: 20px;
-  }
-
-  .contact-form input[type="text"],
-  .contact-form input[type="email"],
-  .contact-form textarea {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid lightgray;
-    font-size: 16px;
-  }
-
-  .contact-form textarea {
-    height: 120px;
-    resize: vertical;
-  }
-
-  .contact-form button {
-    padding: 10px 20px;
-    background-color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    color: lightgreen;
-    cursor: pointer;
-  }
-
-  /* Info column styles */
-  .info-column {
-    width: 100%;
-    max-width: 400px;
-    margin-top: 20px;
-  }
-
-  .info-column h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 20px;
-  }
-
-  .list-info {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
-    color: white;
-  }
-
-  .list-info li {
-    margin-bottom: 10px;
-  }
-
-  .social-icon-four {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  .social-icon-four .follow {
-    color: white;
-    margin-right: 10px;
-  }
-
-  .social-icon-four li {
-    display: inline-block;
-    margin-right: 5px;
-  }
-
-  .social-icon-four a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: white;
-    color: lightgreen;
-  }
-  button.hover{
-    background-color: greenyellow;
-    cursor: pointer;
-  }
-  @media (max-width: 767px) {
-    .inner-container {
-      flex-direction: column;
-    }
-
-    .form-column,
-    .info-column {
-      width: 100%;
-      max-width: none;
-    }
-
-    .form-group,
-    .list-info {
-      text-align: center;
-    }
-  }
-
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-*{
-    margin: 0px;
-    padding: 0px;
-    /* box-sizing: border-box; */
-    
 }
 
-body{
-background-color: #efefef;
-font-family: 'Poppins', sans-serif;
+body {
+    background-color: #efefef;
+    font-family: 'Poppins', sans-serif;
 }
 
-.contact-box{
-    width: 500px;
+.contact-box {
     height: 520px;
+    width: 480px; /* Adjust this as needed */
     background-color: #fff;
     box-shadow: 0 0 20px 0 #999;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    position: absolute;
+    margin: 0 auto; /* Center horizontally */
+    position: relative;
     border-radius: 8px;
+    padding: 30px; /* Add some padding for spacing */
+    margin-top: 10%; /* Adjust the vertical position as needed */
+}
 
-}
-.contact-box h1{
-    padding-top: 30px;
+.contact-box h1 {
     font-weight: 500;
-    margin-top: 0px;
     text-align: center;
-}
- 
-.form{
-    margin: 35px;
+    margin-top: 0;
 }
 
 .input-field{
-    width: 400px;
+    margin-left: 31px;
+    width:400px;
     height: 40px;
     margin-top: 20px;
-    margin-left: 40px;
-    padding-left: 10px; 
-    padding-right: 10px; 
+    padding: 0 10px;
     border: 1px solid #777;
     border-radius: 8px;
     outline: none;
 }
 
-.textarea-field{
+  .textarea-field{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 0 10px;
+    border: 1px solid #777;
+    border-radius: 8px;
+    outline: none;
+  }
+
+.textarea-field {
     height: 150px;
     padding-top: 10px;
 }
 
-.btn{
+.btn {
     border-radius: 8px;
     color: #fff;
     margin-top: 18px;
-    padding: 10px 30px;
-    background-color: #47c35a;
+    padding: 10px 20px;
+    background-color: rgb(110, 204, 110);
     font-size: 20px;
     border: none;
     cursor: pointer;
-    margin-left: 40px;
+    text-align: center;
+    width: 100%;
+    margin-left: 30px;
 }
 
 @media (max-width: 600px) {
     .contact-box {
-        width: 90%; /* Adjust the width for smaller screens */
+        width: 80%;
+        height: 485px;
     }
 
-    .input-field, .textarea-field, .btn {
-        width: 70%; /* Set all form elements to full width */
+    .input-field, .textarea-field {
+        width: 100%;
+        margin: 10px auto;
+         /* Make sure input fields span the full width */
     }
 
-    .btn{
-        width: auto;
+    .btn {
+        width: 38%; /* Make the button span the full width */
+        text-align: center;
+        padding: 10px 20px;
+        margin: 10px auto; /* Center the button horizontally */
     }
 }
 
+
+/* Landscape Orientation */
+@media (orientation: landscape) {
+    .contact-box {
+        margin-top: 5%;
+    }
+    
+    /* Changes for landscape orientation */
+    .input-field, .textarea-field {
+        width: 84%; /* Changed width for landscape */
+    }
+
+    .btn {
+        width: 20%; /* Changed width for landscape */
+    }
+}
