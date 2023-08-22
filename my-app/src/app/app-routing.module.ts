@@ -11,6 +11,7 @@ import { FeaturesComponent } from './features/features.component';
 import { UserdetailsSignupComponent } from './userdetails-signup/userdetails-signup.component';
 import { SearchResultsPageComponent } from './search-results-page/search-results-page.component';
 import { SigninComponent } from './signin/signin.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
 //   {path:'results',
@@ -22,6 +23,7 @@ const routes: Routes = [
 // ],
 // },
   {path: 'contact', component: ContactComponent},
+  { path: 'about', component: AboutComponent },
   {path: 'home', component: HomeComponent},
   {path: 'sign-up-page', component: SignUpPageComponent},
   {path: 'pharmacy-registration', component: PharmacyRegistrationComponent},
