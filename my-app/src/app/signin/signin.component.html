@@ -1,4 +1,4 @@
-<div class="signin-container" *ngIf="showSignInPage">
+<div class="signin-container" [ngClass]="{ 'hidden': !showSignInPage }">
   <form (ngSubmit)="onSubmit()">
     <label for="username" class="form-label">Username</label>
     <div class="input-field">
@@ -16,6 +16,11 @@
     <button type="submit">sign in</button>
   </form>
   <ul class="Reset-password!"><a routerLink="/reset-password-page">Reset Password!</a></ul>
-  <p class="signup-text">Not a member? <a routerLink="/sign-up-page" (click)="navigateTosignUp()">Sign up today!</a></p>
+  <p class="signup-text">Not a member? <a  href="javascript:void(0);" (click)="openSignUpModal()">Sign up today!</a></p>
 
+</div>
+
+<!-- Sign-up modal overlay -->
+<div class="overlay" *ngIf="showSignUpModal">
+  <app-sign-up-page (closeSignUp)="closeSignUpModal()"></app-sign-up-page>
 </div>

@@ -56,5 +56,16 @@ export class SigninComponent implements OnInit{
     this.signInHovered.emit(false);
     this.signInClosed.emit();
   }
+
+  showSignUpModal = false;
+
+  openSignUpModal() {
+    this.showSignUpModal = true;
+    this.showSignInPage = false;
+  }
+
+  closeSignUpModal() {
+    this.showSignUpModal = false;
+  }
 }
 
