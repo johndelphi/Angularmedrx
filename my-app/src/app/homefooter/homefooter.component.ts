@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./homefooter.component.css']
 })
 export class HomefooterComponent {
+closeDropdownMenu() {
+throw new Error('Method not implemented.');
+}
 
 }
