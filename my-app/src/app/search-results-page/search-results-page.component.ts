@@ -24,12 +24,15 @@ export class SearchResultsPageComponent implements OnInit {
     if (stateData && stateData.searchResults) {
       const searchResults = stateData.searchResults;
       this.store.dispatch(MedicineSearchresults({ results: searchResults }));
-    }
-    else if (this.searchResults$ === null) {
-      this.router.navigate(['/home']);
-    
+    } else {
+      this.searchResults$.subscribe(results => {
+        if (!results || results.length === 0) {
+          this.router.navigate(['/home']);
+        }
+      });
     }
   }
+  
      
   
 }

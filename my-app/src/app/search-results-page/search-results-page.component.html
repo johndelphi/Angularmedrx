@@ -31,3 +31,6 @@
     </tr>
   </table>
 </div>
+<div class="no-results" *ngIf="(searchResults$ | async)?.length === 0">
+  <p>No results found</p>
+</div>
