@@ -1,5 +1,6 @@
-<div class="signup-container">
-  <button class="close-button" (click)="closeSignUp()">X</button>
+<div class="signup-overlay">
+  <div class="signup-container">
+  <button class="close-button" (click)="onCloseSignUp()">X</button>
   <h1>Sign up <span [ngClass]="{'highlight': wordToHighlight === 'Free'}">Free</span> To Get Lowest Price</h1>
   <h2>Enter your email to get started</h2>
   <form (submit)="onSubmit($event)" [formGroup]="signupForm">
@@ -16,4 +17,5 @@
     <br>
     <button type="submit" [disabled]="signupForm.invalid">Continue</button>
   </form>
+  </div>
 </div>

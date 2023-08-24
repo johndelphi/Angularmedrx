@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -37,13 +37,15 @@ export class SignUpPageComponent implements OnInit{
     this.userSignUp();
   }
 
+  @Output() closeSignUp = new EventEmitter<void>();
 
-  closeSignUp() {
-    this.router.navigate(['/header']);
+  onCloseSignUp() {
+    this.closeSignUp.emit();
   }
 
   userSignUp() {
     this.router.navigate(['/userdetails-signup']);
+    this.closeSignUp.emit();
   }
 
 
