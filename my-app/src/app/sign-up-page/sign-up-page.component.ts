@@ -34,7 +34,7 @@ export class SignUpPageComponent implements OnInit{
     console.log('Email:', this.signupForm.value.email);
     console.log('Phone:', this.signupForm.value.phone);
     // Add logic to navigate to another page if needed
-    this.userSignUp();
+    this.openuserdetailsSignUpModal();
   }
 
   @Output() closeSignUp = new EventEmitter<void>();
@@ -43,10 +43,16 @@ export class SignUpPageComponent implements OnInit{
     this.closeSignUp.emit();
   }
 
-  userSignUp() {
-    this.router.navigate(['/userdetails-signup']);
-    this.closeSignUp.emit();
+  showuserdetailsSignUpModal = false;
+  showSignupPage: boolean = true;
+
+   openuserdetailsSignUpModal() {
+    this.showuserdetailsSignUpModal = true;
+    this.showSignupPage = false;
   }
 
+   closeuserdetailsSignUpModal() {
+    this.showuserdetailsSignUpModal = false;
+  }
 
 }
