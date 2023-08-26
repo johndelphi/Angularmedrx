@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 
@@ -41,8 +41,10 @@ export class UserdetailsSignupComponent implements OnInit {
     // Add your sign-in logic here, such as making an API request or validating credentials
   }
 
-  closeSignUp() {
-    this.router.navigate(['/header']);
+  @Output() closeSignUp = new EventEmitter<void>();
+
+  onCloseSignUp() {
+    this.closeSignUp.emit();
   }
 
 }
