@@ -1,155 +1,99 @@
-.float-container {
-    background-color: rgb(146, 192, 146);
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    min-height: 400px;
-
-    max-height: 80vh;
-    width: 70%;
-
-    max-height: 90vh;
-    width: 35%;
-
+Reset some default styles
+body, h1, h2 {
+    margin: 0;
+    padding: 0;
 }
 
-.close-button {
-  color: red;
-  position: absolute;
-  top: -20px;
-  right: 15px;
-  transform: translate(50%, -50%);
-  transform-origin: top right;
-  cursor: pointer;
-  border: none;
-  background: none;
-  font-size: 22px;
-  z-index: 2;
-  font-weight: bolder;
-
+/* Background image styles */
+.background-image {
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
 }
 
-h2 {
-  margin-top: 20px;
-  margin-left: 60px;
-}
-.pharm {
-  margin-left: 30px;
-}
-
-.pharm input {
-  border-radius: 10px;
-  width: 390px;
+/* Header styles */
+.header {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px;
+    color: black;
 }
 
-.loc {
-  margin-left: 30px;
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
 }
 
-.loc input {
-  border-radius: 10px;
-  width: 390px;
+.header h2 {
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
-.county {
-  margin-left: 30px;
+.cta-button {
+    background-color: white;
+    color: rgb(110, 204, 110);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.county .form-control {
-  border-radius: 10px;
-  width: 390px;
+/* Main section styles */
+.main-section {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px 0;
+    text-align: start;
+    margin-top: -120px;
 }
 
-.sub-county {
-  margin-left: 30px;
+.form-container {
+    max-width: 400px;
+    /* margin: 100px; */
+    margin: 60px 40px;
 }
 
-.sub-county .form-control {
-  border-radius: 10px;
-  width: 390px;
+.text-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.phone {
-  margin-left: 30px;
-}
-
-.phone input {
-  border-radius: 10px;
-  width: 390px;
-}
-button {
-  margin-top: 10px;
-  border-radius: 15px;
-  width: 35%;
-  margin-left: 110px;
-  margin-bottom: 10px;
+.join-button {
+    background-color: rgb(110, 204, 110);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
-  .float-container {
-    width: 90%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 
-  .close-button {
-    top: -8px;
-  }
+    .header {
+      width: 90%;
+      margin-left: 16px;
+    }
 
-  h2 {
-    margin-left: 45px;
-  }
+    .main-section{
+      width: 90%;
+      margin-left: 16px;
+    }
 
-  .pharm {
-    margin-left: 40px;
-  }
+    .form-container {
+        width: 80%;
+    }
+}
 
-  .pharm input {
-    width: 90%;
-  }
-
-  .loc {
-    margin-left: 40px;
-    margin-top: 10px;
-  }
-
-  .loc input {
-    width: 90%;
-  }
-
-  .county {
-    margin-top: 10px;
-    margin-left: 40px;
-  }
-
-  .county .form-control {
-    width: 90%;
-  }
-
-  .sub-county {
-    margin-top: 10px;
-    margin-left: 40px;
-  }
-
-  .sub-county .form-control {
-    width: 90%;
-  }
-
-  .phone {
-    margin-top: 10px;
-    margin-left: 40px;
-  }
-
-  .phone input {
-    width: 90%;
-  }
-
-  button {
-    width: 170px;
-    margin-top: 20px;
-    margin-left: 98px;
-  }
-
+@media (orientation: landscape) {
+    .header {
+        margin-top: 2%;
+    }
 }
