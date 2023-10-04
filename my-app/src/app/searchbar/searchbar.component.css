@@ -23,31 +23,39 @@
     padding: 0.5rem 1rem;
     height: 3rem;
     border: 1px solid #ccc;
-    border-radius: 50px;
+    border-radius: 5px;
     flex-grow: 1;
     margin: 10px 0;
     padding-right: 3rem;
     box-sizing: border-box;
   }
+  
 
-  .Search-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #333;
-    background-color:#07b90a;
-    border-radius: 0 50px 0;
-    color: white;
-    border: none;
-    border-radius: 0 25px 0;
-    padding: 0.5rem;
-    cursor: pointer;
-    font-size: 1rem;
-    position: absolute; /* Add this line */
-    right: 0; /* Add this line */
-    height: 3rem;
-    width: 3rem; /* Adjust this value if needed */
-  }
+ /* ... your existing CSS code ... */
+
+ .Search-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #07b90a;
+   /* Change button color */
+   border-radius: 0 5px 5px 0;
+   /* Add rounded corners */
+   color: white;
+   border: none;
+   padding: 0.5rem 1rem;
+   /* Adjust padding for button size */
+   cursor: pointer;
+   font-size: 1rem;
+   position: absolute;
+   right: 0;
+   height: 3rem;
+   width: 7rem;
+   /* Adjust button width as needed */
+ }
+
+ /* ... your existing CSS code ... */
+  
   .search-barWrapper{
     background-color: rgb(110, 204, 110);
     height: 40%;
@@ -88,3 +96,41 @@
     font-size: 1.2rem;
     color: #333;
   }
+
+    .centered-header {
+      text-align: center;
+      /* Center the text horizontally */
+      margin: 0;
+      /* Remove any default margin */
+    }
+
+ /* Your existing CSS styles... */
+
+ .search-conditions {
+   display: flex;
+   justify-content: space-evenly;
+   margin-top: 20px;
+   margin-left: 340px;
+   margin-right: 340px;
+ }
+
+ .condition {
+  background-color: rgba(255, 255, 255, 0.8);
+   display: flex;
+   align-items: center;
+   padding: 10px 10px;
+   /* Adjust padding to increase container size */
+   border: 2px solid #07b90a;
+   /* Add a border for visual separation */
+   border-radius: 5px;
+   /* Add rounded corners for a better look */
+   margin-right: 5px;
+   /* Reduced margin between conditions by half */
+   /* Adjust spacing between containers */
+ }
+
+ /* .condition input[type="checkbox"] {
+  margin-right: 5px;
+} */
+
+ /* Adjust other styles as needed... */
