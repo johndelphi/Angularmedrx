@@ -1,4 +1,4 @@
-<div class="search-barWrapper">
+<!-- <div class="search-barWrapper">
   <div class="Searchbarheader">
       <h2>Compare prices and save upto 80%</h2>
   </div>
@@ -16,5 +16,45 @@
         <div class="loading-spinner"></div>
         <p>Loading...</p>
       </div>
+  </div>
+</div> -->
+
+
+
+
+<div class="search-barWrapper">
+  <div class="Searchbarheader">
+    <h2>Compare Prices and Save up to 80%</h2>
+  </div>
+  <div class="parent-container">
+    <div class="container">
+      <input type="text" class="search-input" placeholder="Enter a medication...." [(ngModel)]="searchTerm">
+      <button class="Search-btn" (click)="onSearch()" [disabled]="isLoading">
+        Search
+      </button>
+    </div>
+    <div *ngIf="isLoading" class="loading-overlay">
+      <div class="loading-spinner"></div>
+      <p>Loading...</p>
+    </div>
+  </div>
+<div class="search-conditions-header">
+  <h5 class="centered-header">Or browse by condition</h5>
+</div>
+<div class="search-conditions">
+  <div class="condition">
+    <label for="pain">Pain Killers</label>
+  </div>
+  <div class="condition">
+    <label for="prescription">Prescription</label>
+  </div>
+  <div class="condition">
+    <label for="birth-control">Birth Control</label>
+  </div>
+  <div class="condition">
+    <label for="depression">Depression</label>
+  </div>
+  <div class="condition">
+    <label for="high-blood-pressure">High Blood Pressure</label>
   </div>
 </div>
