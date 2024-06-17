@@ -1,15 +1,20 @@
 <div class="search-barWrapper">
   <div class="Searchbarheader">
       <h2>Compare prices and save upto 80%</h2>
-      <p>testing second cicd</p>
   </div>
   <div class="parent-container">
       <div class="container">
       
         <input type="text" class="search-input" placeholder="Enter a medication...." [(ngModel)]="searchTerm">
-        <button class="Search-btn" (click)="onSearch()">
+        
+        <button class="Search-btn" (click)="onSearch()" [disabled]="isLoading">
           <i class="material-icons">search</i>
         </button>
+      </div>
+
+      <div *ngIf="isLoading" class="loading-overlay">
+        <div class="loading-spinner"></div>
+        <p>Loading...</p>
       </div>
   </div>
 </div>

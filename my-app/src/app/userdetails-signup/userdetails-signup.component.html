@@ -1,28 +1,35 @@
 <div class="user-container">
+  <button class="close-button" (click)="closeSignUp()">X</button>
   <h1>Sign up <span [ngClass]="{'highlight': wordToHighlight === 'Free'}">Free</span> To Get Lowest price</h1>
-  <form (ngSubmit)="onSubmit()" >
+  <form (submit)="onSubmit($event)" [formGroup]="signupForm" >
     <div class="first-name">
       <label for="firstName">First name</label>
-      <input type="text" id="firstName" name="firstName" [(ngModel)]="firstName">
+      <input type="text" id="firstName" name="firstName" formControlName="firstName">
     </div>
+    <small *ngIf="signupForm.controls['firstName'].dirty && signupForm.hasError('required','firstName')" class="text-danger">*First name is required</small>
 
     <div class="last-name">
       <label for="lastName">last name</label>
-      <input type="text" id="lastName" name="lastName" [(ngModel)]="lastName">
+      <input type="text" id="lastName" name="lastName" formControlName="lastName">
     </div>
+    <small *ngIf="signupForm.controls['lastName'].dirty && signupForm.hasError('required','lastName')" class="text-danger">*last name is required</small>
 
     <div class="DOB-password">
       <div class="DOB">
         <label for="dateOfbirth">Date of birth</label>
-        <input type="text" id="dateOfbirth" name="dateOfbirth" [(ngModel)]="dateOfbirth">
+        <input type="text" id="dateOfbirth" name="dateOfbirth" formControlName="dateOfbirth">
+        <small *ngIf="signupForm.controls['dateOfbirth'].dirty && signupForm.hasError('required','dateOfbirth')" class="text-danger">*DOB is required</small>
       </div>
+
       <br>
       <div class="password">
         <label for="passWord">Password</label>
-        <input type="text" id="passWord" name="passWord" [(ngModel)]="passWord">
+        <input type="text" id="passWord" name="passWord" formControlName="passWord">
+        <small *ngIf="signupForm.controls['passWord'].dirty && signupForm.hasError('required','passWord')" class="text-danger">*Password is required</small>
       </div>
+
     </div>
-    <button type="submit" >Sign UP</button>
+    <button type="submit" [disabled]="signupForm.invalid">Sign UP</button>
 
   </form>
 </div>

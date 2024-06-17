@@ -15,4 +15,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_MEDRX_5005E }}'
           projectId: medrx-5005e
-          entrypoint : my-app
+          entrypoint: my-app

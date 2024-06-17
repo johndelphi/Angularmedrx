@@ -2,27 +2,31 @@
   <h1>MedRx</h1>
   <ul class="navigation">
     <!-- <li><a href="#">Download App</a></li> -->
-    <li><a routerLink="/services" routerLinkActive="active">Services</a></li>
+    <li><a class="service-link" routerLink="/services" routerLinkActive="active">Services</a></li>
 
-    <div class="dropdown">
-      <li><a routerLink="/signin" routerLinkActive="active" (click)="toggleSignin()">Sign In</a></li>
-      <div class="dropdown-content" [ngClass]="{'show': isContentOpen }">
-        <app-signin></app-signin>
-      </div>
-
+    <div class="dropdown" (mousedown)="handleDropdownClick($event)">
+      <li><a class="signin-link" (click)="navigateToSignIn($event)">Sign In</a>
+        <div class="dropdown-content" [ngClass]="{'show': isContentOpen }">
+          <app-signin
+            *ngIf="isContentOpen" (mousedown)="handleSigninMousedown($event)"
+          ></app-signin>
+        </div>
+      </li>
     </div>
+
 
     <div class="menu-container">
       <mat-toolbar>
-        <button mat-icon-button (click)="toggleSideNav()">
+        <button mat-icon-button (click)="toggleSideNav()" class="burger-menu-btn">
           <mat-icon>menu</mat-icon>
         </button>
       </mat-toolbar>
       <div class="dropdown-menu" [ngClass]="{ 'show': isMenuOpen }">
         <h1>MedRx</h1>
         <!-- <li ><a routerLink="/home" routerLinkActive="active" (click)="closeDropdownMenu()">Home</a></li> -->
-        <li><a routerLink="/about" routerLinkActive="active" (click)="closeDropdownMenu()">About</a></li>
+        <li><a routerLink="/home" routerLinkActive="active" (click)="closeDropdownMenu()">Home</a></li>
         <li><a  routerLink="/contact" routerLinkActive="active" (click)="closeDropdownMenu()">Contact</a></li>
+        <!-- <li><a  routerLink="/about" routerLinkActive="active" (click)="closeDropdownMenu()">About</a></li> -->
         <!-- <li ><a routerLink="/features" routerLinkActive="active" (click)="closeDropdownMenu()">Features</a></li> -->
         <li><a  routerLink="/pharmacy-registration" routerLinkActive="active" (click)="closeDropdownMenu()">Pharmacy Registration</a></li>
       </div>
@@ -30,8 +34,6 @@
   </ul>
 
 </nav>
-
-
 
 
 

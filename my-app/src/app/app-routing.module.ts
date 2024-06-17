@@ -1,6 +1,6 @@
 import { NgModule, Component } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
+import { LoaderComponent } from './loader/loader.component';
 import { AppComponent } from './app.component';
 import { ContactComponent } from './contact/contact.component';
 import { HomeComponent } from './home/home.component';
@@ -10,7 +10,8 @@ import { ServicesComponent } from './services/services.component';
 import { FeaturesComponent } from './features/features.component';
 import { UserdetailsSignupComponent } from './userdetails-signup/userdetails-signup.component';
 import { SearchResultsPageComponent } from './search-results-page/search-results-page.component';
-// import { SigninComponent } from './signin/signin.component';
+import { SigninComponent } from './signin/signin.component';
+import { AboutComponent } from './about/about.component';
 
 const routes: Routes = [
 //   {path:'results',
@@ -22,6 +23,7 @@ const routes: Routes = [
 // ],
 // },
   {path: 'contact', component: ContactComponent},
+  { path: 'about', component: AboutComponent },
   {path: 'home', component: HomeComponent},
   {path: 'sign-up-page', component: SignUpPageComponent},
   {path: 'pharmacy-registration', component: PharmacyRegistrationComponent},
@@ -29,7 +31,8 @@ const routes: Routes = [
   {path: 'features', component: FeaturesComponent},
   {path: 'userdetails-signup', component: UserdetailsSignupComponent},
   {path: 'results', component: SearchResultsPageComponent},
-  // {path: 'signin', component: SigninComponent},
+  {path: 'signin', component: SigninComponent},
+  {path: 'loader', component: LoaderComponent},
   {path: '**', redirectTo: 'home'}
 
 

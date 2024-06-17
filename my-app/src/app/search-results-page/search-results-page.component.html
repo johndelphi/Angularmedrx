@@ -10,7 +10,7 @@
             <div>Medicine Description: {{ result.medicineDescription }}</div>
             <div>Category: {{ result.category }}</div>
           </div>
-åå        </div>
+       </div>
       </td>
     </tr>
     <tr>
@@ -30,4 +30,7 @@
       </td>
     </tr>
   </table>
+</div>
+<div class="no-results" *ngIf="(searchResults$ | async)?.length === 0">
+  <p>No results found</p>
 </div>
