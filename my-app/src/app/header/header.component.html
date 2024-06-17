@@ -5,13 +5,13 @@
     <li><a class="service-link" routerLink="/services" routerLinkActive="active">Services</a></li>
 
     <div class="dropdown" (mousedown)="handleDropdownClick($event)">
-      <li><a class="signin-link" (click)="navigateToSignIn($event)">Sign In</a>
+      <!-- <li><a class="signin-link" (click)="navigateToSignIn($event)">Sign In</a>
         <div class="dropdown-content" [ngClass]="{'show': isContentOpen }">
           <app-signin
             *ngIf="isContentOpen" (mousedown)="handleSigninMousedown($event)"
           ></app-signin>
         </div>
-      </li>
+      </li> -->
     </div>
 
 
