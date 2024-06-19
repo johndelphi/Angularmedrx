@@ -1,0 +1,10 @@
+<div class="landingpage-container">
+  <div class="landingpage" *ngFor="let landingpage of landingpage">
+    <img [src]="landingpage.image" alt="{{landingpage.title}}" class="background-image">
+    <div class="overlay">
+      <h3>{{landingpage.title}}</h3>
+      <p>{{landingpage.description}}</p>
+    </div>
+  </div>
+</div>
+<app-services></app-services>
