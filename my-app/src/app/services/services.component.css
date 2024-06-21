@@ -1,6 +1,7 @@
 .services-header {
   display: flex;
   justify-content: center;
+  text-decoration: underline;
   margin-top: 3rem;
   font-weight: 600;
   font-size: 2.5rem;

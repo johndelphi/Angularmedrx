@@ -12,6 +12,7 @@ import { UserdetailsSignupComponent } from './userdetails-signup/userdetails-sig
 import { SearchResultsPageComponent } from './search-results-page/search-results-page.component';
 import { SigninComponent } from './signin/signin.component';
 import { AboutComponent } from './about/about.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const routes: Routes = [
 //   {path:'results',
@@ -32,7 +33,8 @@ const routes: Routes = [
   {path: 'userdetails-signup', component: UserdetailsSignupComponent},
   {path: 'results', component: SearchResultsPageComponent},
   {path: 'signin', component: SigninComponent},
-  {path: 'loader', component: LoaderComponent},
+  { path: 'loader', component: LoaderComponent },
+  {path: 'landing-page', component: LandingPageComponent},
   {path: '**', redirectTo: 'home'}
 
 

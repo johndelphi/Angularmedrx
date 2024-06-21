@@ -32,6 +32,7 @@ import { BackendserviceService } from './backendservice.service';
 import { AboutComponent } from './about/about.component';
 import { HomefooterComponent } from './homefooter/homefooter.component';
 import { LoaderComponent } from './loader/loader.component';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 
@@ -54,11 +55,14 @@ import { LoaderComponent } from './loader/loader.component';
     UserdetailsSignupComponent,
     DrugCarouselComponentComponent,
     HowmedrxworksComponent,
+    LandingPageComponent,
+
 
     SearchResultsPageComponent,
       AboutComponent,
       HomefooterComponent,
       LoaderComponent,
+
 
 
 

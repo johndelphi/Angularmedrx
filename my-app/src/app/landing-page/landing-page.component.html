@@ -1,0 +1,18 @@
+<div class="landingpage-container">
+  <div class="landingpage" *ngFor="let landingpage of landingpage">
+    <img [src]="landingpage.image" alt="{{landingpage.title}}" class="background-image">
+    <div class="overlay">
+      <h3>{{landingpage.title}}</h3>
+      <p>{{landingpage.description}}</p>
+      <div class="download-buttons" *ngFor="let download of download">
+        <a href="https://play.google.com/store" target="_blank">
+          <img [src]="download.google" alt="Download on Google Play" class="store-image">
+        </a>
+        <a href="https://www.apple.com/app-store/" target="_blank">
+          <img [src]="download.apple" alt="Download on App Store" class="store-image">
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+<app-services></app-services>

@@ -1,0 +1,91 @@
+/* General reset and styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 80%;
+}
+
+.landingpage-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  /* Full viewport height */
+  overflow: hidden;
+  /* Hide overflow */
+}
+
+.landingpage {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.background-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  /* Cover the whole container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black;
+  padding: 20px;
+}
+
+.overlay h3 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 1.2rem;
+}
+
+.download-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.store-image {
+  width: 150px;
+  height: auto;
+}
+
+.landingpage-container+app-services {
+  margin-top: 0;
+  /* Remove any default margin */
+  padding-top: 0;
+  /* Remove any default padding */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .overlay h3 {
+    font-size: 2rem;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+
+  .store-image {
+    width: 100px;
+  }
+}
