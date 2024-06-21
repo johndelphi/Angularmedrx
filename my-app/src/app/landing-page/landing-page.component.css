@@ -56,6 +56,18 @@ html {
   font-size: 1.2rem;
 }
 
+.download-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.store-image {
+  width: 150px;
+  height: auto;
+}
+
 .landingpage-container+app-services {
   margin-top: 0;
   /* Remove any default margin */
@@ -71,5 +83,9 @@ html {
 
   .overlay p {
     font-size: 1rem;
+  }
+
+  .store-image {
+    width: 100px;
   }
 }
