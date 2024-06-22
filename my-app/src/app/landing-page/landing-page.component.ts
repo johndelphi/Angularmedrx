@@ -10,8 +10,9 @@ export class LandingPageComponent {
     {
       title: 'Empowering Pharmacies through Mobile Solutions In Africa',
       image: 'assets/Images/pic4.jpg',
-      description: 'Download Our App', },
-  ]
+      description: 'Download Our App',
+    },
+  ];
 
   download = [
     {
@@ -21,5 +22,6 @@ export class LandingPageComponent {
   ]
 
   constructor() {}
+
   ngOnInit(): void {}
 }
