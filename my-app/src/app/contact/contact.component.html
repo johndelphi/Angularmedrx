@@ -1,10 +1,48 @@
-<div class="contact-box">
-    <h1>Contact Us</h1>
-    <form>
-        <input type="text" class="input-field" placeholder="Your Name">
-        <input type="text" class="input-field" placeholder="Your Phone Number">
-        <input type="text" class="input-field" placeholder="Subject">
-        <textarea class="input-field textarea-field" placeholder="Your Message"></textarea>
-        <button type="button" class="btn">Send</button>
-    </form>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.component.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <div class="contact-container">
+        <div class="contact-text">
+            <h1>For More Details<br>Contact Us!</h1>
+            <hr>
+            <p>
+                Feel free to drop us a quick message with your questions, suggestions or complaints.
+                We're responsive and aim to get back to you as soon as possible, Thanks 😊
+            </p>
+            <address>
+                31515 Nairobi, Ngara, 00600<br>
+                <a href="mailto:MedRxkenya@outlook.com">MedRxkenya.co.ke</a><br>
+                Call: +254 768 935464, or +254 792 685818
+            </address>
+        </div>
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="firstName" class="input-field" placeholder="First Name">
+                    <input type="text" id="lastName" class="input-field" placeholder="Last Name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" id="phone" class="input-field" placeholder="Phone">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" class="input-field" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Comment or Message</label>
+                    <textarea id="message" class="input-field textarea-field" placeholder="Comment or Message"></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
