@@ -17,7 +17,7 @@ export class LandingPageComponent {
   download = [
     {
       google: 'assets/Images/googleplay1.png',
-      apple: 'assets/Images/appstore1.png',
+      apple: 'assets/Images/appstore21.png',
     },
   ]
 

@@ -39,7 +39,7 @@ html {
 
 .overlay {
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 30%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -61,11 +61,14 @@ html {
   display: flex;
   justify-content: center;
   gap: 10px;
+  align-items: center;
 }
 
 .store-image {
   width: 150px;
   height: auto;
+  border-radius: 0;
+  object-fit: contain;
 }
 
 .landingpage-container+app-services {
@@ -81,6 +84,16 @@ html {
     font-size: 2rem;
   }
 
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    padding: 20px;
+  }
+
   .overlay p {
     font-size: 1rem;
   }
@@ -88,4 +101,5 @@ html {
   .store-image {
     width: 100px;
   }
+
 }

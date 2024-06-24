@@ -219,33 +219,34 @@ button:focus:not(:focus-visible) {
     gap: 10px;
     align-items: center;
     margin: 0;
-    padding: 0 70px;
+    padding: 0 30px;
     flex: 1;
     justify-content: space-between;
   }
 
   .navigation {
-    display: none;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
   }
 
   .menu-container {
     display: flex;
     gap: 10px;
     align-items: center;
-    flex: 1;
-    justify-content: flex-end;
-    margin: 0;
-    padding: 0;
+    margin-left: auto;
   }
   .service-link{
-    padding: 0 10px;
+    margin-left: 3px;
   }
 
-  .signin-link{
+  .contact-box{
     white-space: nowrap;
   }
 
-  .burger-menu {
+  .burger-menu-btn{
     display: block;
   }
 }
