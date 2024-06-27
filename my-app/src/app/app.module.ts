@@ -33,6 +33,7 @@ import { AboutComponent } from './about/about.component';
 import { HomefooterComponent } from './homefooter/homefooter.component';
 import { LoaderComponent } from './loader/loader.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 
 
@@ -56,6 +57,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     DrugCarouselComponentComponent,
     HowmedrxworksComponent,
     LandingPageComponent,
+    FeedbackComponent,
 
 
     SearchResultsPageComponent,
