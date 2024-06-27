@@ -13,6 +13,7 @@ import { SearchResultsPageComponent } from './search-results-page/search-results
 import { SigninComponent } from './signin/signin.component';
 import { AboutComponent } from './about/about.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { FeedbackComponent } from './feedback/feedback.component';
 
 const routes: Routes = [
 //   {path:'results',
@@ -34,7 +35,8 @@ const routes: Routes = [
   {path: 'results', component: SearchResultsPageComponent},
   {path: 'signin', component: SigninComponent},
   { path: 'loader', component: LoaderComponent },
-  {path: 'landing-page', component: LandingPageComponent},
+  { path: 'landing-page', component: LandingPageComponent },
+  {path: 'feedback', component: FeedbackComponent},
   {path: '**', redirectTo: 'home'}
 
 
