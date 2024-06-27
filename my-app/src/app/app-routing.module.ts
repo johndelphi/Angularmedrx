@@ -37,7 +37,7 @@ const routes: Routes = [
   { path: 'loader', component: LoaderComponent },
   { path: 'landing-page', component: LandingPageComponent },
   {path: 'feedback', component: FeedbackComponent},
-  {path: '**', redirectTo: 'home'}
+  {path: '**', redirectTo: 'landing-page'}
 
 
 ];
