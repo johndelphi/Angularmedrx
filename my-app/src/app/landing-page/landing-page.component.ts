@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
 export class LandingPageComponent {
   landingpage = [
     {
-      title: 'Empowering Pharmacies through Mobile Solutions In Africa',
+      title: 'Empowering Pharmacies through Mobile Solutions in Africa',
       image: 'assets/Images/pic4.jpg',
       description: 'Download Our App',
     },
@@ -19,7 +19,7 @@ export class LandingPageComponent {
       google: 'assets/Images/googleplay1.png',
       apple: 'assets/Images/appstore21.png',
     },
-  ]
+  ];
 
   constructor() {}
 

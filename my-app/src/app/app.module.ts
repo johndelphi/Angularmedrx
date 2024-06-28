@@ -34,6 +34,7 @@ import { HomefooterComponent } from './homefooter/homefooter.component';
 import { LoaderComponent } from './loader/loader.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -58,6 +59,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
     HowmedrxworksComponent,
     LandingPageComponent,
     FeedbackComponent,
+    ContactComponent,
 
 
     SearchResultsPageComponent,
