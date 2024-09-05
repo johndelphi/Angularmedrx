@@ -6,22 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./landing-page.component.css']
 })
 export class LandingPageComponent {
-  landingpage = [
-    {
-      title: 'Empowering Pharmacies through Mobile Solutions in Africa',
-      image: 'assets/Images/pic4.jpg',
-      description: 'Download Our App',
-    },
-  ];
 
-  download = [
-    {
-      google: 'assets/Images/googleplay1.png',
-      apple: 'assets/Images/appstore21.png',
-    },
-  ];
-
-  constructor() {}
-
-  ngOnInit(): void {}
 }
