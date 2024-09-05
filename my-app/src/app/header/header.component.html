@@ -1,41 +1,17 @@
 <nav>
-  <h1>MedFastGo</h1>
-  <ul class="navigation">
-    <!-- <li><a href="#">Download App</a></li> -->
-    <li><a class="contact-box" routerLink="/contact" routerLinkActive="active">Contact Us</a></li>
-    <li><a class="service-link" routerLink="/services" routerLinkActive="active">Services</a></li>
-
-    <!-- <div class="dropdown" (mousedown)="handleDropdownClick($event)">
-      <li><a class="signin-link" (click)="navigateToSignIn($event)">Sign In</a>
-        <div class="dropdown-content" [ngClass]="{'show': isContentOpen }">
-          <app-signin
-            *ngIf="isContentOpen" (mousedown)="handleSigninMousedown($event)"
-          ></app-signin>
-        </div>
-      </li>
-    </div> -->
-
-
-    <div class="menu-container">
-      <mat-toolbar>
-        <button mat-icon-button (click)="toggleSideNav()" class="burger-menu-btn">
-          <mat-icon>menu</mat-icon>
-        </button>
-      </mat-toolbar>
-      <div class="dropdown-menu" [ngClass]="{ 'show': isMenuOpen }">
-        <h1>MedFastGo</h1>
-        <!-- <li ><a routerLink="/home" routerLinkActive="active" (click)="closeDropdownMenu()">Home</a></li> -->
-        <li><a routerLink="/landing-page" routerLinkActive="active" (click)="closeDropdownMenu()">Home</a></li>
-        <li><a  routerLink="/contact" routerLinkActive="active" (click)="closeDropdownMenu()">Contact Us</a></li>
-        <!-- <li><a  routerLink="/about" routerLinkActive="active" (click)="closeDropdownMenu()">About</a></li> -->
-        <!-- <li ><a routerLink="/features" routerLinkActive="active" (click)="closeDropdownMenu()">Features</a></li> -->
-        <!-- <li><a  routerLink="/pharmacy-registration" routerLinkActive="active" (click)="closeDropdownMenu()">Pharmacy Registration</a></li> -->
-      </div>
+  <div class="nav-container">
+    <div class="name">
+      <img src="assets/Images/medfastlogowhite1 1.png" alt="Logo" class="overlay-image">
+      <h1>MEDFASTGO</h1>
     </div>
+    <div class="tilted-rectangle"></div>
+  </div>
+
+  <ul class="navigation">
+    <li><a class="contact-box" routerLink="/features" routerLinkActive="active">Features</a></li>
+    <li><a class="contact-box" routerLink="/why-us" routerLinkActive="active">Why Us</a></li>
+    <li><a class="contact-box" routerLink="/who-we-are" routerLinkActive="active">Who we are</a></li>
+    <li><a class="contact-box" routerLink="download-app" routerLinkActive="active">Download App</a></li>
+    <li><a class="contact-box" routerLink="/contact" routerLinkActive="active">Contact Us</a></li>
   </ul>
-
 </nav>
-
-
-
-

@@ -1,18 +1,24 @@
-<div class="landingpage-container">
-  <div class="landingpage" *ngFor="let landingpage of landingpage">
-    <img [src]="landingpage.image" alt="{{landingpage.title}}" class="background-image">
-    <div class="overlay">
-      <h3>{{landingpage.title}}</h3>
-      <p>{{landingpage.description}}</p>
-      <div class="download-buttons">
-        <a href="https://play.google.com/store" target="_blank">
-          <img [src]="download[0].google" alt="Download on Google Play" class="store-image">
-        </a>
-        <a href="https://www.apple.com/app-store/" target="_blank">
-          <img [src]="download[0].apple" alt="Download on App Store" class="store-image">
-        </a>
-      </div>
+<nav>
+  <div class="hero-section">
+    <div class="welcome">
+      <h1>Welcome to MedFastGo</h1>
+      <h2>
+        Our open, positive and proactive approach helps us to find ways to align
+        your pharmacy working environment with the growing and diverse
+        technological approach.
+      </h2>
+    </div>
+    <div class="tilted-rectangle"></div>
+  </div>
+
+  <div class="landingpage">
+    <div class="shape">
+      <div class="five-sided-shape"></div>
+      <img
+        src="assets\Images\landingimage.png"
+        alt="Overlay Image"
+        class="overlay-image"
+      />
     </div>
   </div>
-</div>
-<app-services></app-services>
+</nav>
