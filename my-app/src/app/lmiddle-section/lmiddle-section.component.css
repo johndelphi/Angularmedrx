@@ -1,0 +1,177 @@
+/* middle section */
+nav{
+  display: flex;
+}
+
+.Middle-section {
+  margin-top: -1200px;
+}
+
+.Expertise {
+  position: absolute;
+  width: 310px;
+  height: 134.83px;
+  left: 89px;
+  margin-top: -360px;
+}
+
+/* Rectangle 1 */
+.rectangle1 {
+  position: absolute;
+  width: 220px;
+  height: 90px;
+  left: 89px;
+  top: 905px;
+  background: #1BC768;
+  border-radius: 20px;
+}
+
+/* Professional Expertise */
+.professional-expertise {
+  position: absolute;
+  width: 191px;
+  height: 29px;
+  left: 107px;
+  margin-top: 950px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 29px;
+  color: #FFFFFE;
+}
+
+/* icon */
+.Expertise i {
+  position: absolute;
+  left: 103px;
+  top: 920px;
+  border-radius: 30px;
+}
+
+.services {
+  position: absolute;
+  width: 310px;
+  height: 134.83px;
+  left: 300px;
+  margin-top: -360px;
+}
+
+.rectangle2 {
+  position: absolute;
+  width: 220px;
+  height: 90px;
+  left: 310px;
+  top: 905px;
+  background: #1BC768;
+  border-radius: 20px;
+}
+
+/* Reliable-services */
+.Reliable-services {
+  position: absolute;
+  width: 191px;
+  height: 29px;
+  left: 330px;
+  margin-top: 950px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 29px;
+  color: #FFFFFE;
+}
+
+/* icon */
+.services i {
+  position: absolute;
+  left: 330px;
+  top: 920px;
+  border-radius: 30px;
+}
+
+.efficiency {
+  position: absolute;
+  width: 310px;
+  height: 134.83px;
+  right: 60px;
+  margin-top: -360px;
+  z-index: 2;
+}
+
+.rectangle3 {
+  position: absolute;
+  width: 220px;
+  height: 90px;
+  right: 60px;
+  top: 905px;
+  background: #1BC768;
+  border-radius: 20px;
+}
+
+/* Opperational-efficiency */
+.Opperational-efficiency {
+  position: absolute;
+  width: 200px;
+  height: 29px;
+  left: 40px;
+  margin-top: 950px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 550;
+  font-size: 19px;
+  line-height: 29px;
+  color: #FFFFFE;
+}
+
+/* icon */
+.efficiency i {
+  position: absolute;
+  left: 40px;
+  top: 920px;
+  border-radius: 30px;
+}
+
+/* triangle section */
+.triangle1 {
+  position: absolute;
+  top: 810px;
+  left: 120px;
+
+}
+
+/* Five-Sided Shape */
+.triangle1 .five-sided-shape {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(560deg, rgba(27, 198, 104, 0.7) 0%, rgba(242, 247, 255, 0.7) 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 38%, 38% 100%, 0% 100%);
+  border-radius: 40px;
+  transform: rotate(135deg);
+  top: 0;
+  right: -30px;
+}
+
+/* triangle section */
+.triangle2 {
+  position: absolute;
+  top: 600px;
+  right: 0;
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+}
+
+/* Five-Sided Shape */
+.triangle2 .five-sided-shape {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(380deg, rgba(27, 198, 104, 0.7) 0%, rgba(242, 247, 255, 0.7) 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 98%, 98% 100%, 0% 100%);
+  border-radius: 40px 40px 0 40px;
+  transform: rotate(-45deg);
+  top: 60px;
+  right: -110px;
+}
