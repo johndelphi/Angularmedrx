@@ -36,6 +36,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { ContactComponent } from './contact/contact.component';
 import { LmiddleSectionComponent } from './lmiddle-section/lmiddle-section.component';
+import { LandingiconsComponent } from './landingicons/landingicons.component';
 
 
 
@@ -68,6 +69,7 @@ import { LmiddleSectionComponent } from './lmiddle-section/lmiddle-section.compo
       HomefooterComponent,
     LoaderComponent,
     LmiddleSectionComponent,
+    LandingiconsComponent,
 
 
 
