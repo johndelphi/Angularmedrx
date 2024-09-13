@@ -11,7 +11,7 @@ nav{
   position: absolute;
   width: 310px;
   height: 134.83px;
-  left: 89px;
+  left: 39px;
   margin-top: -360px;
 }
 
@@ -53,7 +53,7 @@ nav{
   position: absolute;
   width: 310px;
   height: 134.83px;
-  left: 300px;
+  left: 270px;
   margin-top: -360px;
 }
 
@@ -135,7 +135,7 @@ nav{
 /* triangle section */
 .triangle1 {
   position: absolute;
-  top: 810px;
+  top: 860px;
   left: 120px;
 
 }
@@ -174,4 +174,160 @@ nav{
   transform: rotate(-45deg);
   top: 60px;
   right: -110px;
+}
+
+.medfastgo{
+  margin-top: -25px;
+  margin-left: 175px;
+}
+
+.med {
+  position: absolute;
+  width: 210px;
+  height: 100px;
+  left: 350px;
+  margin-top: -380px;
+}
+
+.rectangle4 {
+  position: absolute;
+  width: 180px;
+  height: 40px;
+  margin-left: 250px;
+  margin-top: -80px;
+  background: #F1F6FF;
+  border-radius: 10px;
+}
+
+.medfast {
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  margin-left: 265px;
+  margin-top: -73px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 29px;
+  color: green;
+}
+
+.pharmacy-management {
+  position: absolute;
+  width: 410px;
+  height: 100px;
+  left: 300px;
+  margin-top: -280px;
+}
+
+.pharmacy-management h1 {
+  position: absolute;
+  width: 330px;
+  height: 40px;
+  margin-left: 235px;
+  margin-top: -123px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 29px;
+}
+
+.pharmacy-management h2 {
+  position: absolute;
+  width: 530px;
+  height: 40px;
+  margin-left: 175px;
+  margin-top: -73px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.fef {
+  position: absolute;
+  display: flex;
+  width: 410px;
+  height: 100px;
+  left: 430px;
+  margin-top: -250px;
+}
+
+.fast-to-deploy {
+  position: absolute;
+  display: flex;
+  width: 300px;
+  height: 100px;
+}
+
+.rectangle5 {
+  width: 45px;
+  height: 45px;
+  background: #F1F6FF;
+  border-radius: 10px;
+}
+
+.fast-to-deploy i {
+  color: green;
+  margin-top: 15px;
+  margin-left: -33px;
+}
+
+.fast {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.easy-to-learn {
+  position: absolute;
+  display: flex;
+  width: 300px;
+  height: 100px;
+  margin-left: 270px;
+}
+
+.rectangle6 {
+  width: 45px;
+  height: 45px;
+  background: #F1F6FF;
+  border-radius: 10px;
+}
+
+.easy-to-learn i {
+  color: green;
+  margin-top: 15px;
+  margin-left: -32px;
+}
+
+.easy {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+.future-rich {
+  position: absolute;
+  display: flex;
+  width: 300px;
+  height: 100px;
+  margin-left: 510px;
+}
+
+.rectangle7 {
+  width: 45px;
+  height: 45px;
+  background: #F1F6FF;
+  border-radius: 10px;
+}
+
+.future-rich i {
+  color: green;
+  margin-top: 15px;
+  margin-left: -32px;
+}
+
+.future {
+  margin-top: 10px;
+  margin-left: 30px;
 }
