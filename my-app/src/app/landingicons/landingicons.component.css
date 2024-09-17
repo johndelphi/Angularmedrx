@@ -1,5 +1,4 @@
-/* Decor05 */
-.decor05 {
+.graph {
   position: absolute;
   width: 105px;
   height: 81px;
@@ -7,7 +6,6 @@
   right: 320px;
 }
 
-/* Rectangle 88 */
 .rectangle88 {
   position: absolute;
   width: 74px;
@@ -20,97 +18,28 @@
 }
 
 /* Group 7 */
-.group7 {
-  position: absolute;
-  width: 31.5px;
-  height: 42.07px;
-  left: 20.5px;
-  top: 27.54px;
+.graphi {
+  position: relative;
+  width: 100%;
+  height: auto;
+  left: 15.5px;
+  top: 32.54px;
 }
 
-/* Group 6 */
-.group6 {
+.gra i {
   position: absolute;
-  width: 30.17px;
-  height: 26.62px;
-  left: 21.83px;
-  top: 43px;
+  font-size: 25px;
+  left: 7px;
+  top: 14px;
 }
 
-/* Rectangle 89 */
-.rectangle89 {
+.arrow i {
   position: absolute;
-  width: 6.21px;
-  height: 12.42px;
-  left: 0px;
-  top: 14.2px;
-  background: #364050;
-  border-radius: 1.77465px;
-}
-
-/* Rectangle 90 */
-.rectangle90 {
-  position: absolute;
-  width: 6.21px;
-  height: 16.86px;
-  left: 8px;
-  top: 9.76px;
-  background: #364050;
-  border-radius: 1.77465px;
-}
-
-/* Rectangle 91 */
-.rectangle91 {
-  position: absolute;
-  width: 6.21px;
-  height: 22.18px;
-  left: 16px;
-  top: 4.44px;
-  background: #364050;
-  border-radius: 1.77465px;
-}
-
-/* Rectangle 92 */
-.rectangle92 {
-  position: absolute;
-  width: 6.21px;
-  height: 26.62px;
-  left: 24px;
-  top: 0px;
-  background: #364050;
-  border-radius: 1.77465px;
-}
-
-/* Group */
-.group {
-  position: absolute;
-  left: 34.83%;
-  right: 43.15%;
-  top: 25.94%;
-  bottom: 61.37%;
-  transform: rotate(2.69deg);
-}
-
-/* Vector 1: Arrowhead */
-.vector1 {
-  position: absolute;
-  left: 4px;
-  top: 2px;
-  width: 15px;
-  height: 15px;
-  fill: #364050;
-  transform: rotate(45.69deg);
-}
-
-/* Vector 2: Curved Line */
-.vector2 {
-  position: absolute;
-  left: -20px;
-  top: 6px;
-  width: 32px;
+  left: 7px;
+  font-size: 25px;
   height: 32px;
   stroke: #364050;
-  transform: rotate(8.97deg);
+  transform: rotate(-45.97deg);
 }
 
 /* Frame 870 */
@@ -167,12 +96,9 @@
   left: 12px;
   top: 12px;
   background-color: transparent;
-  /* Transparent center */
   border-radius: 50%;
   border: 5px solid #1AC44A;
-  /* Green border */
   border-top-color: transparent;
-  /* Open top area */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -197,12 +123,9 @@
   font-family: 'Plus Jakarta Sans';
   font-style: normal;
   font-weight: 500;
-  font-size: 9px;
+  font-size: 10px;
   line-height: 17px;
   color: #121D2F;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 /* Decor02 */
@@ -242,14 +165,6 @@
   border-radius: 50%;
 }
 
-.wave1 {
-  width: 32px;
-  height: 32px;
-  top: -25px;
-  left: 10px;
-  opacity: 0.8;
-}
-
 .wave2 {
   width: 42px;
   height: 42px;
@@ -269,7 +184,6 @@
 /* Frame 870 */
 .frame880 {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 12px;
@@ -299,7 +213,6 @@
 /* Decor03 */
 .decor03 {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   padding: 24px;
   gap: 25px;
@@ -344,30 +257,23 @@
   position: relative;
 }
 
-.rectangle94 {
-  position: absolute;
-  width: 50px;
-  height: 4px;
-  left: 0px;
-  background: #EFF1F4;
-  border-radius: 27px;
-}
-
 .rectangle95 {
   position: absolute;
-  width: 33px;
-  height: 4px;
+  width: 50px;
+  height: 5px;
   left: 0px;
-  background: #1AC44A;
+  background: linear-gradient(to right, #1AC44A 60%, transparent 40%);
+  border: 1px solid grey;
   border-radius: 27px;
 }
 
 .rectangle96 {
   position: absolute;
-  width: 33px;
-  height: 4px;
+  width: 50px;
+  height: 5px;
   left: 0px;
-  background: linear-gradient(249.46deg, #2878FF 1.31%, #2C65C8 100%);
+  border: 1px solid grey;
+  background: linear-gradient(to right, #2C65C8 60%, transparent 40%);
   border-radius: 27px;
 }
 
