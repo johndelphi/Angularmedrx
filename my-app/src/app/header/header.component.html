@@ -2,16 +2,24 @@
   <div class="nav-container">
     <div class="name">
       <img src="assets/Images/medfastlogowhite1 1.png" alt="Logo" class="overlay-image">
-      <h1>MEDFASTGO</h1>
+      <span><a class="contact-box" routerLink="/landing-page" routerLinkActive="active"(click)="closeMenu()">MEDFASTGO</a></span>
     </div>
-    <div class="tilted-rectangle"></div>
+
+    <!-- Burger menu for small screens -->
+    <div class="burger-menu" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
   </div>
 
-  <ul class="navigation">
-    <li><a class="contact-box" routerLink="/features" routerLinkActive="active">Features</a></li>
-    <li><a class="contact-box" routerLink="/why-us" routerLinkActive="active">Why Us</a></li>
-    <li><a class="contact-box" routerLink="/who-we-are" routerLinkActive="active">Who we are</a></li>
-    <li><a class="contact-box" routerLink="download-app" routerLinkActive="active">Download App</a></li>
-    <li><a class="contact-box" routerLink="/contact" routerLinkActive="active">Contact Us</a></li>
+  <ul class="navigation" [class.active]="menuOpen">
+    <li><a class="contact-box" routerLink="/features" routerLinkActive="active" (click)="closeMenu()">Features</a></li>
+    <li><a class="contact-box" routerLink="/why-us" routerLinkActive="active" (click)="closeMenu()">Why Us</a></li>
+    <li><a class="contact-box" routerLink="/who-we-are" routerLinkActive="active" (click)="closeMenu()">Who we are</a>
+    </li>
+    <li><a class="contact-box" routerLink="download-app" routerLinkActive="active" (click)="closeMenu()">Download
+        App</a></li>
+    <li><a class="contact-box" routerLink="/contact" routerLinkActive="active" (click)="closeMenu()">Contact Us</a></li>
   </ul>
 </nav>
