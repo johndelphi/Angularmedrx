@@ -14,6 +14,7 @@ import { SigninComponent } from './signin/signin.component';
 import { AboutComponent } from './about/about.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { FeedbackComponent } from './feedback/feedback.component';
+import { DownloadappComponent } from './downloadapp/downloadapp.component';
 
 const routes: Routes = [
 //   {path:'results',
@@ -37,6 +38,7 @@ const routes: Routes = [
   { path: 'loader', component: LoaderComponent },
   { path: 'landing-page', component: LandingPageComponent },
   {path: 'feedback', component: FeedbackComponent},
+  {path:'downloadapp', component: DownloadappComponent}, 
   {path: '**', redirectTo: 'landing-page'}
 
 
