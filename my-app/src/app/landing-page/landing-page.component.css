@@ -3,6 +3,18 @@ nav{
   margin-bottom: 750px;
 }
 
+.tilted-rectangle1 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, rgba(27, 198, 104, 0.5) 0%, rgba(242, 247, 255, 0.5) 100%);
+  border-radius: 50px;
+  transform: rotate(15deg);
+  position: absolute;
+  top: -130px;
+  left: -70px;
+  z-index: 2;
+}
+
 .hero-section{
   margin-top: 140px;
 }
