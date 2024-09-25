@@ -1,4 +1,3 @@
-
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -37,6 +36,7 @@ import { FeedbackComponent } from './feedback/feedback.component';
 import { ContactComponent } from './contact/contact.component';
 import { LmiddleSectionComponent } from './lmiddle-section/lmiddle-section.component';
 import { LandingiconsComponent } from './landingicons/landingicons.component';
+import { LastlandingComponent } from './lastlanding/lastlanding.component';
 
 
 
@@ -70,6 +70,7 @@ import { LandingiconsComponent } from './landingicons/landingicons.component';
     LoaderComponent,
     LmiddleSectionComponent,
     LandingiconsComponent,
+    LastlandingComponent,
 
 
 
