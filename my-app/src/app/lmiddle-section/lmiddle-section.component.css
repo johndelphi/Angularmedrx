@@ -1,10 +1,11 @@
 /* middle section */
 nav{
   display: flex;
+  margin-top: 780px;
 }
 
 .Middle-section {
-  margin-top: -1200px;
+  margin-top: -1400px;
 }
 
 .Expertise {
@@ -177,8 +178,8 @@ nav{
 }
 
 .medfastgo{
-  margin-top: -25px;
-  margin-left: 175px;
+  margin-top: -250px;
+  margin-left: 155px;
 }
 
 .med {
@@ -251,11 +252,11 @@ nav{
   display: flex;
   width: 410px;
   height: 100px;
-  left: 430px;
+  left: 420px;
   margin-top: -250px;
 }
 
-.fast-to-deploy {
+.fast-to-manage {
   position: absolute;
   display: flex;
   width: 300px;
@@ -269,7 +270,7 @@ nav{
   border-radius: 10px;
 }
 
-.fast-to-deploy i {
+.fast-to-manage i {
   color: green;
   margin-top: 15px;
   margin-left: -33px;
