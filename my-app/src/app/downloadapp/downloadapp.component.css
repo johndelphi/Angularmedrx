@@ -68,14 +68,15 @@
 }
 
 .download-image {
-  width: 100px; /* Set a fixed width for the images */
+  width: 80px; /* Set a fixed width for the images */
   height: auto;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the images */
-  transition: transform 0.3s ease; /* Add transition for hover effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add transition for hover effect */
 }
 
 .download-image:hover {
   transform: scale(1.1); /* Scale up the image on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
 
 .phone-image {
@@ -120,7 +121,7 @@
   }
 
   .download-image {
-    width: 80px; /* Adjust size for smaller screens */
+    width: 60px; /* Adjust size for smaller screens */
   }
 
   .phone-image {
@@ -132,22 +133,4 @@
   .phone-image img {
     height: 300px; /* Adjust size for smaller screens */
   }
-}/* lastlanding.component.css */
-
-
-.gra i {
-  position: absolute;
-  font-size: 25px;
-  left: 7px;
-  top: 14px;
-  color: #364050; /* Added color for consistency */
-}
-
-.arrow i {
-  position: absolute;
-  left: 7px;
-  font-size: 25px;
-  height: 32px;
-  color: #364050; /* Changed stroke to color for consistency */
-  transform: rotate(-45.97deg);
 }
