@@ -216,3 +216,35 @@ nav{
   font-size: 20px;
   line-height: 29px;
 }
+/* For larger screens (desktop and beyond) */
+@media screen and (min-width: 1400px) {
+  nav {
+    margin-top: -290px;
+  }
+  .graph {
+    left: 230px;
+  }
+  .triangle1 {
+    margin-left: 370px;
+
+  }
+  .decor01 {
+    left: 250px;
+  }
+  .pharmacy-management {
+    left: 550px;
+  }
+  .pharmacy-management h1 {
+    width: 900px;
+    font-size: 55px;
+  }
+  .pharmacy-management h2 {
+    width: 750px;
+    font-size: 30px;
+  }
+  /* triangle section */
+  .triangle2 {
+    margin-top: -480px;
+    right: 330px;
+  }
+}

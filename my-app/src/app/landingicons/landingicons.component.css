@@ -169,7 +169,7 @@
 
 /* Media Queries */
 @media (max-width: 768px) {
-  .graph { position: relative; top: -270px; right: -205px; }
+  .graph { position: relative; top: -270px; right: -195px; }
   .rectangle88 { width: 40px; height: 40px; border-radius: 12px; }
   .graphi { top: 18px; left: 9px; }
   .arrow i { font-size: 15px; margin-top: 2px; }
