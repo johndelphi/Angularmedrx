@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./downloadapp.component.css']
 })
 export class DownloadappComponent {
+downloadApp() {
+throw new Error('Method not implemented.');
+}
 
 }

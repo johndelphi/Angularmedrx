@@ -1,19 +1,97 @@
-<!-- downloadapp.component.html -->
-<div class="container">
-  <div class="rectangle-tile">
-    <div class="tile-content">
-      <h2>Get MEDFASTGO App Now</h2>
-      <p>Download the MedFastGo app to manage, track, and access your pharmacy anytime, anywhere.</p>
-      <button class="download-button">Download Now</button>
-      <div class="download-images">
-        <img src="assets/Images/ios.png" alt="Android Download" class="download-image">
-        <img src="assets/Images/android 1.png" alt="iPhone Download" class="download-image">
-        <img src="assets/Images/windows.png" alt="Windows Phone Download" class="download-image">
+
+
+<main>
+  <section id="download-app" class="hero">
+    <div class="hero-content">
+      <h1>Get MEDFASTGO App Now</h1>
+      <p>Download the MedFastGo app to Manage, track and access your Pharmacy anytime, anywhere.</p>
+      <button (click)="downloadApp()" class="download-btn">DOWNLOAD Now <span class="download-icon">↓</span></button>
+      <div class="app-stores">
+        <img src="assets/Images/ios.png" alt="App Store">
+        <img src="assets/Images/android 1.png" alt="Google Play">
+        <img src="assets/Images/windows.png" alt="Windows Store">
       </div>
     </div>
-    <div class="phone-image">
-      <img src="assets/Images/Frame 1038.png" alt="Phone Image">
+    <div class="hero-image">
+      <img src="assets/Images/Frame 1038.png" alt="MEDFASTGO App">
+    </div>
+  </section>
+
+  <section id="why-us" class="why-choose">
+    <h2>Why Choose MeFastGo?</h2>
+    <p class="subtitle">Experience Quick and Reliable Pharmacy Management at your Fingertips.</p>
+    <div class="features">
+      <div class="feature">
+        <i class="feature-icon connect"></i>
+        <p>Connect with your pharmacy</p>
+      </div>
+      <div class="feature">
+        <i class="feature-icon schedule"></i>
+        <p>Schedule appointments with ease</p>
+      </div>
+      <div class="feature">
+        <i class="feature-icon management"></i>
+        <p>Get professional pharmacy management</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="business-boost">
+    <div class="boost-content">
+      <div class="stats">
+        <div class="stat-item">
+          <span class="stat-value">+25%</span>
+          <img src="assets/Images/graph-icon.png" alt="Growth">
+        </div>
+      </div>
+      <h2>Let Plateform boost your business!</h2>
+      <p>Join 250+ pharmacies and clinics that are already using Plateform and growing their reach, revenue and sales.</p>
+      <div class="actions">
+        
+      </div>
+    </div>
+    <div class="boost-image">
+      <img src="assets/Images/plant-decoration.png" alt="Decoration">
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <img src="assets/Images/medfastgo-logo.png" alt="MEDFASTGO">
+    </div>
+    <div class="footer-links">
+      <div class="footer-section">
+        <h3>Features</h3>
+        <ul>
+          <li>Inventory Management</li>
+          <li>POS Management</li>
+          <li>Financial Management</li>
+          <li>Operational Management</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Why Us</h3>
+        <ul>
+          <li>Who we are</li>
+          <li>Download App</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Social Media</h3>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Youtube</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Contact</h3>
+        <p>123 Main Street, Cityville,</p>
+        <p>Stateville, ZIP Code</p>
+        
+      </div>
     </div>
   </div>
-</div>
-<app-homefooter></app-homefooter>
+</footer>
