@@ -157,7 +157,7 @@ nav{
 /* triangle section */
 .triangle2 {
   position: absolute;
-  top: 600px;
+  top: 750px;
   right: 0;
   width: 600px;
   height: 600px;
@@ -331,4 +331,106 @@ nav{
 .future {
   margin-top: 10px;
   margin-left: 30px;
+}
+
+  /* For larger screens (desktop and beyond) */
+ @media screen and (min-width: 1400px) {
+  .Middle-section {
+    margin-top: -1800px;
+  }
+  /* Reliable-services */
+  .services {
+    left: 570px;
+  }
+
+  .medfastgo {
+    position: relative;
+    margin-top: -620px;
+    left: 55px;
+  }
+
+  .med {
+    left: 400px;
+    margin-top: -400px;
+  }
+
+  .rectangle4 {
+    width: 220px;
+    height: 50px;
+    margin-left: 260px;
+  }
+
+  .medfast {
+    font-size: 18px;
+    margin-left: 285px;
+    top: 5px;
+  }
+
+  .pharmacy-management {
+    left: 350px;
+    margin-top: -300px;
+  }
+
+  .pharmacy-management h1 {
+    font-size: 35px;
+    margin-left: 240px;
+    margin-top: -115px;
+    white-space: nowrap;
+  }
+
+  .pharmacy-management h2 {
+    width: 810px;
+    font-size: 28px;
+    margin-left: 100px;
+    margin-top: -60px;
+  }
+
+  .fef {
+    left: 450px;
+  }
+
+  .fast-to-manage,
+  .easy-to-learn,
+  .future-rich {
+    width: 200px;
+  }
+
+  .rectangle5,
+  .rectangle6,
+  .rectangle7 {
+    width: 55px;
+    height: 55px;
+  }
+
+  .fast,
+  .easy,
+  .future {
+    white-space: nowrap;
+    font-size: 16px;
+  }
+
+  .fef i {
+  margin-left: -42px;
+  font-size: 30px;
+  }
+
+  .triangle1 {
+    top: 980px;
+  }
+
+  .triangle1 .five-sided-shape {
+    width: 320px;
+    height: 320px;
+    right: -70px;
+  }
+
+  .triangle2 {
+    top: 760px;
+  }
+
+  .triangle2 .five-sided-shape {
+    width: 360px;
+    height: 360px;
+    right: -150px;
+  }
 }

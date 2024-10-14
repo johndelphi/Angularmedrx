@@ -1,5 +1,6 @@
 nav{
   display: flex;
+  flex-direction: column;
   margin-bottom: 750px;
 }
 
@@ -25,7 +26,7 @@ nav{
   font-weight: 550;
   margin-bottom: 20px;
   position: absolute;
-  z-index: 5;
+  z-index: 9;
 }
 
 .hero-section h2 {
@@ -34,7 +35,7 @@ nav{
   margin-left: 40px;
   position: absolute;
   margin-top: 50px;
-  z-index: 5;
+  z-index: 9;
 }
 
 .hero-section .tilted-rectangle {
@@ -44,8 +45,8 @@ nav{
   border-radius: 30px;
   transform: rotate( -20deg);
   position: absolute;
-  top: 140px;
-  left: 190px;
+  top: 120px;
+  left: 150px;
   z-index: 0.5;
 }
 
@@ -54,6 +55,7 @@ nav{
   position: relative;
   width: 100%;
   height: 100vh;
+  top: -100px;
   right: 0;
   margin: 0 auto;
   overflow: hidden;
@@ -111,4 +113,146 @@ nav{
   right: -30px;
 }
 
+/* For smaller screens (mobile) */
+@media screen and (max-width: 568px) {
+  .hero-section {
+    margin-top: 80px;
+  }
 
+  .hero-section .welcome {
+    margin-top: -190px;
+    z-index: 10;
+  }
+
+  .hero-section h1 {
+    font-size: large;
+    font-weight: 550;
+    margin-left: 15px;
+    position: static;
+  }
+
+  .hero-section h2 {
+    font-size: 12px;
+    width: 180px;
+    margin-left: 15px;
+    margin-top: -10px;
+    position: static;
+  }
+
+  .tilted-rectangle1 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    transform: rotate(15deg);
+    top: -200px;
+    left: -150px;
+  }
+
+  .hero-section .tilted-rectangle {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin: 20px auto;
+    transform: rotate(-20deg);
+    top: -220px;
+    left: -70px;
+  }
+
+  .landingpage {
+    width: 100%;
+    height: 100vh;
+    top: -345px;
+  }
+
+  .shape {
+    top: 100px;
+    position: relative;
+  }
+
+  .shape .five-sided-shape {
+    width: 230px;
+    height: 230px;
+    right: -30px;
+    margin: 0 auto;
+    transform: rotate(45deg);
+    border-radius: 30px 0 0 30px;
+  }
+
+  .shape .overlay-image {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    top: -90px;
+    right: -150px;
+    margin: 20px auto;
+    transform: none;
+  }
+
+  .triangle {
+    position: relative;
+    top: -1080px;
+    left: -110px;
+    margin: 0 auto;
+  }
+
+  .triangle .five-sided-shape {
+    width: 110px;
+    height: 110px;
+    transform: rotate(45deg);
+    margin: 20px auto;
+    border-radius: 20px;
+  }
+}
+
+/* For larger screens (desktop and beyond) */
+@media screen and (min-width: 1300px) {
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-left: 80px;
+  }
+
+  .hero-section h2 {
+    font-size: 1.5rem;
+    width: 700px;
+    margin-left: 60px;
+    margin-top: 70px;
+  }
+
+  .tilted-rectangle1 {
+    width: 400px;
+    height: 400px;
+    top: -150px;
+    left: -100px;
+  }
+
+  .hero-section .tilted-rectangle {
+    width: 200px;
+    height: 200px;
+    top: 150px;
+    left: 180px;
+  }
+
+  .shape .five-sided-shape {
+    width: 500px;
+    height: 480px;
+    right: -50px;
+  }
+
+  .shape .overlay-image {
+    width: 480px;
+    height: 480px;
+    top: 100px;
+    right: 100px;
+  }
+
+  .triangle {
+    top: 500px;
+    left: 450px;
+  }
+
+  .triangle .five-sided-shape {
+    width: 250px;
+    height: 250px;
+  }
+}
