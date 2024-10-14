@@ -1,146 +1,39 @@
-/* downloadapp.component.css */
-.container {
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically if needed */
-  height: 100vh; /* Full viewport height */
+nav{
+  margin-top: 20px;
 }
-
-.rectangle-tile {
-  width: 100%;
-  max-width: 1347px; /* Optional: max width for larger screens */
-  height: 60%; /* Set height from Figma */
-  flex-shrink: 0; /* Prevent shrinking */
-  background: linear-gradient(360deg, rgba(27, 198, 104, 0.5) 0%, rgba(242, 247, 255, 0.5) 100%); /* Gradient from faded green to white */
-  border-radius: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Align items to the top */
-  position: relative;
-  overflow: visible; /* Allow overflow to be visible */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px auto; /* Center the tile horizontally */
-  padding: 20px; /* Add padding */
-}
-
-.tile-content {
-  text-align: left; /* Align text to the left */
-  z-index: 1; /* Ensure content is below the image */
-  padding: 20px; /* Add padding for better spacing */
-  flex: 1; /* Allow content to grow */
-  align-self: flex-start; /* Align content to the top left */
-}
-
-.tile-content h2 {
-  font-size: 32px; /* Increase font size for the heading */
-  font-weight: bold; /* Make the heading bold */
-  color: black; /* Set a black color for the heading */
-  margin-bottom: 10px; /* Add space below the heading */
-}
-
-.tile-content p {
-  font-size: 18px; /* Increase font size for the paragraph */
-  color: #333; /* Set a dark color for the paragraph */
-  margin-bottom: 20px; /* Add space below the paragraph */
-}
-
-.download-button {
-  padding: 12px 24px; /* Increase padding for the button */
-  font-size: 18px; /* Increase font size for the button */
-  color: white;
-  background-color: #57cb57;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-bottom: 20px; /* Add margin below the button */
-  transition: background-color 0.3s ease; /* Add transition for hover effect */
-}
-
-.download-button:hover {
-  background-color: #45a045;
-}
-
-.download-images {
-  display: flex;
-  justify-content: flex-start; /* Align images to the left */
-  gap: 20px; /* Space between images */
-  margin-top: 20px; /* Add space above the images */
-}
-
-.download-image {
-  width: 100px; /* Set a fixed width for the images */
-  height: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to the images */
-  transition: transform 0.3s ease; /* Add transition for hover effect */
-}
-
-.download-image:hover {
-  transform: scale(1.1); /* Scale up the image on hover */
-}
-
-.phone-image {
+.graph {
   position: absolute;
-  top: 50%; /* Center vertically */
-  right: 40px; /* Slide left by reducing the right offset */
-  transform: translateY(-50%); /* Adjust position to center vertically */
-  z-index: 2; /* Ensure image is above the content */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for floating effect */
+  width: 105px;
+  height: 81px;
+  margin-top: -320px;
+  left: 150px;
 }
 
-.phone-image img {
-  height: 800px; /* Shrink the height */
-  width: auto;
-  border-radius: 20px; /* Make the image rounded */
+.rectangle88 {
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  left: 0px;
+  top: 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 9px rgba(38, 97, 197, 0.2);
+  border-radius: 24px;
 }
 
-/* Media query for small devices */
-@media (max-width: 768px) {
-  .rectangle-tile {
-    width: 100%;
-    height: auto;
-    padding: 20px;
-  }
-
-  .tile-content h2 {
-    font-size: 24px;
-  }
-
-  .tile-content p {
-    font-size: 16px;
-  }
-
-  .download-button {
-    padding: 10px 20px;
-    font-size: 16px;
-  }
-
-  .download-images {
-    flex-direction: column;
-    gap: 10px; /* Space between images */
-  }
-
-  .download-image {
-    width: 80px; /* Adjust size for smaller screens */
-  }
-
-  .phone-image {
-    top: 50%; /* Adjust as needed for smaller screens */
-    right: -10px; /* Adjust as needed for smaller screens */
-    transform: translateY(-50%);
-  }
-
-  .phone-image img {
-    height: 300px; /* Adjust size for smaller screens */
-  }
-}/* lastlanding.component.css */
-
+/* Group 7 */
+.graphi {
+  position: relative;
+  width: 100%;
+  height: auto;
+  left: 15.5px;
+  top: 32.54px;
+}
 
 .gra i {
   position: absolute;
   font-size: 25px;
   left: 7px;
   top: 14px;
-  color: #364050; /* Added color for consistency */
 }
 
 .arrow i {
@@ -148,7 +41,7 @@
   left: 7px;
   font-size: 25px;
   height: 32px;
-  color: #364050; /* Changed stroke to color for consistency */
+  stroke: #364050;
   transform: rotate(-45.97deg);
 }
 
