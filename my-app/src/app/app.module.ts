@@ -37,6 +37,7 @@ import { ContactComponent } from './contact/contact.component';
 import { LmiddleSectionComponent } from './lmiddle-section/lmiddle-section.component';
 import { LandingiconsComponent } from './landingicons/landingicons.component';
 import { LastlandingComponent } from './lastlanding/lastlanding.component';
+import { DownloadComponent } from './download/download.component';
 
 
 
@@ -62,6 +63,7 @@ import { LastlandingComponent } from './lastlanding/lastlanding.component';
     LandingPageComponent,
     FeedbackComponent,
     ContactComponent,
+    DownloadComponent,
 
 
     SearchResultsPageComponent,
@@ -71,6 +73,7 @@ import { LastlandingComponent } from './lastlanding/lastlanding.component';
     LmiddleSectionComponent,
     LandingiconsComponent,
     LastlandingComponent,
+    DownloadComponent,
 
 
 

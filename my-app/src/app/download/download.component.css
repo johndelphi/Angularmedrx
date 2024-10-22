@@ -1,0 +1,359 @@
+/* Container */
+.container {
+  max-width: 1200px;
+  
+  margin: 0 auto;
+  padding: 0 20px;
+  height: 550px;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(180deg, #f0fdf4 0%, #22c55e 100%);
+  padding:90px 20px;
+  position: relative;
+  overflow: visible; /* Allow overflow for the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* margin: 20px auto; */
+  margin: 40px 50px 20px auto;
+  max-width: 90%;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  position: relative;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  align-items: left;
+}
+
+/* Hero Section Text */
+.hero-text h1 {
+ text-align: right;
+  font-size: 2rem; /* Large font size */
+  font-weight: bold;
+  text-align: center;
+  color: #000000; /* Black text */
+  margin-bottom: 20px; /* Space between heading and subheading */
+  font-family: 'Arial', sans-serif; /* Use a clean sans-serif font */
+}
+
+.hero-text p {
+  font-size: 1.2rem; /* Slightly smaller for subtext */
+  color: #666666; /* Lighter gray for subtext */
+  text-align: center;
+  max-width: 600px; /* Limit the width for readability */
+  margin: 0 auto; /* Center the text block */
+  font-family: 'Arial', sans-serif;
+}
+
+
+/* Hero Image */
+.hero-image {
+  position: absolute; /* Position it outside the normal flow */
+  top: 10px;
+  right: -25%; /* Move it outside the container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1; /* Behind the text */
+  width: 60%;
+  overflow: visible;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 60%; /* Adjust size as needed */
+  height: 60%; /* Maintain the aspect ratio */
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.12));
+  object-fit: cover; /* Ensure the image fills the space without rounding */
+  border-radius: 0; /* Ensure no rounding */
+  animation: floating 3s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes floating {
+  0%, 100% {
+    transform: scale(0.9) translateY(0px);
+  }
+  50% {
+    transform: scale(0.9) translateY(-10px);
+  }
+}
+
+/* Subtle glow */
+.hero-image::after {
+  content: '';
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(ellipse at center, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0) 70%);
+  transform: translateX(-50%);
+  border-radius: 50%;
+  animation: shadowPulse 3s ease-in-out infinite;
+}
+
+@keyframes shadowPulse {
+  0% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: translateX(-50%) scale(0.9);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 0.3;
+  }
+}
+
+/* Download Button */
+.download-btn {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 16px 32px;
+  border-radius: 9999px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  background-color: #444;
+}
+
+/* Store Icons */
+.store-icons {
+  display: flex;
+  gap: 16px;
+  margin-top: 32px;
+}
+
+.store-icons img {
+  height: 40px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.store-icons img:hover {
+  transform: scale(1.1);
+}
+
+/* Why Choose Section */
+.why-choose {
+  padding: 80px 0;
+  background: white;
+  text-align: center;
+}
+
+.why-choose h2 {
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+}
+
+.why-choose h3 {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 64px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.feature-card {
+  padding: 32px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+}
+
+.feature-card h4 {
+  font-size: 1.25rem;
+  color: #333;
+}
+
+/* Platform Stats Section */
+.platform-stats {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+.stats-content {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 48px;
+  align-items: center;
+}
+
+.stats-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+}
+
+.stats-text p {
+  font-size: 1.25rem;
+  color: #444;
+  margin-bottom: 32px;
+  max-width: 600px;
+}
+
+.stats-card {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 32px;
+  width: fit-content;
+}
+
+.stat-value {
+  color: #22c55e;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 16px;
+}
+
+.signup-btn {
+  background: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.signup-btn:hover {
+  background: #1d4ed8;
+}
+
+.watch-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: none;
+  border: none;
+  color: #2563eb;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.watch-btn:hover {
+  color: #1d4ed8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-content,
+  .stats-content {
+    grid-template-columns: 1fr;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+
+  .hero-text {
+    text-align: center;
+  }
+
+  .store-icons {
+    justify-content: center;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stats-text {
+    text-align: center;
+  }
+
+  .stats-card {
+    margin: 0 auto 32px;
+  }
+
+  .hero-image {
+    margin-top: 20px;
+    min-height: 350px;
+  }
+
+  .hero-image img {
+    height: 350px;
+  }
+
+  .hero-image::after {
+    bottom: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image {
+    min-height: 300px;
+  }
+
+  .hero-image img {
+    height: 300px;
+  }
+
+  .hero-image::after {
+    width: 150px;
+    bottom: 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero-image img {
+    height: 250px;
+  }
+
+  .hero-text {
+    padding: 16px;
+  }
+}
