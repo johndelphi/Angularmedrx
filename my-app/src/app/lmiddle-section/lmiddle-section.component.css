@@ -323,7 +323,7 @@ nav {
     top: 0;
     left: -150px;
   }
-  
+
   .triangle2 {
     top: 410px;
     overflow: hidden;
@@ -424,6 +424,10 @@ nav {
 
   .professional-expertise, .Opperational-efficiency, .Reliable-services {
     width: auto;
+    white-space: nowrap;
+  }
+
+  .pharmacy-management h1 {
     white-space: nowrap;
   }
 
