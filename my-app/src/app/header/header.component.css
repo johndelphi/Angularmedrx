@@ -4,6 +4,7 @@ nav {
   align-items: center;
   padding: 15px;
   position: relative;
+  z-index: 6;
 }
 
 .nav-container {
