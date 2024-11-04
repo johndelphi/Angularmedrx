@@ -12,114 +12,157 @@ body {
     flex-wrap: wrap;
 }
 
-.info{
-  display: flex;
-  gap: 10px;
-  position: relative;
+.info {
+    display: flex;
+    gap: 10px;
+    position: relative;
 }
-.info  img {
-  margin-top: 6px;
-  width: 30px;
-  height: 30px;
+
+.info img {
+    margin-top: 6px;
+    width: 30px;
+    height: 30px;
 }
+
 .info h1 {
-  margin-top: 10px;
-  font-size: large;
-  color: white;
+    margin-top: 10px;
+    font-size: large;
+    color: white;
 }
 
 .feature h1 {
-  margin-top: 10px;
-  font-size: large;
-  margin-left: 90px;
-  margin-bottom: 20px;
+    margin-top: 10px;
+    font-size: large;
+    margin-left: 90px;
+    margin-bottom: 20px;
 }
+
 .feature h1 a {
-  text-decoration: none;
-  color: white;
+    text-decoration: none;
+    color: white;
 }
+
 .feature h1 a.active {
-  color: green;
-  text-decoration: underline;
+    color: green;
+    text-decoration: underline;
 }
+
 .feature li {
-  list-style: none;
-  padding: 5px;
+    list-style: none;
+    padding: 5px;
 }
-.feature li a{
-  text-decoration: none;
-  color: white;
-  margin-left: 52px;
+
+.feature li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 52px;
 }
 
 .why-us h1 {
-  margin-top: 10px;
-  font-size: large;
-  margin-left: 40px;
-  margin-bottom: 20px;
-}
-.why-us h1 a {
-  text-decoration: none;
-  color: white;
-}
-.why-us h1 a.active {
-  color: green;
-  text-decoration: underline;
-}
-.why-us li {
-  list-style: none;
-  padding: 5px;
-}
-.why-us li a {
-  text-decoration: none;
-  color: white;
-  margin-left: 3px;
-}
-.why-us li a.active {
-  color: green;
-  text-decoration: underline;
+    margin-top: 10px;
+    font-size: large;
+    margin-left: 40px;
+    margin-bottom: 20px;
 }
 
-.social-media h1{
-  margin-top: 10px;
-  font-size: large;
-  color: white;
-  margin-left: 35px;
-  margin-bottom: 25px;
+.why-us h1 a {
+    text-decoration: none;
+    color: white;
 }
-.social-media .social-links li{
-  list-style: none;
-  padding: 5px;
-  margin-left: -5px;
+
+.why-us h1 a.active {
+    color: green;
+    text-decoration: underline;
 }
+
+.why-us li {
+    list-style: none;
+    padding: 5px;
+}
+
+.why-us li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 3px;
+}
+
+.why-us li a.active {
+    color: green;
+    text-decoration: underline;
+}
+
+.social-media h1 {
+    margin-top: 10px;
+    font-size: large;
+    color: white;
+    margin-left: 35px;
+    margin-bottom: 25px;
+}
+
+.social-media .social-links li {
+    list-style: none;
+    padding: 5px;
+    margin-left: -5px;
+}
+
 .social-media .social-links li a {
-  text-decoration: none;
-  color: white;
-  width: 15px;
-  height: 15px;
+    text-decoration: none;
+    color: white;
+    width: 15px;
+    height: 15px;
 }
 
 .contact h1 {
-  margin-top: 10px;
-  font-size: large;
-  margin-left: 40px;
-  margin-bottom: 20px;
-}
-.contact h1 a {
-  text-decoration: none;
-  color: white;
-}
-.contact h1 a.active {
-  color: green;
-  text-decoration: underline;
-}
-.contact li {
-  list-style: none;
-  padding: 5px;
-}
-.contact li a {
-  text-decoration: none;
-  color: white;
-  margin-left: 3px;
+    margin-top: 10px;
+    font-size: large;
+    margin-left: 40px;
+    margin-bottom: 20px;
 }
 
+.contact h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.contact h1 a.active {
+    color: green;
+    text-decoration: underline;
+}
+
+.contact li {
+    list-style: none;
+    padding: 5px;
+}
+
+.contact li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 3px;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .info, .feature, .why-us, .social-media, .contact {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .feature h1, .why-us h1, .social-media h1, .contact h1 {
+        margin-left: 0;
+    }
+
+    .feature li a, .why-us li a, .contact li a {
+        margin-left: 0;
+    }
+
+    .social-media .social-links li {
+        margin-left: 0;
+    }
+}
