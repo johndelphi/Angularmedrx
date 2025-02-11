@@ -15,6 +15,7 @@ import { AboutComponent } from './about/about.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { DownloadComponent } from './download/download.component';
+import { PricingComponent } from './pricing/pricing.component';
 const routes: Routes = [
 //   {path:'results',
 //   component: SearchResultsPageComponent,
@@ -38,6 +39,7 @@ const routes: Routes = [
   { path: 'landing-page', component: LandingPageComponent },
   {path: 'feedback', component: FeedbackComponent},
   {path:'download',component:DownloadComponent},
+  {path:'pricing',component:PricingComponent},
   {path: '**', redirectTo: 'landing-page'},
 
 ];
