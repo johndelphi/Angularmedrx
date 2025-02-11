@@ -38,6 +38,7 @@ import { LmiddleSectionComponent } from './lmiddle-section/lmiddle-section.compo
 import { LandingiconsComponent } from './landingicons/landingicons.component';
 import { LastlandingComponent } from './lastlanding/lastlanding.component';
 import { DownloadComponent } from './download/download.component';
+import { PricingComponent } from './pricing/pricing.component';
 
 
 
@@ -74,6 +75,7 @@ import { DownloadComponent } from './download/download.component';
     LandingiconsComponent,
     LastlandingComponent,
     DownloadComponent,
+    PricingComponent,
 
 
 

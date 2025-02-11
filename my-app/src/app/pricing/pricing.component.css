@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin-bottom: 100px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .header {
+    background: linear-gradient(180deg, #FFFFFF 0%, #1BC768 100%);
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 30px 30px;
+    height: 40%;
+    top: -10%;
+  }
+  
+  .header-text {
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    padding-top: 12%;
+  }
+  
+  .header-text h1 {
+    font-weight: bold;
+    margin-left: 45%;
+  }
+  
+  .header-text p {
+    margin-top: 15px;
+    margin-left: 40%;
+  }
+  
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    margin-top: -3%;
+    gap: 7%;
+  }
+  
+  .pricing-container .free-tier, .standard, .premium, .one-time {
+    position: relative;
+    margin-top: 0; 
+    background: #FFFFFF;
+    border: #1BC768 solid 2px;
+    width: 20%;
+    height: auto;
+  }
+
+    .pricing-container .free-tier {
+        margin-left: 50px;
+    }
+
+    .pricing-container .one-time {
+        margin-right: 50px;
+    }
+  
+  .pricing-container .free-tier .tier-head,
+  .pricing-container .standard .standard-head,
+  .pricing-container .premium .premium-head,
+  .pricing-container .one-time .one-time-head {
+    text-align: center;
+  }
+
+  .pricing-container .standard .standard-head ,
+  .pricing-container .one-time .one-time-head  {
+    text-decoration: underline;
+  }
+  
+  .pricing-container .free-tier .tier-head h2, 
+  .pricing-container .standard .standard-head h2,
+  .pricing-container .premium .premium-head h2,
+  .pricing-container .one-time .one-time-head h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-top: 10px;
+  }
+
+  .pricing-container .standard .standard-head h2, .pricing-container .one-time .one-time-head p {
+    color: rgb(5, 102, 248);
+    text-decoration: underline;
+  }
+
+  .pricing-container .standard  .standard-head p, .pricing-container .one-time .one-time-head h2 {
+    font-weight: bold;
+    color: red;
+    text-decoration: underline;
+  }
+
+  .pricing-container .standard .standard-head p, .pricing-container .premium .premium-head p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+
+  .pricing-container .premium .premium-head {
+    font-weight: bold;
+    color: #1BC768;
+    text-decoration: underline;
+   }
+
+  .pricing-container .free-tier .tier-head p,
+  .pricing-container .one-time .one-time-head p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: rgb(5, 102, 248);
+    margin-top: 10px;
+  }
+  
+  .pricing-container .free-tier h2,
+  .pricing-container .standard h2,
+  .pricing-container .premium h2,
+  .pricing-container .one-time h2 {
+    font-weight: lighter;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .pricing-container .free-tier ul,
+  .pricing-container .standard ul,
+  .pricing-container .premium ul,
+  .pricing-container .one-time ul {
+    font-weight: 800;
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .pricing-container .free-tier ul li,
+  .pricing-container .standard ul li,
+  .pricing-container .premium ul li,
+  .pricing-container .one-time ul li {
+    margin-top: 10px;
+  }
+  
+  .pricing-container .free-tier ul p,
+  .pricing-container .standard ul p,
+  .pricing-container .premium ul p,
+  .pricing-container .one-time ul p {
+    margin-left: 20px;
+    margin-top: 8px;
+  }
+  
+  .pricing-container .free-tier button,
+  .pricing-container .standard button,
+  .pricing-container .premium button,
+  .pricing-container .one-time button {
+    display: block;
+    margin: 20px auto 20px auto;
+    padding: 10px 20px;
+    border: black solid 1px;
+    background: #1BC768;
+    border-radius: 20px;
+  }
+  
+  
