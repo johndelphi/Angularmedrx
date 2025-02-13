@@ -3,7 +3,7 @@
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  height: auto; 
+  height: auto;
 }
 
 /* Hero Section */
@@ -11,11 +11,11 @@
   background: linear-gradient(180deg, #f0fdf4 0%, #22c55e 100%);
   padding: 90px 20px;
   position: relative;
-  overflow: visible; 
+  overflow: visible;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin: 50px 50px 20px;
   max-width: 100%;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 .hero-content {
@@ -67,11 +67,11 @@
 
 .hero-image img {
   width: 100%;
-  max-width: 60%; 
-  height: 300%; 
+  max-width: 60%;
+  height: 300%;
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.12));
-  object-fit: cover; 
-  border-radius: 0; 
+  object-fit: cover;
+  border-radius: 0;
   animation: floating 3s ease-in-out infinite;
 }
 
@@ -149,6 +149,35 @@
 
 .store-icons img:hover {
   transform: scale(1.1);
+}
+
+.store-icon {
+  position: relative;
+  display: inline-block;
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.store-icon .tooltip {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the icon */
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.store-icon:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
 }
 
 /* Why Choose Section */
@@ -472,14 +501,14 @@
 
   .download-btn {
     padding: 8px 16px;
-    font-size: 10px; 
-    margin-top: 10px; 
+    font-size: 10px;
+    margin-top: 10px;
   }
 }
 .plangreen-image {
-  width: 148.363px; 
-  height: 400px; 
-  flex-shrink: 0; 
+  width: 148.363px;
+  height: 400px;
+  flex-shrink: 0;
   display: block; /* Ensure the image is centered */
   margin: 0 auto; /* Center the image */
 }
