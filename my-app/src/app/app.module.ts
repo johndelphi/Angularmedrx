@@ -1,4 +1,3 @@
-
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -33,6 +32,13 @@ import { AboutComponent } from './about/about.component';
 import { HomefooterComponent } from './homefooter/homefooter.component';
 import { LoaderComponent } from './loader/loader.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { ContactComponent } from './contact/contact.component';
+import { LmiddleSectionComponent } from './lmiddle-section/lmiddle-section.component';
+import { LandingiconsComponent } from './landingicons/landingicons.component';
+import { LastlandingComponent } from './lastlanding/lastlanding.component';
+import { DownloadComponent } from './download/download.component';
+import { PricingComponent } from './pricing/pricing.component';
 
 
 
@@ -56,12 +62,20 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     DrugCarouselComponentComponent,
     HowmedrxworksComponent,
     LandingPageComponent,
+    FeedbackComponent,
+    ContactComponent,
+    DownloadComponent,
 
 
     SearchResultsPageComponent,
       AboutComponent,
       HomefooterComponent,
-      LoaderComponent,
+    LoaderComponent,
+    LmiddleSectionComponent,
+    LandingiconsComponent,
+    LastlandingComponent,
+    DownloadComponent,
+    PricingComponent,
 
 
 

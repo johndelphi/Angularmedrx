@@ -1,0 +1,348 @@
+/* Base styles */
+nav {
+  margin-top: 20px;
+}
+
+.graph {
+  position: absolute;
+  width: 105px;
+  height: 81px;
+  margin-top: -320px;
+  left: 150px;
+}
+
+.rectangle88 {
+  position: absolute;
+  width: 74px;
+  height: 74px;
+  left: 0px;
+  top: 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 9px rgba(38, 97, 197, 0.2);
+  border-radius: 24px;
+}
+
+/* Group 7 */
+.graphi {
+  position: relative;
+  width: 100%;
+  height: auto;
+  left: 15.5px;
+  top: 32.54px;
+}
+
+.gra i {
+  position: absolute;
+  font-size: 25px;
+  left: 7px;
+  top: 14px;
+}
+
+.arrow i {
+  position: absolute;
+  left: 7px;
+  font-size: 25px;
+  height: 32px;
+  stroke: #364050;
+  transform: rotate(-45.97deg);
+}
+
+/* Frame 870 */
+.frame870 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  position: absolute;
+  width: 59px;
+  height: 33px;
+  left: 54px;
+  top: 0px;
+  background: #1AC44A;
+  border-radius: 71px;
+}
+
+/* +25% */
+.percent {
+  width: 35px;
+  height: 9px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+/* Decor01 */
+.decor01 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 12px 24px 12px 12px;
+  gap: 14px;
+  position: absolute;
+  width: 155px;
+  height: 50px;
+  left: 190px;
+  margin-top: -90px;
+  background: #FFFFFF;
+  box-shadow: 0px 8px 16px rgba(37, 98, 204, 0.15);
+  border-radius: 82px;
+  z-index: 5;
+}
+
+/* Ellipse 1 */
+.ellipse1 {
+  width: 38px;
+  height: 38px;
+  left: 12px;
+  top: 12px;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 5px solid #1AC44A;
+  border-top-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* +21% */
+.percentage {
+  padding: 2px 8px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 17px;
+  color: #121D2F;
+  border-radius: 12px;
+}
+
+/* Progress in sales this month */
+.progress-text {
+  width: 75px;
+  height: 26px;
+  font-family: 'Plus Jakarta Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 17px;
+  color: #121D2F;
+}
+
+/* triangle section */
+.triangle1 {
+  position: absolute;
+  margin-top: -110px;
+  margin-left: 310px;
+}
+
+/* Five-Sided Shape */
+.triangle1 .five-sided-shape {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  background: linear-gradient(330deg, rgba(27, 198, 104, 0.7) 0%, rgba(242, 247, 255, 0.7) 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 90% 0%, 0% 90%, 0% 100%);
+  border-radius: 40px;
+  transform: rotate(45deg);
+  top: 0;
+  right: -30px;
+}
+
+/* triangle section */
+.triangle2 {
+  position: absolute;
+  margin-top: -480px;
+  right: 200px;
+}
+
+/* Five-Sided Shape */
+.triangle2 .five-sided-shape {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(480deg, rgba(27, 198, 104, 0.7) 0%, rgba(242, 247, 255, 0.7) 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 38%, 38% 100%, 0% 100%);
+  border-radius: 40px;
+  transform: rotate(225deg);
+  top: 60px;
+  right: -110px;
+}
+
+/* Overlay Image */
+.triangle2 .overlay-image {
+  position: absolute;
+  top: 230px;
+  right: -90px;
+  transform: translate(0, -50%) rotate(0deg);
+  width: 130px;
+  height: 130px;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.pharmacy-management {
+  position: absolute;
+  width: 510px;
+  height: 100px;
+  left: 300px;
+  margin-top: -200px;
+}
+
+.pharmacy-management h1 {
+  position: absolute;
+  width: 800px;
+  height: 40px;
+  margin-left: 80px;
+  margin-top: -60px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 29px;
+}
+
+.pharmacy-management h2 {
+  position: absolute;
+  width: 530px;
+  height: 40px;
+  margin-left: 125px;
+  margin-top: 22px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  body { overflow-x: hidden; }
+
+  nav {
+    margin-top: -490px;
+  }
+
+  .graph {position: relative;top: -80px; left: 40px; }
+  .rectangle88 { width: 40px; height: 40px; border-radius: 12px; }
+  .graphi { top: 18px; left: 9px; }
+  .arrow i { font-size: 15px; margin-top: 2px; }
+  .gra i { font-size: 15px; left: 3px; }
+  .frame870 { width: 35px; height: 20px; margin-left: -20px; }
+  .percent { margin-top: -7px; font-size: 8px; }
+
+
+  .decor01 { width: 117px; height: 40px; left: 90px;margin-top: -60px; }
+  .ellipse1 { width: 28px; height: 28px; border-width: 4px; }
+  .percentage { font-size: 7px; }
+  .progress-text {font-size: 6.5px;line-height: 2; margin-left: -6px; }
+
+  .triangle1 {
+    margin-top: -63px;
+    margin-left: 160px;
+  }
+
+  .triangle1 .five-sided-shape {
+    width: 150px;
+    height: 150px;
+    border-radius: 30px;
+  }
+
+  .triangle2 {
+    margin-top: -250px;
+    right: 140px;
+  }
+
+  .triangle2 .five-sided-shape {
+    width: 120px;
+    height: 120px;
+    border-radius: 22px;
+  }
+
+  .triangle2 .overlay-image {
+    top: 135px;
+    right: -95px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .pharmacy-management {
+    width: 280px;
+    left: 100px;
+    margin-top: -100px;
+  }
+
+  .pharmacy-management h1 {
+    width: 260px;
+    font-size: 15px;
+    margin-left: -12px;
+    margin-top: -30px;
+  }
+
+  .pharmacy-management h2 {
+    width: 180px;
+    font-size: 10px;
+    margin-left: 110px;
+    margin-top: 10px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  body { overflow-x: hidden; }
+
+  .pharmacy-management h1 {
+    width: 300px;
+    font-size: 12px;
+    margin-left: -12px;
+    margin-top: -30px;
+  }
+
+  .pharmacy-management h2 {
+    width: 150px;
+    font-size: 9px;
+    margin-left: 110px;
+    margin-top: 10px;
+  }
+}
+
+/* For larger screens (desktop and beyond) */
+@media screen and (min-width: 1400px) {
+  nav {
+    margin-top: -290px;
+  }
+
+  .graph {
+    left: 230px;
+  }
+
+  .triangle1 {
+    margin-left: 370px;
+  }
+
+  .decor01 {
+    left: 250px;
+  }
+
+  .pharmacy-management {
+    left: 550px;
+  }
+
+  .pharmacy-management h1 {
+    width: 900px;
+    font-size: 45px;
+    white-space: nowrap;
+  }
+
+  .pharmacy-management h2 {
+    width: 750px;
+    font-size: 30px;
+  }
+
+  .triangle2 {
+    margin-top: -480px;
+    right: 330px;
+  }
+}

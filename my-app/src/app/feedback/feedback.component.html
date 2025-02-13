@@ -1,0 +1,21 @@
+<div class="feedback-container">
+  <div class="fixed-image">
+    <img src="assets/Images/feedback.jpg" alt="Client's Feedback">
+  </div>
+  <div class="message-section">
+    <h1 class="underlined">What Our Clients Say</h1>
+    <div class="feedback-carousel" [style.transform]="'translateX(-' + currentIndex * 100 + '%)'">
+      <div class="feedback" *ngFor="let feedback of feedbacks; let i = index" [ngClass]="{ 'active': i === currentIndex }">
+        <div class="feedback-section">
+          <div class="client">
+            <h2>{{ feedback.message }}</h2>
+            <p>{{ feedback.name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dots">
+      <span *ngFor="let feedback of feedbacks; let i = index" [class.active]="i === currentIndex" (click)="selectFeedback(i)"></span>
+    </div>
+  </div>
+</div>

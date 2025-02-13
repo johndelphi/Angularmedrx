@@ -1,83 +1,33 @@
-
-import { Component, HostListener, ViewChild } from '@angular/core';
-import { SigninComponent } from '../signin/signin.component';
-import { NavigationEnd, Router } from '@angular/router';
-
+import { Component, HostListener, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-
 export class HeaderComponent {
-  isMenuOpen = false
-  isHovered: boolean = false;
-  isSignInHovered: boolean = false;
+  menuOpen = false;
 
-  constructor(private router: Router) {
-    this.router.events.subscribe(event => {
-      if (event instanceof NavigationEnd) {
-        console.log('Navigation event:', event);
-      }
-    })
+  constructor(private eRef: ElementRef) {}
+
+  // Toggle the menu when the burger icon is clicked
+  toggleMenu() {
+    this.menuOpen = !this.menuOpen;
   }
 
-  @ViewChild(SigninComponent) signInComponent!: SigninComponent;
-
-  toggleSideNav() {
-    this.isMenuOpen = !this.isMenuOpen;
-
+  // Close the menu when clicking a link
+  closeMenu() {
+    this.menuOpen = false;
   }
 
-  closeDropdownMenu() {
-    this.isMenuOpen = false;
-  }
-
-  closeSigninDropdown() {
-     if (!this.isSignInHovered) {
-      this.isContentOpen = false;
-    }
-    this.isSignInHovered = false;
-  }
-
-  isContentOpen: boolean = false;
-
-
-
-  handleDropdownClick(event: Event) {
-    event.stopPropagation(); // Prevent the event from propagating
-  }
-
-  handleSigninMousedown(event: Event) {
-    event.stopPropagation(); // Prevent the event from propagating
-  }
-
-  navigateToSignIn(event: Event) {
-    event.stopPropagation();
-    this.isContentOpen = !this.isContentOpen;
-    this.isContentOpen = true;
-    this.signInComponent.showSignInPage = true;
-    this.router.navigate(['/sign-in']); // Replace 'sign-in' with the actual path
-  }
-
+  // Close the menu when clicking outside the navigation
   @HostListener('document:click', ['$event'])
-  handleDocumentClick(event: Event) {
-    const target = event.target as HTMLElement;
-    const dropdownContent = document.querySelector('.dropdown-content') as HTMLElement;
+  closeMenuOutside(event: Event) {
+    const targetElement = event.target as HTMLElement;
 
-    if (!dropdownContent.contains(target)) {
-      this.closeDropdown();
+    // Close menu if click happens outside the navigation or burger menu
+    if (this.menuOpen && !this.eRef.nativeElement.contains(targetElement)) {
+      this.menuOpen = false;
     }
   }
-
-
-
-  closeDropdown() {
-    this.isContentOpen = false;
-  }
-
-
-
 }
-

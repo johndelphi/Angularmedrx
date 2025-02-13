@@ -1,14 +1,24 @@
-
 <div class="services-header">
-     <h1>Our Services</h1>
+    <h1>Our Services</h1>
 </div>
 <div class="services-container">
-    <div class="service" *ngFor="let service of services">
-      <h3>{{service.title}}</h3>
-      <img [src]="service.image" alt="{{service.title}}">
-      <p [class.collapsed]="service.collapsed">{{service.description}}</p>
-      <button (click)="toggleViewMore(service)">{{service.collapsed ? 'View More' : 'View Less'}}</button>
+    <div class="service" *ngFor="let service of services; let i = index" [class.alternate]="i % 2 !== 0">
+        <div class="service-content">
+            <h3>{{service.title}}</h3>
+            <ul>
+                <li *ngFor="let point of service.bulletPoints.slice(0, 2)">{{point}}</li>
+            </ul>
+            <div class="more-content" [class.collapsed]="service.collapsed">
+                <ul>
+                    <li *ngFor="let point of service.bulletPoints.slice(2)">{{point}}</li>
+                </ul>
+            </div>
+            <button (click)="toggleViewMore(service)">{{service.collapsed ? 'See More' : 'See Less'}}</button>
+        </div>
+        <div class="service-image">
+            <img [src]="service.image" alt="{{service.title}}">
+        </div>
     </div>
 </div>
-<!-- <app-features></app-features> -->
+<app-feedback></app-feedback>
 <app-homefooter></app-homefooter>

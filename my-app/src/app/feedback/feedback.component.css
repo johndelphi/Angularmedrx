@@ -1,0 +1,137 @@
+.feedback-container {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+  width: 100%;
+  position: relative;
+}
+
+.fixed-image {
+  width: 25%; /* Adjusted width to be smaller */
+  position: relative;
+  overflow: hidden;
+}
+
+.fixed-image img {
+  width: 100%;
+  height: 100vh; /* Maintain aspect ratio */
+  max-height: 300px; /* Set a max height for the image */
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 10px; /* Reduced margin */
+  margin-top: 10px; /* Reduced margin */
+}
+
+.message-section {
+  width: 45%; /* Adjusted width */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10%;
+  overflow: hidden;
+  margin-top: -3%; /* Adjusted margin */
+}
+
+.message-section h1 {
+  font-size: 36px; /* Adjusted font size */
+  margin-top: 40px; /* Adjusted margin */
+  margin-bottom: 20px; /* Adjusted margin */
+  position: relative;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+.message-section h1::after {
+  content: "";
+  display: block;
+  width: 15%;
+  height: 4px;
+  background: linear-gradient(to right, blue 50%, green 50%);
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feedback-carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.feedback {
+  flex: 0 0 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.feedback.active {
+  opacity: 1;
+}
+
+.feedback .feedback-section {
+  width: 100%;
+  text-align:center; /* Align text to the left */
+}
+
+.feedback .feedback-section h2 {
+  font-size: medium; /* Adjusted font size */
+  font-weight: 400; /* Adjusted font weight */
+  margin-bottom: 10px; /* Adjusted margin */
+  margin-top: 10px; /* Adjusted margin */
+  line-height: 1.5; /* Adjusted line height for readability */
+}
+
+.feedback .feedback-section p {
+  color: green;
+  font-size: small; /* Adjusted font size */
+  margin-top: 0; /* Adjusted margin */
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  bottom: 150px; /* Adjusted position */
+  width: 100%;
+}
+
+.dots span {
+  width: 10px; /* Adjusted size */
+  height: 8px; /* Adjusted size */
+  margin: 0 5px;
+  background-color: grey;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dots span.active {
+  background-color: green;
+}
+
+/* Media Query for small screens */
+@media only screen and (max-width: 768px) {
+  .feedback-container {
+    flex-direction: column;
+  }
+
+  .fixed-image,
+  .message-section {
+    width: 100%;
+    padding: 0;
+  }
+
+  .fixed-image img {
+    height: auto;
+    max-height: 200px; /* Ensure the image uses the full width on small devices */
+  }
+
+  .dots {
+    bottom: 20px;
+  }
+}

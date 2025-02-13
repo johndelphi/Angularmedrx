@@ -1,0 +1,456 @@
+/* Base styles */
+nav {
+  display: flex;
+  margin-top: 780px;
+}
+
+.Middle-section {
+  margin-top: -1400px;
+}
+
+.Expertise, .services, .efficiency {
+  position: absolute;
+  width: 310px;
+  height: 134.83px;
+  margin-top: -360px;
+}
+
+.Expertise {
+  left: 39px;
+}
+
+.services {
+  left: 270px;
+}
+
+.efficiency {
+  right: 60px;
+  z-index: 2;
+}
+
+.rectangle1, .rectangle2, .rectangle3 {
+  position: absolute;
+  width: 240px;
+  height: 90px;
+  background: #1BC768;
+  border-radius: 20px;
+}
+
+.rectangle1 {
+  left: 89px;
+  top: 905px;
+}
+
+.rectangle2 {
+  left: 310px;
+  top: 905px;
+}
+
+.rectangle3 {
+  right: 60px;
+  top: 905px;
+}
+
+.professional-expertise, .Reliable-services, .Opperational-efficiency {
+  position: absolute;
+  width: 191px;
+  height: 29px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 550;
+  font-size: 20px;
+  line-height: 29px;
+  color: #FFFFFE;
+  margin-top: 950px;
+  white-space: nowrap;
+}
+
+.professional-expertise {
+  left: 107px;
+}
+
+.Reliable-services {
+  left: 330px;
+}
+
+.Opperational-efficiency {
+  left: 40px;
+  font-size: 19px;
+}
+
+.Expertise i, .services i, .efficiency i {
+  position: absolute;
+  border-radius: 30px;
+  top: 920px;
+}
+
+.Expertise i {
+  left: 103px;
+}
+
+.services i {
+  left: 330px;
+}
+
+.efficiency i {
+  left: 40px;
+}
+
+.triangle1, .triangle2 {
+  position: absolute;
+}
+
+.triangle1 {
+  top: 860px;
+  left: 120px;
+}
+
+.triangle1 .five-sided-shape {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(560deg, rgba(27, 198, 104, 0.7) 0%, rgba(242, 247, 255, 0.7) 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 38%, 38% 100%, 0% 100%);
+  border-radius: 40px;
+  transform: rotate(135deg);
+  top: 0;
+  right: -30px;
+}
+
+.triangle2 {
+  top: 750px;
+  right: 0;
+  width: 600px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.triangle2 .five-sided-shape {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(380deg, rgba(27, 198, 104, 0.7) 0%, rgba(242, 247, 255, 0.7) 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 98%, 98% 100%, 0% 100%);
+  border-radius: 40px 40px 0 40px;
+  transform: rotate(-45deg);
+  top: 60px;
+  right: -110px;
+}
+
+.medfastgo {
+  margin-top: -250px;
+  margin-left: 155px;
+}
+
+.med {
+  position: absolute;
+  width: 210px;
+  height: 100px;
+  left: 350px;
+  margin-top: -380px;
+}
+
+.rectangle4 {
+  position: absolute;
+  width: 180px;
+  height: 40px;
+  margin-left: 250px;
+  margin-top: -80px;
+  background: #F1F6FF;
+  border-radius: 10px;
+}
+
+.medfast {
+  position: absolute;
+  width: 200px;
+  height: 40px;
+  margin-left: 265px;
+  margin-top: -73px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 29px;
+  color: green;
+}
+
+.pharmacy-management {
+  position: absolute;
+  width: 410px;
+  height: 100px;
+  left: 300px;
+  margin-top: -280px;
+}
+
+.pharmacy-management h1 {
+  position: absolute;
+  width: 330px;
+  height: 40px;
+  margin-left: 235px;
+  margin-top: -123px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 29px;
+}
+
+.pharmacy-management h2 {
+  position: absolute;
+  width: 530px;
+  height: 40px;
+  margin-left: 175px;
+  margin-top: -73px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.fef {
+  position: absolute;
+  display: flex;
+  width: 410px;
+  height: 100px;
+  left: 420px;
+  margin-top: -250px;
+}
+
+.fast-to-manage, .easy-to-learn, .future-rich {
+  position: absolute;
+  display: flex;
+  width: 300px;
+  height: 100px;
+}
+
+.fast-to-manage {
+  margin-left: 0;
+}
+
+.easy-to-learn {
+  margin-left: 270px;
+}
+
+.future-rich {
+  margin-left: 510px;
+}
+
+.rectangle5, .rectangle6, .rectangle7 {
+  width: 45px;
+  height: 45px;
+  background: #F1F6FF;
+  border-radius: 10px;
+}
+
+.fast-to-manage i, .easy-to-learn i, .future-rich i {
+  color: green;
+  margin-top: 15px;
+  margin-left: -32px;
+}
+
+.fast-to-manage i {
+  margin-left: -33px;
+}
+
+.fast, .easy, .future {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  body { overflow-x: hidden; }
+
+  nav {
+    margin-top: -185%;
+  }
+
+  .Middle-section {
+    margin-top: -1450px;
+  }
+
+  .Expertise {
+    left: -70px;
+  }
+
+  .services {
+    left: -150px;
+  }
+
+  .efficiency {
+    right: -30px;
+    z-index: 2;
+  }
+
+  .rectangle1, .rectangle2, .rectangle3 {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+  }
+
+  .professional-expertise, .Reliable-services, .Opperational-efficiency {
+    margin-top: 930px;
+    font-size: 8px;
+    width: 100px;
+    white-space: nowrap;
+  }
+
+  .professional-expertise {
+    left: 100px;
+  }
+
+  .Opperational-efficiency {
+    left: 160px;
+  }
+
+  .Expertise i, .services i, .efficiency i {
+    font-size: 11px;
+  }
+
+  .efficiency i {
+    left: 165px;
+  }
+
+  .triangle1 {
+    top: 520px;
+  }
+
+  .triangle1 .five-sided-shape {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 16px;
+    top: 0;
+    left: -150px;
+  }
+
+  .triangle2 {
+    top: 410px;
+    overflow: hidden;
+  }
+
+  .triangle2 .five-sided-shape {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    top: 60px;
+    right: -50px;
+    border-radius: 22px 22px 0 22px;
+  }
+
+  .medfastgo {
+    position: relative;
+    margin-top: -370px;
+    margin-left: -500px;
+    width: 50%;
+    height: auto;
+  }
+
+  .pharmacy-management {
+    left: 360px;
+    width: 200px;
+  }
+
+  .pharmacy-management h1 {
+    font-size: 20px;
+    white-space: nowrap;
+    width: 250px;
+  }
+
+  .pharmacy-management h2 {
+    width: 330px;
+    height: 20px;
+    font-size: 14px;
+    margin-left: 185px;
+    margin-top: -80px;
+  }
+
+  .fast-to-manage {
+    margin-left: 100px;
+  }
+
+  .easy-to-learn {
+    margin-left: 230px;
+  }
+
+  .future-rich {
+    margin-left: 360px;
+  }
+
+  .rectangle5, .rectangle6, .rectangle7 {
+    width: 35px;
+    height: 35px;
+  }
+
+  .fast-to-manage i, .easy-to-learn i, .future-rich i {
+    font-size: 12px;
+    margin-top: 12px;
+    margin-left: -24px;
+  }
+
+  .fast, .easy, .future {
+    white-space: nowrap;
+    font-size: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  body { overflow-x: hidden; }
+
+  nav {
+    margin-top: -145%;
+  }
+
+  .services {
+    left: -180px;
+  }
+
+  .medfastgo {
+    margin-left: -510px;
+  }
+}
+
+/* For larger screens (desktop and beyond) */
+@media screen and (min-width: 1400px) {
+  .Middle-section {
+    margin-top: -1800px;
+  }
+
+  .services {
+    left: 570px;
+  }
+
+  .professional-expertise, .Opperational-efficiency, .Reliable-services {
+    width: auto;
+    white-space: nowrap;
+  }
+
+  .pharmacy-management h1 {
+    white-space: nowrap;
+  }
+
+  .medfastgo, .med {
+    position: absolute;
+    margin-top: -620px;
+    left: 140px;
+  }
+
+  .med {
+    left: 320px;
+    margin-top: -400px;
+  }
+
+  .rectangle4 {
+    width: 220px;
+    height: 50px;
+    margin-left: 260px;
+  }
+
+  .medfast {
+    font-size: 18px;
+    margin-left: 285px;
+    top: 5px;
+  }
+}

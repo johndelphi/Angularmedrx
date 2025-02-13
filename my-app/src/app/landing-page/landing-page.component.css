@@ -1,91 +1,280 @@
-/* General reset and styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+nav{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 750px;
 }
 
-body,
-html {
-  height: 80%;
+.tilted-rectangle1 {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(135deg, rgba(27, 198, 104, 0.5) 0%, rgba(242, 247, 255, 0.5) 100%);
+  border-radius: 50px;
+  transform: rotate(15deg);
+  position: absolute;
+  top: -130px;
+  left: -70px;
+  z-index: 2;
 }
 
-.landingpage-container {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  /* Full viewport height */
-  overflow: hidden;
-  /* Hide overflow */
+.hero-section{
+  margin-top: 140px;
 }
 
+.hero-section h1 {
+  font-size: xx-large;
+  margin-left: 60px;
+  font-weight: 550;
+  margin-bottom: 20px;
+  position: absolute;
+  z-index: 9;
+}
+
+.hero-section h2 {
+  font-size: larger;
+  width: 550px;
+  margin-left: 40px;
+  position: absolute;
+  margin-top: 50px;
+  z-index: 9;
+}
+
+.hero-section .tilted-rectangle {
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(435deg, rgba(27, 198, 104, 0.3) 0%, rgba(242, 247, 255, 0.3) 100%);
+  border-radius: 30px;
+  transform: rotate( -20deg);
+  position: absolute;
+  top: 120px;
+  left: 150px;
+  z-index: 0.5;
+}
+
+/* Landing Page Container */
 .landingpage {
   position: relative;
   width: 100%;
-  height: 100%;
-}
-
-.background-image {
-  width: 100%;
   height: 100vh;
-  object-fit: cover;
-  /* Cover the whole container */
+  top: -100px;
+  right: 0;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Shape Container */
+.shape {
   position: absolute;
+  top: 200px;
+  right: 0;
+}
+
+/* Five-Sided Shape */
+.shape .five-sided-shape {
+  position: absolute;
+  width: 400px;
+  height: 380px;
+  background: linear-gradient(330deg, #1BC768 0%, #F2F7FF 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 37%, 40% 100%, 0% 100%);
+  border-radius: 60px 0 0 60px;
+  transform: rotate(45deg);
   top: 0;
-  left: 0;
-  z-index: -1;
-  border-radius: 5px;
+  right: -30px;
 }
 
-.overlay {
+/* Overlay Image */
+.shape .overlay-image {
   position: absolute;
-  top: 30%;
-  left: 30%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: black;
-  padding: 20px;
+  top: 90px;
+  right: 100px;
+  transform: translate(0, -50%) rotate(0deg);
+  width: 380px;
+  height: 380px;
+  border-radius: 10px;
+  z-index: 2;
 }
 
-.overlay h3 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+/* triangle section */
+.triangle {
+  position: absolute;
+  top: 422px;
+  left: 370px;
+
+}
+/* Five-Sided Shape */
+.triangle .five-sided-shape {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(330deg, rgba(27, 198, 104, 0.5) 0%, rgba(242, 247, 255, 0.5) 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 38%, 38% 100%, 0% 100%);
+  border-radius: 40px;
+  transform: rotate(45deg);
+  top: 0;
+  right: -30px;
 }
 
-.overlay p {
-  font-size: 1.2rem;
-}
-
-.download-buttons {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.store-image {
-  width: 150px;
-  height: auto;
-}
-
-.landingpage-container+app-services {
-  margin-top: 0;
-  /* Remove any default margin */
-  padding-top: 0;
-  /* Remove any default padding */
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .overlay h3 {
-    font-size: 2rem;
+/* For smaller screens (mobile) */
+@media screen and (max-width: 768px) {
+  body { overflow-x: hidden; }
+  .hero-section {
+    margin-top: 80px;
   }
 
-  .overlay p {
-    font-size: 1rem;
+  .hero-section .welcome {
+    margin-top: -190px;
+    z-index: 10;
   }
 
-  .store-image {
-    width: 100px;
+  .hero-section h1 {
+    font-size: large;
+    font-weight: 550;
+    margin-left: 15px;
+    position: static;
+  }
+
+  .hero-section h2 {
+    font-size: 12px;
+    width: 180px;
+    margin-left: 15px;
+    margin-top: -10px;
+    position: static;
+  }
+
+  .tilted-rectangle1 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    transform: rotate(15deg);
+    top: -200px;
+    left: -150px;
+  }
+
+  .hero-section .tilted-rectangle {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin: 20px auto;
+    transform: rotate(-20deg);
+    top: -220px;
+    left: -70px;
+  }
+
+  .landingpage {
+    width: 100%;
+    height: 100vh;
+    top: -345px;
+    overflow: hidden;
+  }
+
+  .shape {
+    top: 100px;
+    position: relative;
+  }
+
+  .shape .five-sided-shape {
+    width: 230px;
+    height: 230px;
+    right: -30px;
+    margin: 0 auto;
+    transform: rotate(45deg);
+    border-radius: 30px 0 0 30px;
+  }
+
+  .shape .overlay-image {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    top: -90px;
+    right: -150px;
+    margin: 20px auto;
+    transform: none;
+  }
+
+  .triangle {
+    position: relative;
+    top: -1080px;
+    left: -110px;
+    margin: 0 auto;
+  }
+
+  .triangle .five-sided-shape {
+    width: 110px;
+    height: 110px;
+    transform: rotate(45deg);
+    margin: 20px auto;
+    border-radius: 20px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  body { overflow-x: hidden; }
+
+  .shape .overlay-image {
+    top: -60px;
+    right: -140px;
+    width: 200px;
+    height: 200px;
+  }
+  .triangle {
+    top: -810px;
+    left: -120px;
+  }
+  .triangle .five-sided-shape {
+    width: 70px;
+    height: 70px;
+    border-radius: 15px;
+  }
+}
+
+/* For larger screens (desktop and beyond) */
+@media screen and (min-width: 1300px) {
+  .hero-section h1 {
+    font-size: 3rem;
+    margin-left: 80px;
+  }
+
+  .hero-section h2 {
+    font-size: 1.5rem;
+    width: 700px;
+    margin-left: 60px;
+    margin-top: 70px;
+  }
+
+  .tilted-rectangle1 {
+    width: 400px;
+    height: 400px;
+    top: -150px;
+    left: -100px;
+  }
+
+  .hero-section .tilted-rectangle {
+    width: 200px;
+    height: 200px;
+    top: 150px;
+    left: 180px;
+  }
+
+  .shape .five-sided-shape {
+    width: 500px;
+    height: 480px;
+    right: -50px;
+  }
+
+  .shape .overlay-image {
+    width: 480px;
+    height: 480px;
+    top: 100px;
+    right: 100px;
+  }
+
+  .triangle {
+    top: 500px;
+    left: 450px;
+  }
+
+  .triangle .five-sided-shape {
+    width: 250px;
+    height: 250px;
   }
 }

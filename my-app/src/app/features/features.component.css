@@ -1,44 +1,207 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
 
-.features-benefits {
-    background-color: #c8e6c9;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin-bottom: 450px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .header {
+    background: linear-gradient(180deg, #FFFFFF 0%, #1BC768 100%);
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 30px 30px;
+    height: 50%;
+    top: -10%;
+  }
+  
+  .header-text {
+    position: relative;
+    z-index: 2;
+    align-items: center;
+    padding-top: 8%;
+    margin-left: 5%;
+  }
+  
+  .header-text h2 {
+    margin-top: 10px;
+  }
+  
+  .header-text p {
+    margin-top: 10px;
+  }
+
+  .triangle1 {
+    width: 200px;
+    height: 200px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .triangle1 .triangle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(500deg, rgba(27, 198, 104, 0.7) 0%, rgba(242, 247, 255, 0.7) 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%, 0% 100%); 
+    border-radius: 35px 0px 35px 0px;
+    transform: rotate(-135deg);
+    top: -100px;
+  }
+
+  .triangle2 {
+    width: 200px;
+    height: 200px;
+    margin-left: 10%;
+    position: relative;
+  }
+  
+  .triangle2 .triangle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(500deg, rgba(27, 198, 104, 0.7) 0%, rgba(242, 247, 255, 0.7) 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 25% 100%, 0% 100%); 
+    border-radius: 35px;
+    transform: rotate(135deg);
+    margin-top: 40%;
+  }
+
+  .features-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
-    margin: 2rem 0;
-    padding: 2rem;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    font-family: 'Open Sans', sans-serif;
-}
+    margin-top: -23%;
+    gap: 7rem;
+  }
 
-.feature, .benefit {
-    flex: 1 1 200px;  
-    margin: 1rem;
-    padding: 2rem;
-    background-color: #a5d6a7;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease-in-out;
-}
+  .inventory, .sales, .financial, .operational{
+    background: white;
+    border: #1BC768 solid 2px;
+    border-radius: 20px;
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
 
-.feature h2, .benefit h2 {
-    color: #2e7d32;
-    margin-bottom: 1rem;
-}
+  .financial, .operational{
+    margin-top: 60px;
+  }
 
-.feature ul, .benefit ul {
-    line-height: 1.6;
-}
+  .inventory h1, .sales h1, .financial h1, .operational h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
 
-.feature:hover, .benefit:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
-}
+  .inventory p, .sales p, .financial p, .operational p{
+    margin-top: 10px;
+  }
 
-@media (max-width: 600px) {
-    .features-benefits {
-        flex-direction: column;
+  .inventory img, .sales img, .financial img, .operational img{
+    width: 40px;
+    height: 40px;
+    border-radius: 0;
+  }
+
+  .triangle3 {
+    width: 200px;
+    height: 200px;
+    margin-left: 74%;
+    position: relative;
+  }
+  
+  .triangle3 .triangle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(500deg, rgba(27, 198, 104, 0.7) 0%, rgba(242, 247, 255, 0.7) 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 25%, 25% 100%, 0% 100%); 
+    border-radius: 35px;
+    transform: rotate(-45deg);
+    margin-top: -190%;
+  }
+
+  .triangle4{
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .triangle4 .triangle {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    background: linear-gradient(300deg, rgba(27, 198, 104, 0.7) 0%, rgba(242, 247, 255, 0.7) 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 39%, 39% 100%, 0% 100%); 
+    border-radius: 35px;
+    transform: rotate(45deg);
+    top: -219px;
+  }
+
+  @media screen and (max-width: 768px) {
+    body {
+        margin-bottom: 920px;
     }
-}
- 
+    .header-text {
+        padding-top: 20%;
+    }
+
+    .triangle1{
+        margin-top: 3%;
+        height: 100px;
+        width: 100px;
+    }
+
+    .triangle1 .triangle {
+        height: 100px;
+        width: 100px;
+        border-radius: 20px 0px 20px 0px;
+    }
+
+    .first {
+        margin-top: 5%;
+    }
+
+    .second {
+        margin-top: -12%;
+    }
+
+
+   .triangle2, .triangle3, .triangle4 {
+     display: none;
+   }
+  }
+
+  @media screen and (min-width: 1300px) {
+    body {
+        margin-bottom: 132px;
+    }
+
+    .header {
+        height: 40%;
+    }
+
+    .triangle2 {
+        margin-left: 15%;
+    }
+
+    .features-container {
+        margin-top: -16%;
+    }
+    
+  }
