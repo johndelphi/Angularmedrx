@@ -5,7 +5,7 @@
   }
   
   body {
-    margin-bottom: 100px;
+    margin-bottom: 470px;
     font-family: 'Poppins', sans-serif;
   }
   
@@ -22,17 +22,17 @@
     position: relative;
     z-index: 2;
     align-items: center;
-    padding-top: 12%;
+    padding-top: 8%;
   }
   
   .header-text h1 {
     font-weight: bold;
-    margin-left: 45%;
+    margin-left: 40%;
   }
   
   .header-text p {
     margin-top: 15px;
-    margin-left: 40%;
+    margin-left: 30%;
   }
   
   .pricing-container {
@@ -52,14 +52,30 @@
     height: auto;
   }
 
-    .pricing-container .free-tier {
-        margin-left: 50px;
-    }
+  .pricing-container .free-tier {
+      margin-left: 50px;
+  }
 
-    .pricing-container .one-time {
-        margin-right: 50px;
-    }
+  .pricing-container .one-time {
+    margin-right: 50px;
+  }
   
+  .pricing-container .free-tier .tier-top,
+  .pricing-container .standard .standard-top {
+    background: #8de2b3;
+    padding: 10px;
+  } 
+
+  .pricing-container .premium .premium-top {
+    background: #c3e6b3;
+    padding: 10px;
+  } 
+
+  .pricing-container .one-time .one-time-head {
+    background: #5b6961;
+    padding: 10px;
+  }
+
   .pricing-container .free-tier .tier-head,
   .pricing-container .standard .standard-head,
   .pricing-container .premium .premium-head,
@@ -158,4 +174,58 @@
     border-radius: 20px;
   }
   
-  
+  @media screen and (max-width: 768px) {
+    body {
+      margin-bottom: 2250px;
+    }
+
+    .header-text {
+      padding-top: 30%;
+    }
+
+    .header-text h1 {
+      margin-left: 20%;
+    }
+    
+    .header-text p {
+      margin-left: 10%;
+    }
+
+    .pricing-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .pricing-container .free-tier, .standard, .premium, .one-time {
+      width: 80%;
+    }
+
+    .pricing-container .free-tier {
+      margin-left: 0px;
+  }
+
+  .pricing-container .one-time {
+      margin-right: 0px;
+  }
+  }
+
+  @media screen and (min-width: 1400px) {
+    body {
+      margin-bottom: 100px;
+    }
+
+    .header-text {
+      padding-top: 12%;
+    }
+    
+    .header-text h1 {
+      margin-left: 40%;
+    }
+    
+    .header-text p {
+      margin-left: 35%;
+    }
+
+  }
