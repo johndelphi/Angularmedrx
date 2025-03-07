@@ -43,7 +43,7 @@
     gap: 7%;
   }
   
-  .pricing-container .free-tier, .standard, .premium, .one-time {
+  .pricing-container .standard, .premium, .one-time {
     position: relative;
     margin-top: 0; 
     background: #FFFFFF;
@@ -52,15 +52,14 @@
     height: auto;
   }
 
-  .pricing-container .free-tier {
+  /* .pricing-container .free-tier {
       margin-left: 50px;
-  }
+  } */
 
   .pricing-container .one-time {
     margin-right: 50px;
   }
   
-  .pricing-container .free-tier .tier-top,
   .pricing-container .standard .standard-top {
     background: #8de2b3;
     padding: 10px;
@@ -72,11 +71,10 @@
   } 
 
   .pricing-container .one-time .one-time-head {
-    background: #5b6961;
+    background: #9ec48d;
     padding: 10px;
   }
 
-  .pricing-container .free-tier .tier-head,
   .pricing-container .standard .standard-head,
   .pricing-container .premium .premium-head,
   .pricing-container .one-time .one-time-head {
@@ -88,7 +86,6 @@
     text-decoration: underline;
   }
   
-  .pricing-container .free-tier .tier-head h2, 
   .pricing-container .standard .standard-head h2,
   .pricing-container .premium .premium-head h2,
   .pricing-container .one-time .one-time-head h2 {
@@ -119,7 +116,6 @@
     text-decoration: underline;
    }
 
-  .pricing-container .free-tier .tier-head p,
   .pricing-container .one-time .one-time-head p {
     font-weight: bold;
     font-size: 1.2rem;
@@ -127,7 +123,6 @@
     margin-top: 10px;
   }
   
-  .pricing-container .free-tier h2,
   .pricing-container .standard h2,
   .pricing-container .premium h2,
   .pricing-container .one-time h2 {
@@ -137,7 +132,6 @@
     margin-left: 10px;
   }
   
-  .pricing-container .free-tier ul,
   .pricing-container .standard ul,
   .pricing-container .premium ul,
   .pricing-container .one-time ul {
@@ -147,14 +141,12 @@
     margin-left: 10px;
   }
   
-  .pricing-container .free-tier ul li,
   .pricing-container .standard ul li,
   .pricing-container .premium ul li,
   .pricing-container .one-time ul li {
     margin-top: 10px;
   }
   
-  .pricing-container .free-tier ul p,
   .pricing-container .standard ul p,
   .pricing-container .premium ul p,
   .pricing-container .one-time ul p {
@@ -162,7 +154,6 @@
     margin-top: 8px;
   }
   
-  .pricing-container .free-tier button,
   .pricing-container .standard button,
   .pricing-container .premium button,
   .pricing-container .one-time button {
@@ -174,9 +165,10 @@
     border-radius: 20px;
   }
   
+  
   @media screen and (max-width: 768px) {
     body {
-      margin-bottom: 2250px;
+      margin-bottom: 1950px;
     }
 
     .header-text {
@@ -198,7 +190,7 @@
       gap: 20px;
     }
 
-    .pricing-container .free-tier, .standard, .premium, .one-time {
+    .pricing-container .standard, .premium, .one-time {
       width: 80%;
     }
 
