@@ -15,7 +15,7 @@
           <p class="card-text" [ngStyle]="{ 'text-decoration': drug.discountedPrice ? 'line-through' : 'none', 'color': drug.discountedPrice ? 'red' : 'black' }">Ksh {{ drug.originalPrice }}</p>
           <p class="card-text" [ngStyle]="{ 'color': 'green', 'font-size': '1.1em' }">Ksh {{ drug.discountedPrice }}</p>
           <p class="card-text">{{ drug.discountDetails }}</p>
-    
+
           <button (click)="getCoupon(drug)" class="btn btn-success">Get free coupon</button>
         </div>
       </div>
