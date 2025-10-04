@@ -1,4 +1,5 @@
 import { Component, ViewChild,ElementRef } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 
 interface Drug {
@@ -24,7 +25,7 @@ export class DrugCarouselComponentComponent {
       originalPrice: '59.99',
       discountedPrice: '40',
       discountDetails: '98% off with MedRx'
-      
+
     },
     {
       image:'https://buzzrx.s3.amazonaws.com/gs/DrugItem_5059.JPG',
@@ -48,7 +49,7 @@ export class DrugCarouselComponentComponent {
       originalPrice: '29.99',
       discountedPrice: '19.22',
       discountDetails: '95% off with MedRx'
-    }, 
+    },
     {
       image:'https://buzzrx.s3.amazonaws.com/caf6e1e8-8e0e-45c3-840d-c10080913b0e/lipitor-img.jpeg',
       name: 'Lipitor ',
