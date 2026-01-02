@@ -80,9 +80,6 @@ import { PricingComponent } from './pricing/pricing.component';
 
 
 
-
-
-
   ],
   imports: [
     BrowserModule,
